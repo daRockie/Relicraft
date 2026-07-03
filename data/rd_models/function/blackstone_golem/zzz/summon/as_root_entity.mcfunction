@@ -12,7 +12,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "rd_models:blackstone_golem"
-data modify storage animated_java:temp entry.data.rig_hash set value "427c4734e835dcc6149551a808277e14aa864a82250c2829ed55d6282969f8d0"
+data modify storage animated_java:temp entry.data.rig_hash set value "38a38e23ffdfdbfd7f83e9be63c6c9b18e75069f8303b339757e246d787fc87b"
 tp @s ~ ~ ~ ~ ~
 summon minecraft:marker ^0 ^0 ^0 {Tags:["RD.blackstone_golem","aj.global.bone.bs_golem_bone.child","aj.global.bone.bs_golem_bone.child.locator","aj.global.bone.bs_golem_bone.decendant","aj.global.bone.bs_golem_bone.decendant.locator","aj.global.bone.bs_golem_bone.tree","aj.global.entity","aj.global.locator","aj.global.node","aj.global.node.locator","aj.new","rd_models.blackstone_golem.bone.bs_golem_bone.child","rd_models.blackstone_golem.bone.bs_golem_bone.child.locator","rd_models.blackstone_golem.bone.bs_golem_bone.decendant","rd_models.blackstone_golem.bone.bs_golem_bone.decendant.locator","rd_models.blackstone_golem.bone.bs_golem_bone.tree","rd_models.blackstone_golem.entity","rd_models.blackstone_golem.locator","rd_models.blackstone_golem.locator.locator","rd_models.blackstone_golem.node","rd_models.blackstone_golem.node.locator"]}
 execute as @n[ type=minecraft:marker, tag=rd_models.blackstone_golem.locator.locator, tag=aj.new, distance=..1 ] run function rd_models:blackstone_golem/zzz/summon/as_locator/locator

@@ -1,6 +1,6 @@
 # 今までの処理重すぎん？
-execute store result entity @s brightness.block int 1 run function rd_asset_blocks:get_brightness
-execute store result entity @s brightness.sky int 1 run function rd_asset_blocks:get_brightness
+execute store result entity @n[type=item_display,tag=RD.block.customCrafter] brightness.block int 1 run function rd_asset_blocks:get_brightness
+execute store result entity @n[type=item_display,tag=RD.block.customCrafter] brightness.sky int 1 run function rd_asset_blocks:get_brightness
 
 # execute positioned ~ ~1 ~ if predicate custom_items:can_see_sky run data modify entity @n[type=block_display] brightness.sky set value 14
 # execute positioned ~ ~1 ~ unless predicate custom_items:can_see_sky run data modify entity @n[type=block_display] brightness.sky set value 1

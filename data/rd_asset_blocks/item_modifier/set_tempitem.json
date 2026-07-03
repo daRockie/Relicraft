@@ -1,9 +1,7 @@
 {
-  "function": "minecraft:set_components",
-  "components": {
-    "minecraft:custom_data": {
-      "TempItem": true
-    }
+  "function": "minecraft:set_custom_data",
+  "tag":{
+    "TempItem": true
   },
   "conditions": []
 }

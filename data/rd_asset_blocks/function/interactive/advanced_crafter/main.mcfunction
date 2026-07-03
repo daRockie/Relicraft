@@ -8,7 +8,7 @@ execute if entity @s[tag=placed_barrel] unless block ~ ~ ~ barrel[facing=up]{Cus
 #execute unless block ~ ~ ~ dispenser{Items:[]} if score @s RD.ai_timer matches 20.. if score @s isSuccess matches 1 run function crafter_main:do_craft
 
 # ブロックディスプレイ
-execute if entity @s[tag=placed_barrel] if block ~ ~ ~ barrel[facing=up]{CustomName:{"text":"改良型作業台","bold":true}} unless entity @e[type=block_display,distance=..0.5,tag=RD.block.customCrafter] align xyz positioned ~0.5 ~ ~0.5 run function rd_asset_blocks:interactive/advanced_crafter/replace_block_display
+execute if entity @s[tag=placed_barrel] if block ~ ~ ~ barrel[facing=up]{CustomName:{"text":"改良型作業台","bold":true}} unless entity @e[type=item_display,distance=..0.5,tag=RD.block.customCrafter] run function rd_asset_blocks:interactive/advanced_crafter/replace_block_display
 
 # ホッパー使うなアホ
 fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace hopper destroy

@@ -6,4 +6,4 @@ $function rd_recipe:force_return_item {table:"$(table)", place:"container.$(slot
 
 $item modify block ~ ~ ~ container.$(slot) rd_asset_blocks:set_tempitem
 
-# $item modify block ~ ~ ~ container.$(slot) rd_asset_blocks:set_ingredient
+$item modify block ~ ~ ~ container.$(slot) rd_asset_blocks:set_ingredient

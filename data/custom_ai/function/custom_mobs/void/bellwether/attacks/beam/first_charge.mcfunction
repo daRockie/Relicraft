@@ -3,7 +3,7 @@ playsound entity.illusioner.cast_spell hostile @a ~ ~ ~ 1 1
 
 # item replace entity @s weapon.mainhand with ender_pearl[blocks_attacks={block_delay_seconds:5}] 1
 
-effect give @s resistance 20 1
+effect give @s resistance 30 2
 
 particle trial_spawner_detection_ominous ~ ~ ~ 0.5 0.5 0.5 0 20
 

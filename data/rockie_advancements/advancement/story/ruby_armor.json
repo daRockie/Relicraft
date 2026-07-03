@@ -1,0 +1,97 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:leather_chestplate",
+			"components": {
+				"minecraft:enchantment_glint_override": true,
+				"minecraft:dyed_color": 14680064,
+				"minecraft:trim": {
+					"material": "minecraft:redstone",
+					"pattern": "minecraft:silence"
+				}
+			}
+		},
+		"title": {
+      "text": "フィジカル・ストレンス",
+      "color": "light_purple",
+      "bold": true
+    },
+		"description": "ルビーから強力な防具をクラフトする",
+		"frame": "challenge",
+		"show_toast": true
+	},
+	"parent": "rockie_advancements:story/ruby_craft",
+	"criteria": {
+		"craft_helmet": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"leather_helmet"
+						],
+						"components": {
+							"custom_data": {
+								"CustomItem": "RD.rubyArmor"
+							}
+						}
+					}
+				]
+			}
+		},
+		"craft_chestplate": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"leather_chestplate"
+						],
+						"components": {
+							"custom_data": {
+								"CustomItem": "RD.rubyArmor"
+							}
+						}
+					}
+				]
+			}
+		},
+		"craft_leggings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"leather_leggings"
+						],
+						"components": {
+							"custom_data": {
+								"CustomItem": "RD.rubyArmor"
+							}
+						}
+					}
+				]
+			}
+		},
+		"craft_boots": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"leather_boots"
+						],
+						"components": {
+							"custom_data": {
+								"CustomItem": "RD.rubyArmor"
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "rd_system:progress/starter"
+	}
+}

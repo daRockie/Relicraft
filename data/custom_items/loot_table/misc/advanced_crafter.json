@@ -1,0 +1,65 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "max_stack_size":64,
+                "minecraft:rarity": "uncommon",
+                "minecraft:custom_name": {
+                  "text": "改良型作業台",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "機械とおまじないでできた、フシギな作業台。",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "普通の作業台では扱えないものを使える。",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "minecraft:player_head",
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQ3MTA2YTgyNzRkYjZiY2JjZDhhNDY2ZDk3ZTkwMDIzMTAxYmI1YTVjMTUxOWNkYTllZDJjMjBiZWQ5ZjFkOCJ9fX0="
+                    }
+                  ]
+                },
+                "minecraft:entity_data": {
+                  "id": "minecraft:armor_stand",
+                  "Invulnerable": true,
+                  "CustomName": {
+                    "text": "改良型作業台",
+                    "color": "yellow",
+                    "italic": false
+                  },
+                  "Tags": [
+                    "RD.block.interactive.advanced_crafter",
+                    "RD.type.block"
+                  ],
+                  "Invisible": true,
+                  "NoBasePlate": true,
+                  "Small": true,
+                  "DisabledSlots": 4144959
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

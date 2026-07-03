@@ -246,14 +246,14 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         },\
     ingredient:\
     [\
-        {declear:"if", modifier:"echo_shard", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"sculk", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"echo_shard", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"sculk", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"echo_shard", table:"",count:1},\
+        {declear:"if", modifier:"sculk", table:"",count:1},\
+        {declear:"if", modifier:"echo_shard", table:"",count:1},\
+        {declear:"if", modifier:"sculk", table:"",count:1},\
         {declear:"if", modifier:"book[custom_data~{CustomItem:\"RD.grimoire\"}]", table:"rd_recipe:ingredient/grimoire",count:1},\
-        {declear:"if", modifier:"sculk", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"echo_shard", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"sculk", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"echo_shard", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"sculk", table:"",count:1},\
+        {declear:"if", modifier:"echo_shard", table:"",count:1},\
+        {declear:"if", modifier:"sculk", table:"",count:1},\
+        {declear:"if", modifier:"echo_shard", table:"",count:1},\
     ]\
 }

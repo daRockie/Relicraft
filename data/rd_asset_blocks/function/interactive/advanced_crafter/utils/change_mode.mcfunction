@@ -1,4 +1,9 @@
+# say mode changed
+
 clear @a *[custom_data={TempItem:1b}]
+
+execute if items block ~ ~ ~ container.* *[!custom_data~{TempItem:1b}] run function rd_asset_blocks:interactive/advanced_crafter/utils/avoid_deleting_items/
+
 playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 2
 #say ERROR!
 execute if score @s RD.isCrafting matches 1 if items block ~ ~ ~ container.* *[!custom_data={TempItem:1b} | !custom_data] run return run function rd_asset_blocks:interactive/advanced_crafter/utils/change_mode_error

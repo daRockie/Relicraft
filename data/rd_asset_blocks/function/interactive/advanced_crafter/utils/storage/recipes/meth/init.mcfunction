@@ -7,7 +7,7 @@
 
 playsound minecraft:entity.experience_orb.pickup block @a ~ ~ ~ 1 1
 playsound block.smithing_table.use block @a ~ ~ ~ 2 1
-particle crit ~ ~ ~ 0.5 0.5 0.5 0.05 5
+particle crit ~ ~1 ~ 0.5 0.5 0.5 0.05 15
 
 # スロットについてのメタデータ書き込み
 data modify storage rockietools:custom_recipe temp_crafter.meta.crafting_slot set from storage rockietools:custom_recipe meta.crafter.crafting_slot

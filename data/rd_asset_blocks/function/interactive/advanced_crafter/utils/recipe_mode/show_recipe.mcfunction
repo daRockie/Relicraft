@@ -2,7 +2,6 @@ execute as @a[distance=..10] if items entity @s player.cursor *[custom_data~{Tem
 
 item replace entity @s weapon.mainhand from entity @p[tag=RD.has_recipe] player.cursor
 
-
 function rd_asset_blocks:interactive/advanced_crafter/utils/item_modify/fill_blank_craft_mode
 
 scoreboard players set @s RD.isCrafting 2

@@ -8,5 +8,7 @@ tag @s add RD.void_bellwether.attack_beam.charged
 
 
 effect give @a[distance=..20] darkness 3
+effect give @n[tag=creeper.target] slowness 6 0
+effect give @n[tag=creeper.target] weakness 5 0
 
 particle dust_color_transition{from_color:[0.75,0.0,1.0],to_color:[0.0,0.0,0.0],scale:1} ~ ~ ~ 1 1 1 0 10

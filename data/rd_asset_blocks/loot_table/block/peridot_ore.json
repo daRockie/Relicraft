@@ -33,9 +33,24 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "魔導書の素材となる神聖な宝石",
+                    "text": "マナをその内に秘める神聖な宝石。",
                     "color": "gray",
                     "italic": false
+                  },
+                  {
+                    "text": "改良型作業台上で使用することで、",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "強力な魔法具",
+                        "color": "gold",
+                        "italic": false
+                      },
+                      {
+                        "text": "制作できる。"
+                      }
+                    ]
                   }
                 ],
                 "enchantment_glint_override": false

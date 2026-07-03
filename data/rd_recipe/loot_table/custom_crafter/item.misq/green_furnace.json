@@ -28,13 +28,23 @@
                 "enchantment_glint_override":true,
                 "minecraft:rarity": "rare",
                 "minecraft:lore": [
+                                    {
+                    "text": "\"人間は自らの能力に対しいささか傲慢になりすぎてしまったようだ。",
+                    "color": "dark_gray"
+                  },
+                  {"text": "止まることを忘れたその無数の魔の手は、自らを育んだ森までに及んでいた。\"","color": "dark_gray"},
+                  {
+                    "text":"──ある魔術書の一節",
+                    "color": "dark_gray"
+                  },
+                  {"text": ""},
                   {
                     "text": "タイプ：タリスマン",
-                    "color": "dark_gray",
+                    "color": "white",
                     "italic": false
                   },
                   {
-                    "text": "インベントリ内に所持している場合、これは発動する",
+                    "text": "インベントリに所持することで発動",
                     "color": "yellow",
                     "bold": true,
                     "italic": false
