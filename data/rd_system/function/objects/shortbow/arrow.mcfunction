@@ -5,7 +5,7 @@
 
 # $say $(owner)
 
-execute unless block ~ ~0.25 ~ #custom_ai:no_collision run function rd_system:objects/shortbow/poof
+execute unless block ~ ~0.25 ~ #rd_custom_ai:no_collision run function rd_system:objects/shortbow/poof
 
 execute if score @s RD.ai_timer matches 40.. run function rd_system:objects/shortbow/poof
 

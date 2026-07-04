@@ -1,0 +1,1 @@
+execute anchored eyes positioned ^ ^ ^2 run function rd_custom_ai:custom_mobs/zombie/miner/fill_light

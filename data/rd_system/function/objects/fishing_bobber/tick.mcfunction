@@ -12,7 +12,7 @@ scoreboard players add @s RD.ai_timer 1
 tp @s[tag=pos_set] ^ ^ ^1.5
 particle dust{color:[1,1,1],scale:1} ~ ~ ~ 0 0 0 1 1
 
-execute unless block ~ ~0.5 ~ #custom_ai:no_collision run function rd_system:objects/shortbow/poof with entity @s
+execute unless block ~ ~0.5 ~ #rd_custom_ai:no_collision run function rd_system:objects/shortbow/poof with entity @s
 
 # ダメージ
 $execute if score @s RD.ai_timer matches 3.. if entity @e[tag=!RD.shortbow,distance=0.01..2,type=!#minecraft:unliving_objects] run function rd_system:objects/shortbow/damage with storage rockietools:uuid datas."$(UUID)".parent

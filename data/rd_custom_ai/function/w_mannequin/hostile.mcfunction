@@ -1,0 +1,1 @@
+execute if entity @s[tag=RD.pirate] run function rd_custom_ai:w_mannequin/pirate/movement

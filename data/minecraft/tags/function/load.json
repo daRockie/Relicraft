@@ -2,7 +2,7 @@
 	"replace": false,
 	"values": [
 		"animated_java:global/on_load",
-		"custom_ai:load",
+		"rd_custom_ai:load",
 		"custom_items:load",
 		"find_looking:internal/load",
 		"player_motion:internal/technical/load",

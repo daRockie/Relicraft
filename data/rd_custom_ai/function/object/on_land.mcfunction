@@ -1,0 +1,1 @@
+execute if entity @s[tag=RD.object] align xyz positioned ~0.5 ~ ~0.5 run function rd_custom_ai:object/flags/zombie_flag/summon

@@ -1,3 +1,5 @@
 $data modify entity @s equipment.mainhand.components."minecraft:custom_data".loot_table set from storage rockietools:custom_recipe list.crafter[{result:{name:"$(text)"}}].result.table
 
+$data modify block ~ ~ ~ CustomName.text set value "改良型作業台 ➡ レシピビュワー ➡ $(text)"
+data modify block ~ ~ ~ CustomName.bold set value true
 # summon ghast ~ ~5 ~ {equipment:{head:{id:"iron_helmet",components:{"enchantments":{"custom_items:immunity_suffocate":1}}}},drop_chances:{head:0f},Passengers:[{id:"ghast",equipment:{head:{id:"iron_helmet",components:{"enchantments":{"custom_items:immunity_suffocate":1}}}},drop_chances:{head:0f},CustomName:"Grumm",attributes:[{id:"flying_speed",base:0.1},{id:"scale",base:0.5},{id:"follow_range",base:1028f}],Passengers:[{id:"ghast",CustomName:"Grumm",attributes:[{id:"scale",base:0.25}],equipment:{head:{id:"iron_helmet",components:{"enchantments":{"custom_items:immunity_suffocate":1}}}},drop_chances:{head:0f}}]}]}

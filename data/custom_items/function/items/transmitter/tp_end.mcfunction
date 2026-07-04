@@ -1,5 +1,5 @@
 particle dust{color:[0.75,0,0.5],scale:1} ~ ~1.5 ~ 0.05 0.05 0.05 0 1
-execute unless block ~ ~ ~ #custom_ai:no_collision run return run execute positioned ^ ^ ^-0.01 run function custom_items:items/transmitter/tp_end
+execute unless block ~ ~ ~ #rd_custom_ai:no_collision run return run execute positioned ^ ^ ^-0.01 run function custom_items:items/transmitter/tp_end
 
 effect give @s invisibility 1
 #playsound entity.generic.explode master @a ~ ~ ~ 1 1

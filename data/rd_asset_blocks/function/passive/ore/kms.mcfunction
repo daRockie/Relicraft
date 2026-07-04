@@ -1,1 +1,1 @@
-function custom_ai:object/looper_item_display
+function rd_custom_ai:object/looper_item_display

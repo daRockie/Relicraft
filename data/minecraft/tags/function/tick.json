@@ -2,7 +2,7 @@
 	"replace": false,
 	"values": [
 		"animated_java:global/data_manager/on_tick",
-		"custom_ai:main",
+		"rd_custom_ai:main",
 		"custom_items:main",
 		"rd_asset_blocks:",
 		"rd_asset_mobs:main",

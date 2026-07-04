@@ -1,0 +1,1 @@
+summon marker ^ ^ ^ {Tags:["RD.light_temp","RD.object"],data:{light:5}}

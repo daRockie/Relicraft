@@ -31,6 +31,9 @@ execute unless items block ~ ~ ~ container.23 *[!custom_data~{TempItem:1b}] run 
 
 #say Turned into craft mode
 
+data modify block ~ ~ ~ CustomName.text set value "改良型作業台 ➡ クラフト"
+data modify block ~ ~ ~ CustomName.bold set value true
+
 function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/refer/init
 
 scoreboard players set @s RD.isCrafting 1

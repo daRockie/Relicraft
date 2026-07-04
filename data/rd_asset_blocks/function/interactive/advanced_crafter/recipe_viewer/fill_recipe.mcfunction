@@ -1,5 +1,6 @@
 # $say $(loot_table)
 
+
 # 
 playsound minecraft:ui.button.click master @a ~ ~ ~ 0.5 1
 playsound minecraft:item.book.page_turn block @a ~ ~ ~ 1 1

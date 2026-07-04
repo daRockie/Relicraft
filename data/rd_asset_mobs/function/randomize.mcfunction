@@ -33,4 +33,4 @@ execute if entity @s[type=minecraft:wither_skeleton] if score @s spawnRandom mat
 execute if entity @s[type=minecraft:horse] if score @s spawnRandom matches 0..15 run function rd_asset_mobs:summon/summon_s_rider
 
 # ガチギレエンダーマン　改
-execute if entity @s[type=enderman,tag=elite_eman,predicate=!rd_asset_mobs:in_hostile] at @s run data modify entity @s angry_at set from entity @e[type=#custom_ai:inhostile,distance=0..10,limit=1] UUID
+execute if entity @s[type=enderman,tag=elite_eman,predicate=!rd_asset_mobs:in_hostile] at @s run data modify entity @s angry_at set from entity @e[type=#rd_custom_ai:inhostile,distance=0..10,limit=1] UUID

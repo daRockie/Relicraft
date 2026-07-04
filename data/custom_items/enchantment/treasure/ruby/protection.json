@@ -1,0 +1,39 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "text": "🍀赤き輝石の加護",
+    "color": "gold"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:max_health",
+        "id": "minecraft:ruby_enchantment",
+        "amount": 4,
+        "operation": "add_value"
+      }
+    ],
+    "minecraft:block_experience": [
+      {
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": 1.5
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 2
+}
