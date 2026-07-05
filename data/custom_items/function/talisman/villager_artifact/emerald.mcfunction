@@ -15,6 +15,6 @@ scoreboard players operation @s RD.item.emerald += @s RD.item.emerald_calculator
 
 #tellraw @s [{"score":{name:"@s","objective":"RD.item.emerald"}}]
 
-#execute if items entity @s armor.head player_head[custom_data~{CustomItem:"RD.equipment.villager_artifact"}] run item modify entity @s armor.head custom_items:villager_artifact
+#execute if items entity @s armor.head player_head[custom_data~{RD.item:"RD.equipment.villager_artifact"}] run item modify entity @s armor.head custom_items:villager_artifact
 
 advancement revoke @s only custom_items:inventory_check/emerald

@@ -19,7 +19,7 @@
             ],
             "components": {
               "item_model": "netherite_ingot",
-              "minecraft:custom_data": {"CustomItem":"RD.red_hot_iron"},
+              "minecraft:custom_data": {"RD.item":"RD.red_hot_iron"},
               "minecraft:custom_name": {
               "text": "赤熱鉄",
               "color": "#ff3300",

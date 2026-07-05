@@ -10,7 +10,7 @@
             {
               "function": "set_custom_data",
               "tag": {
-                "CustomItem": "RD.ruby_boots",
+                "RD.item": "RD.ruby_boots",
                 "RD.recipeResult": true
               }
             },

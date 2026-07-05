@@ -10,13 +10,13 @@
 
 execute \
 unless items block ~ ~ ~ container.3 * \
-if items block ~ ~ ~ container.4 emerald[custom_data~{CustomItem:"RD.peridot"}] \
+if items block ~ ~ ~ container.4 emerald[custom_data~{RD.item:"RD.peridot"}] \
 unless items block ~ ~ ~ container.5 * \
-if items block ~ ~ ~ container.12 emerald[custom_data~{CustomItem:"RD.peridot"}] \
+if items block ~ ~ ~ container.12 emerald[custom_data~{RD.item:"RD.peridot"}] \
 if items block ~ ~ ~ container.13 book \
-if items block ~ ~ ~ container.14 emerald[custom_data~{CustomItem:"RD.peridot"}] \
+if items block ~ ~ ~ container.14 emerald[custom_data~{RD.item:"RD.peridot"}] \
 unless items block ~ ~ ~ container.21 * \
-if items block ~ ~ ~ container.22 emerald[custom_data~{CustomItem:"RD.peridot"}] \
+if items block ~ ~ ~ container.22 emerald[custom_data~{RD.item:"RD.peridot"}] \
 unless items block ~ ~ ~ container.23 * run return 3
 #say RECIPE IS WRONG! RETURN NEXT RECIPE
 return run function custom_items:custom_block/advanced_crafter/recipe_data/grimoire/reverberation

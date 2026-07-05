@@ -98,12 +98,12 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         },\
     ingredient:\
     [\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
@@ -119,15 +119,15 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         },\
     ingredient:\
     [\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
     ]\
 }
 
@@ -140,15 +140,15 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         },\
     ingredient:\
     [\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
     ]\
 }
 
@@ -164,12 +164,12 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
     ]\
 }
 
@@ -182,9 +182,9 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         },\
     ingredient:\
     [\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"if", modifier:"stick", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
@@ -204,10 +204,10 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     ingredient:\
     [\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"red_dye[custom_data~{CustomItem:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"if", modifier:"red_dye[custom_data~{RD.item:\"RD.ruby\"}]", table:"rd_recipe:ingredient/ruby",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
         {declear:"if", modifier:"stick", table:"rd_recipe:ingredient/ruby",count:1},\
@@ -226,13 +226,13 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     ingredient:\
     [\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"emerald[custom_data~{CustomItem:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
+        {declear:"if", modifier:"emerald[custom_data~{RD.item:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"emerald[custom_data~{CustomItem:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
+        {declear:"if", modifier:"emerald[custom_data~{RD.item:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
         {declear:"if", modifier:"book", table:"rd_recipe:ingredient/peridot",count:1},\
-        {declear:"if", modifier:"emerald[custom_data~{CustomItem:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
+        {declear:"if", modifier:"emerald[custom_data~{RD.item:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"emerald[custom_data~{CustomItem:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
+        {declear:"if", modifier:"emerald[custom_data~{RD.item:\"RD.peridot\"}]", table:"rd_recipe:ingredient/peridot",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
     ]\
 }
@@ -250,7 +250,7 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         {declear:"if", modifier:"sculk", table:"",count:1},\
         {declear:"if", modifier:"echo_shard", table:"",count:1},\
         {declear:"if", modifier:"sculk", table:"",count:1},\
-        {declear:"if", modifier:"book[custom_data~{CustomItem:\"RD.grimoire\"}]", table:"rd_recipe:ingredient/grimoire",count:1},\
+        {declear:"if", modifier:"book[custom_data~{RD.item:\"RD.grimoire\"}]", table:"rd_recipe:ingredient/grimoire",count:1},\
         {declear:"if", modifier:"sculk", table:"",count:1},\
         {declear:"if", modifier:"echo_shard", table:"",count:1},\
         {declear:"if", modifier:"sculk", table:"",count:1},\

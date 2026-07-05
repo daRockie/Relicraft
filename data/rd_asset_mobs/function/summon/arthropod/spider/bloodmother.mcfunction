@@ -1,5 +1,5 @@
 data modify entity @s DeathTime set value 19
 data modify entity @s Silent set value 1b
-summon spider ~ ~ ~ {CustomName:{"text":"ブラッドマザー"},Tags:["RD.spawned","RD.initialized","RD.bloodmother"],NoGravity:0b,Health:38f,Passengers:[{Tags:["RD.spawned","RD.initialized"],id:"minecraft:spider",attributes:[{id:"minecraft:scale",base:0.6}]}],attributes:[{id:"minecraft:max_health",base:30},{id:"minecraft:movement_speed",base:0.4},{id:follow_range,base:48f},{id:"safe_fall_distance",base:2048f}]}
+summon spider ~ ~ ~ {DeathLootTable:"rd_asset_mobs:drops/arthropod/spider/bloodmother",CustomName:{"text":"ブラッドマザー"},Tags:["RD.spawned","RD.initialized","RD.bloodmother"],NoGravity:0b,Health:38f,Passengers:[{Tags:["RD.spawned","RD.initialized"],id:"minecraft:spider",attributes:[{id:"minecraft:scale",base:0.6}]}],attributes:[{id:"minecraft:max_health",base:30},{id:"minecraft:movement_speed",base:0.4},{id:follow_range,base:48f},{id:"safe_fall_distance",base:2048f}]}
 tp @s ~ ~-200 ~
 kill @s

@@ -7,7 +7,7 @@
           "items": "minecraft:firework_star",
           "components": {
             "minecraft:custom_data": {
-              "CustomItem": "RD.tankyuu"
+              "RD.item": "RD.tankyuu"
             }
           }
         }

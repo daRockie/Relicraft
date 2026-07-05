@@ -10,7 +10,7 @@
             {
               "function": "set_custom_data",
               "tag": {
-                "CustomItem": "RD.ruby_leggings",
+                "RD.item": "RD.ruby_leggings",
                 "RD.recipeResult": true
               }
             },

@@ -11,9 +11,11 @@ execute if entity @s[type=mannequin] run function rd_custom_ai:object/mannequin/
 
 # execute if entity @s[tag=RD.head] run function rd_custom_ai:object/trace_head_moving
 
+execute if entity @s[tag=RD.nuka_creeper.countdown] unless entity @n[tag=RD.nuka_creeper.ignited,distance=0..10] run kill @s
+
 execute if entity @s[tag=RD.cmd,tag=!RD.initialized] run function rd_custom_ai:object/looper
 
-execute if entity @s[tag=RD.head_entity] unless data entity @s RootVehicle run kill @s
+execute if entity @s[tag=RD.head_entity] unless entity @n[tag=RD.has_head_entity,distance=0..3] run kill @s
 
 execute if entity @s[tag=RD.marker.ore_generation,tag=!RD.initialized] run function rd_custom_ai:object/marker/ore_generator/
 

@@ -7,7 +7,7 @@
                 "item": {
                     "components": {
                         "custom_data": {
-                            "CustomItem":"RD.lapiz_berry"
+                            "RD.item":"RD.lapiz_berry"
                         }
                     }
                 }

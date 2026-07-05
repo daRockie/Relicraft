@@ -19,7 +19,7 @@
         "bold": true,
         "italic": false
       },
-      "custom_data": {"CustomItem":"RD.redhot_iron"},
+      "custom_data": {"RD.item":"RD.redhot_iron"},
       "minecraft:custom_model_data": {
         "strings": [
           "RD.redhot_iron"

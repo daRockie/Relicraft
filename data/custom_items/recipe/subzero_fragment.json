@@ -34,7 +34,7 @@
         }
       ],
       "minecraft:custom_data": {
-        "CustomItem": "RD.subzero"
+        "RD.item": "RD.subzero"
       },
       "minecraft:custom_model_data": {
         "strings": [

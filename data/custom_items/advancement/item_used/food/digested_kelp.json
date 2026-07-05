@@ -7,7 +7,7 @@
                 "item": {
                     "components": {
                         "custom_data": {
-                            "CustomItem":"RD.digested_kelp"
+                            "RD.item":"RD.digested_kelp"
                         }
                     }
                 }

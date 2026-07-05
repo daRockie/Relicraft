@@ -10,7 +10,7 @@
             {
               "function": "set_custom_data",
               "tag": {
-                "CustomItem": "RD.ruby_chestplate",
+                "RD.item": "RD.ruby_chestplate",
                 "RD.recipeResult": true
               }
             },

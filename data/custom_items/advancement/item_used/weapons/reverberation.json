@@ -7,7 +7,7 @@
           "components": {
             "minecraft:custom_data":
             {
-              "CustomItem":"RD.reverberation",
+              "RD.item":"RD.reverberation",
               "RD.recipeResult":true
             }
           }

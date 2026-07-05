@@ -1,1 +1,1 @@
-execute if items entity @s armor.head leather_helmet[custom_data={CustomItem:"RD.mining_helmet"}] run function custom_items:equipments/mining_helmet/auto_torch
+execute if items entity @s armor.head leather_helmet[custom_data={RD.item:"RD.mining_helmet"}] run function custom_items:equipments/mining_helmet/auto_torch

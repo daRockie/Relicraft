@@ -29,7 +29,7 @@
         "can_always_eat": true
       },
       "custom_data": {
-        "CustomItem":"RD.lapiz_berry"
+        "RD.item":"RD.lapiz_berry"
       },
       "lore":[{"text":"ラピスラズリとベリーを用いて作れる、魔法の木の実。","color":"gray","italic": false},{"italic": false,"text":"すばやく素早く食べることができ、食べると","color":"gray","extra":[{"text":"マナを🖊30回復させる。","color":"aqua"}]}],
       "minecraft:enchantment_glint_override": true,

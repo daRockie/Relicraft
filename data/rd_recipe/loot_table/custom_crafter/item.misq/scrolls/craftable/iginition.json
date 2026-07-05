@@ -41,7 +41,7 @@
             {
               "function": "minecraft:set_custom_data",
               "tag": {
-                "CustomItem": "RD.scroll",
+                "RD.item": "RD.scroll",
                 "RD.spells": [
                   {
                     "spell": "RD.ignition"

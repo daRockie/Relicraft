@@ -19,7 +19,7 @@
 		"description": {
 			"text": "慈愛の心を知り、その境地に辿り着く"
 		},
-		"frame": "task",
+		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true
 	},

@@ -29,7 +29,7 @@
 
 if文最後の行にある「run return」の箇所には、アイテムのIDを入力する
 
-例：if items block ~ ~ ~ container.23 red_dye[custom_data~{CustomItem:"RD.ruby"}] run return 1
+例：if items block ~ ~ ~ container.23 red_dye[custom_data~{RD.item:"RD.ruby"}] run return 1
 
 アイテムを一通り指定し終わったら、一番最後の行の「return」を編集する。
 次のIDとなるアイテムが存在する場合は、次IDのアイテムレシピ検知functionを実行

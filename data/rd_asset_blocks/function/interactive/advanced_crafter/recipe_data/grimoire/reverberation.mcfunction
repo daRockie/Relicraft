@@ -13,7 +13,7 @@ if items block ~ ~ ~ container.3 echo_shard \
 if items block ~ ~ ~ container.4 sculk \
 if items block ~ ~ ~ container.5 echo_shard \
 if items block ~ ~ ~ container.12 sculk \
-if items block ~ ~ ~ container.13 book[custom_data~{"CustomItem":"RD.grimoire"}] \
+if items block ~ ~ ~ container.13 book[custom_data~{"RD.item":"RD.grimoire"}] \
 if items block ~ ~ ~ container.14 sculk \
 if items block ~ ~ ~ container.21 echo_shard \
 if items block ~ ~ ~ container.22 sculk \

@@ -24,8 +24,14 @@
                       "type": "minecraft:apply_effects",
                       "effects": [
                         {
+                          "id": "speed",
+                          "amplifier": 0,
+                          "duration": 6000
+                        },
+                        {
                           "id": "minecraft:instant_health",
-                          "amplifier": 1
+                          "amplifier": 0,
+                          "duration": 2
                         },
                         {
                           "id": "minecraft:night_vision",
@@ -47,7 +53,7 @@
                             {
                                 "id": "hunger",
                                 "duration": 1000,
-                                "amplifier": 2,
+                                "amplifier": 4,
                                 "show_particles": true
                             }
                         ],

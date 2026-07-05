@@ -1,4 +1,4 @@
-$summon armor_stand ^ ^1 ^ {Tags:["RD.shortbow"],Small:1b,NoBasePlate:1b,Invulnerable:1b,Invisible:1b,NoGravity:1b,equipment:{head:{id:"command_block",components:{"item_model":"air","custom_data":{"data":{"owner":"$(UUID)","damage":6}}}}}}
+$summon armor_stand ^ ^ ^ {Tags:["RD.shortbow"],Small:1b,NoBasePlate:1b,Invulnerable:1b,Invisible:1b,NoGravity:1b,equipment:{head:{id:"command_block",components:{"item_model":"air","custom_data":{"data":{"owner":"$(UUID)","damage":6}}}}}}
 playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 1 2
 
 data modify entity @n[tag=RD.shortbow,tag=!RD.initialized,type=armor_stand] equipment.head.components."minecraft:custom_data".data.owner set from entity @s {}.UUID

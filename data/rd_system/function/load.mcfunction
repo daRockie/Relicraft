@@ -26,7 +26,7 @@ execute unless data storage rockietools:game_progression progress run function r
 execute unless data storage rockietools:game_progression progress run data modify storage rockietools:game_progression progress set value 0
 function rd_system:define_teams
 
-tellraw @a [{"text": "THE ECLIPSE",bold:true},{"text":"\nDatapack made by Crazy Boomers Crew"}]
+tellraw @a [{"text": "[ Relicraft: Reloaded! ]",color:gray,italic:true}]
 
 data merge storage rockietools:uuid {datas:""}
 data modify storage rockietools:uuid datas set value {}

@@ -45,7 +45,7 @@
               "function": "minecraft:set_custom_data",
               "tag": {
                 "weapon":true,
-                "CustomItem": "RD.scroll",
+                "RD.item": "RD.scroll",
                 "RD.spells": [
                   {
                     "spell": "RD.reverebration"

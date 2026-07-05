@@ -28,7 +28,7 @@
                     "italic": false
                   }
                 ],
-                "custom_data": {"CustomItem":"RD.warp_potion"},
+                "custom_data": {"RD.item":"RD.warp_potion"},
                 "minecraft:potion_contents": {
                   "custom_color": 10958323,
                   "custom_name": "転移"

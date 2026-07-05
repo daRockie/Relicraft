@@ -1,1 +1,1 @@
-execute anchored eyes positioned ^ ^ ^2 run function rd_custom_ai:custom_mobs/zombie/miner/fill_light
+execute anchored eyes positioned ^ ^ ^2 unless entity @n[type=marker,distance=0..0.05] run function rd_custom_ai:custom_mobs/zombie/miner/fill_light

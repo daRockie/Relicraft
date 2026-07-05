@@ -10,7 +10,7 @@ execute if entity @s[tag=RD.miner_zombie] run function rd_custom_ai:custom_mobs/
 
 execute if entity @s[tag=RD.ent] run function rd_custom_ai:custom_mobs/zombie/ent/tick
 
-execute if entity @s[tag=!RD.archer_zombie] if items entity @s weapon *[custom_data={CustomItem:"RD.shortbow"}] run tag @s add RD.archer_zombie
+execute if entity @s[tag=!RD.archer_zombie] if items entity @s weapon *[custom_data={RD.item:"RD.shortbow"}] run tag @s add RD.archer_zombie
 
 execute if entity @s[tag=RD.boomer_zombie,tag=!RD.no_chase] run tag @s add RD.no_chase
 execute if entity @s[tag=RD.boomer_zombie] run function rd_custom_ai:custom_mobs/auto_detonate

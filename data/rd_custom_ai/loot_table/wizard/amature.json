@@ -58,7 +58,7 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "CustomItem": "RD.peridot"
+                  "RD.item": "RD.peridot"
                 },
                 "minecraft:custom_name": {
                   "text": "ペリドット",
@@ -90,7 +90,7 @@
                   "italic": false
                 },
                 "minecraft:custom_data": {
-                  "CustomItem": "RD.classy_cloth"
+                  "RD.item": "RD.classy_cloth"
                 },
                 "minecraft:custom_model_data": {
                   "strings": [

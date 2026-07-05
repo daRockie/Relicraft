@@ -23,7 +23,7 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "CustomItem": "RD.peridot"
+                  "RD.item": "RD.peridot"
                 },
                 "minecraft:custom_name": {
                   "text": "ペリドット",

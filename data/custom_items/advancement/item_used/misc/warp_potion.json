@@ -6,7 +6,7 @@
         "item": {
           "items": "minecraft:potion",
           "components": {
-            "minecraft:custom_data": {"CustomItem": "RD.warp_potion"}
+            "minecraft:custom_data": {"RD.item": "RD.warp_potion"}
           }
         }
       }

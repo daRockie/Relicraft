@@ -20,7 +20,7 @@
         "item": {
           "items": "minecraft:glow_berries",
           "components": {
-            "custom_data": {"CustomItem":"RD.lapiz_berry"}
+            "custom_data": {"RD.item":"RD.lapiz_berry"}
           }
         }
       }

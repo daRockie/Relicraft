@@ -32,7 +32,8 @@
 						],
 						"components": {
 							"custom_data": {
-								"CustomItem": "RD.rubyArmor"
+								"RD.item": "RD.ruby_helmet",
+								"RD.recipeResult":true
 							}
 						}
 					}
@@ -49,7 +50,8 @@
 						],
 						"components": {
 							"custom_data": {
-								"CustomItem": "RD.rubyArmor"
+								"RD.item": "RD.ruby_chestplate",
+								"RD.recipeResult":true
 							}
 						}
 					}
@@ -66,7 +68,8 @@
 						],
 						"components": {
 							"custom_data": {
-								"CustomItem": "RD.rubyArmor"
+								"RD.item": "RD.ruby_leggings",
+								"RD.recipeResult":true
 							}
 						}
 					}
@@ -83,7 +86,8 @@
 						],
 						"components": {
 							"custom_data": {
-								"CustomItem": "RD.rubyArmor"
+								"RD.item": "RD.ruby_boots",
+								"RD.recipeResult":true
 							}
 						}
 					}
@@ -91,6 +95,13 @@
 			}
 		}
 	},
+	"requirements": [
+		["craft_helmet"],
+		["craft_chestplate"],
+		["craft_leggings"],
+		["craft_boots"]
+
+	],
 	"rewards": {
 		"function": "rd_system:progress/starter"
 	}

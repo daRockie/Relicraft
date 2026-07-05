@@ -1,0 +1,138 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "shield",
+					"functions": [
+						{
+							"function": "set_custom_data",
+							"tag": {
+								"weapon": true,
+								"RD.store_damage": true
+							}
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1,
+								"item_model": "iron_pickaxe",
+								"minecraft:custom_name": {
+									"text": "鋼鉄のピッケル",
+									"italic": false
+								},
+								"rarity": "rare",
+								"tool": {
+									"damage_per_block": 1,
+									"default_mining_speed": 1.5,
+									"rules": [
+										{
+											"blocks": "#minecraft:incorrect_for_iron_tool",
+											"correct_for_drops": false
+										},
+										{
+											"blocks": "#minecraft:mineable/pickaxe",
+											"correct_for_drops": true,
+											"speed": 6
+										}
+									]
+								},
+								"minecraft:lore": [
+									{
+										"text": "\"我がツルハシ、それ一つで大地を揺るがす。\"",
+										"color": "dark_gray",
+										"italic": true
+									},
+									"",
+									{
+										"text": "アビリティ：奮起",
+										"color": "gold",
+										"italic": false,
+										"extra": [
+											{
+												"text": "右クリックで発動",
+												"bold": true,
+												"italic": false,
+												"color": "yellow"
+											}
+										]
+									},
+									{
+										"text": "採掘速度上昇Ⅱを40秒間得る。",
+										"color": "gray",
+										"italic": false
+									},
+									{
+										"text": "クールダウン：",
+										"extra": [
+											{
+												"text": "60秒",
+												"color": "green",
+												"italic": false
+											}
+										],
+										"color": "dark_gray",
+										"italic": false
+									}
+								],
+								"use_cooldown": {
+									"seconds": 60,
+									"cooldown_group": "pickaxe"
+								},
+								"consumable": {
+									"consume_seconds": 0.05,
+									"sound": "intentionally_empty",
+									"animation": "none",
+									"has_consume_particles": false
+								},
+								"use_remainder": {
+									"id": "shield",
+									"components": {
+										"minecraft:custom_name": {
+											"text": "鋼鉄のピッケル",
+											"italic": false
+										},
+										"rarity": "rare",
+										"custom_data": "{\"Used\":1b,Loottable:\"custom_items:item/hardened/iron/pickaxe\",function:\"custom_items:items/pickonimbus/iron/used\",damage_per_use:12,max_damage:72,skill_name:\"投擲\",break_sound:\"entity.item.break\",mana_use:0}",
+										"item_model": "iron_pickaxe",
+										"!blocks_attacks": {},
+										"max_damage": 72
+									}
+								},
+								"!blocks_attacks": {},
+								"minecraft:weapon": {
+									"item_damage_per_attack": 2
+								},
+								"minecraft:repairable": {
+									"items": "#minecraft:iron_tool_materials"
+								},
+								"minecraft:enchantable": {
+									"value": 14
+								},
+								"minecraft:attribute_modifiers": [
+									{
+										"type": "minecraft:attack_damage",
+										"amount": 3,
+										"id": "minecraft:base_attack_damage",
+										"operation": "add_value",
+										"slot": "mainhand"
+									},
+									{
+										"type": "minecraft:attack_speed",
+										"amount": -2.799999952316284,
+										"id": "minecraft:base_attack_speed",
+										"operation": "add_value",
+										"slot": "mainhand"
+									}
+								],
+								"max_damage": 792
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

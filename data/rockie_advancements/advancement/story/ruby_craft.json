@@ -23,7 +23,7 @@
             {
               "items": "minecraft:red_dye",
               "components": {
-                "custom_data": {"CustomItem":"RD.ruby"}
+                "custom_data": {"RD.item":"RD.ruby"}
               }
             }
           ]
