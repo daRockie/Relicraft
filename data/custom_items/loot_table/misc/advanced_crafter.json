@@ -48,6 +48,7 @@
                   },
                   "Tags": [
                     "RD.block.interactive.advanced_crafter",
+                    "RD.block.interactive",
                     "RD.type.block"
                   ],
                   "Invisible": true,

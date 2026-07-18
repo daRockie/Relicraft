@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:filled_map",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:death_protection": {},
+                "rarity":"epic",
+                "minecraft:custom_name": {
+                  "text":"a",
+                  "italic":false,
+                  "color":"dark_purple",
+                  "obfuscated":true,
+                  "extra": [{
+                  "text": "古びた魔術書",
+                  "color":"dark_purple",
+                  "bold":true,
+                  "obfuscated":false,
+                  "italic": false
+                },
+                {
+                  "text": "a",
+                  "color":"dark_purple",
+                  "obfuscated": true,
+                  "italic": false
+                }]},
+                "minecraft:lore": [
+                  {
+                    "text": "誰かが魔法を書き記した紙切れ。",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "書き記された魔法は",
+                    "type": "text",
+                    "extra": [
+                      {
+                        "text": "神秘的な作業台",
+                        "color": "yellow",
+                        "bold": true
+                      },
+                      {
+                        "text": "で抽出することができる。",
+                        "type": "text",
+                        "italic": false
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:map_id",
+                    "minecraft:map_decorations",
+                    "minecraft:map_color"
+                  ]
+                },
+                "minecraft:item_model": "minecraft:globe_banner_pattern",
+                "enchantment_glint_override":true,
+                "max_stack_size": 1
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rd_recipe:scroll/default"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+$data modify storage rockietools:item_modifier temp.tools append from entity @s $(address).components."minecraft:use_remainder".components."minecraft:custom_data"

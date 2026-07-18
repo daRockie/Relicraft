@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:filled_map",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:death_protection": {},
+                "minecraft:custom_name": {
+                  "text": "古びた魔術書",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "誰かが魔法を書き記した紙切れ。",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "書き記された魔法は",
+                    "type": "text",
+                    "extra": [
+                      {
+                        "text": "神秘的な作業台",
+                        "color": "yellow",
+                        "bold": true
+                      },
+                      {
+                        "text": "で抽出することができる。",
+                        "type": "text",
+                        "italic": false
+                      }
+                    ],
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:map_id",
+                    "minecraft:map_decorations",
+                    "minecraft:map_color"
+                  ]
+                },
+                "minecraft:item_model": "minecraft:field_masoned_banner_pattern",
+                "max_stack_size": 1
+              }
+            },
+            {
+              "function": "minecraft:reference",
+              "name": "rd_recipe:scroll/default"
+            },
+            {
+              "function": "reference",
+              "name": "rd_recipe:scroll/common/sequence_loot"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

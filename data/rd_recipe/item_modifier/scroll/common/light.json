@@ -1,0 +1,26 @@
+{
+  "function": "minecraft:sequence",
+  "functions": [
+    {
+      "function": "minecraft:set_lore",
+      "lore": [
+        {
+          "text": "魔法のたいまつⅠ",
+          "type": "text",
+          "color": "white",
+          "italic": false
+        }
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:set_custom_data",
+      "tag": {
+        "RD.listed_spell": [
+            {"Used":true,"function":"custom_items:items/healing_wand/used","damage_per_use":1,"skill_name":"魔法のたいまつ","mana_use":40}
+        ]
+      },
+      "conditions": []
+    }
+  ]
+}

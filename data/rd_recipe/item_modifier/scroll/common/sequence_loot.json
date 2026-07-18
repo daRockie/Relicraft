@@ -1,0 +1,55 @@
+{
+    "function": "sequence",
+    "functions": [
+        {
+            "function": "reference",
+            "name": "rd_recipe:scroll/common/healing",
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.3
+                }
+            ]
+        },
+        {
+            "function": "reference",
+            "name": "rd_recipe:scroll/common/fire",
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.3
+                }
+            ]
+        },
+        {
+            "function": "reference",
+            "name": "rd_recipe:scroll/common/light",
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.3
+                }
+            ]
+        },
+                {
+            "function": "reference",
+            "name": "rd_recipe:scroll/common/dig",
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.3
+                }
+            ]
+        },
+                {
+            "function": "reference",
+            "name": "rd_recipe:scroll/common/speed",
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.3
+                }
+            ]
+        }
+    ]
+}

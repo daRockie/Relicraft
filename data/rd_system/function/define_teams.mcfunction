@@ -13,5 +13,9 @@ team add RD.no_friendly_fire [{"text":"no_friendly_fire"}]
 team modify RD.no_friendly_fire collisionRule never
 team modify RD.no_friendly_fire friendlyFire false
 
+team add RD.royal_skeletons [{"text":"Royal Skeletons"}]
+team modify RD.royal_skeletons collisionRule never
+team modify RD.royal_skeletons friendlyFire false
+
 team add RD.mannequin
 team modify RD.mannequin collisionRule never

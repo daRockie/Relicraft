@@ -6,7 +6,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bow",
-          "weight": 3,
           "functions": [
             {
               "function": "set_custom_data",
@@ -17,9 +16,17 @@
           ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_sword",
-          "weight": 3
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "item",
+              "name": "minecraft:iron_sword"
+            },
+            {
+              "type": "item",
+              "name": "stone_sword"
+            }
+          ]
         },
         {
           "type": "minecraft:item",
@@ -39,7 +46,8 @@
                 "enchantment_glint_override":false,
                 "enchantments": {
                   "custom_items:projectile_spawn": 1,
-                  "custom_items:immunity_projectile": 1
+                  "custom_items:immunity_projectile": 1,
+                  "custom_items:weapon_only/resistance": 5 
                 }
               }
             },
@@ -49,7 +57,7 @@
                 {
                   "id": "shield_chivalier_armor",
                   "attribute": "armor",
-                  "amount": 40,
+                  "amount": 20,
                   "operation": "add_value",
                   "slot": "any"
                 },
