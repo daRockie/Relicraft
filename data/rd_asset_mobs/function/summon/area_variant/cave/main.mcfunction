@@ -1,0 +1,1 @@
+execute if entity @s[type=zombie] run function rd_asset_mobs:summon/area_variant/cave/zombie

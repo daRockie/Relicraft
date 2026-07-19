@@ -2,7 +2,7 @@ execute on target run tag @s add zombies.target
 
 execute if entity @s[tag=!RD.zombie_flag_thrown] if items entity @s armor.head shield if entity @n[tag=zombies.target,distance=0..4] run function rd_custom_ai:custom_mobs/zombie/leader/throw
 
-execute if score @s[tag=!RD.runaway_inited] RD.health matches ..20 run function rd_custom_ai:custom_mobs/zombie/leader/run
+execute if score @s[tag=!RD.runaway_inited,tag=!RD.already_ran] RD.health matches ..20 run function rd_custom_ai:custom_mobs/zombie/leader/run
 
 execute if entity @s[tag=RD.runaway_inited] if items entity @s armor.head *[item_model="air"] run particle rain ~ ~2 ~ 0.5 0.5 0.5 0.05 5
 

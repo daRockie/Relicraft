@@ -3,7 +3,7 @@ execute unless score @s RD.mana >= $.mana_use RD.item.durabity run return run fu
 
 # ダメージ計算
 scoreboard players operation $.max_damage RD.item.durabity -= $.damage RD.item.durabity
-tellraw @a [{"text":"計算結果: ",italic:false},{"score":{name:"$.max_damage",objective:"RD.item.durabity"}}]
+# tellraw @a [{"text":"計算結果: ",italic:false},{"score":{name:"$.max_damage",objective:"RD.item.durabity"}}]
 
 # 現在ダメージ値を最大ダメージ値に再代入
 execute store result storage rockietools:item_modifier temp.current_damage int 1 run scoreboard players get $.max_damage RD.item.durabity

@@ -42,5 +42,5 @@ execute store result score $.damage RD.item.durabity run data get storage rockie
 
 execute store result score $.damage_per_use RD.item.durabity run data get storage rockietools:item_modifier temp.damage_per_use 10000
 
-tellraw @a [{"text":"Max Damage: ",italic:false},{"score":{name:"$.max_damage",objective:"RD.item.durabity"}}]
-tellraw @a [{"text":"Damage: ",italic:false},{"score":{name:"$.damage",objective:"RD.item.durabity"}}]
+# tellraw @a [{"text":"Max Damage: ",italic:false},{"score":{name:"$.max_damage",objective:"RD.item.durabity"}}]
+# tellraw @a [{"text":"Damage: ",italic:false},{"score":{name:"$.damage",objective:"RD.item.durabity"}}]
