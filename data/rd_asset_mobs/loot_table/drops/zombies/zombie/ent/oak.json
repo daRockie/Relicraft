@@ -24,6 +24,18 @@
               },
               "enchantment": "minecraft:looting",
               "function": "minecraft:enchanted_count_increase"
+            },
+            {
+              "function": "furnace_smelt",
+              "conditions": [{
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "flags": {
+                    "is_on_fire": true
+                  }
+                }
+              }]
             }
           ],
           "name": "oak_log"
@@ -32,7 +44,7 @@
       "rolls": 1
     },
     {
-      "bonus_rolls": 0,
+      "bonus_rolls": 1,
       "conditions": [
         {
           "condition": "minecraft:killed_by_player"
@@ -64,8 +76,8 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
-                "max": 3
+                "min": 3,
+                "max": 5
               },
               "add": true,
               "conditions": [{

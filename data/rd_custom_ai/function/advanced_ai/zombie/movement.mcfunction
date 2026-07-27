@@ -5,9 +5,11 @@ execute on target run tag @s add zombies.target
 
 execute if entity @s[type=drowned,tag=RD.squid_drowned] at @s run function rd_custom_ai:custom_mobs/squid_drowned
 
-execute as @s[type=#zombies,tag=RD.archer_zombie] at @s run function rd_custom_ai:custom_mobs/archer_zombie
+execute if entity @s[type=#zombies,tag=RD.archer_zombie] at @s run function rd_custom_ai:custom_mobs/archer_zombie
 
 execute if entity @s[tag=RD.boomer_zombie,tag=!ignited] at @s run function rd_custom_ai:custom_mobs/boomer_zombie/tick
+
+execute if entity @s[tag=RD.zombie.viking] run function rd_custom_ai:custom_mobs/zombie/viking/movement
 
 execute if entity @a[distance=0..16] run scoreboard players add @s[tag=!RD.no_chase] RD.ai_timer 1
 

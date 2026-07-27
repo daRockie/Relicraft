@@ -34,7 +34,7 @@ if文最後の行にある「run return」の箇所には、アイテムのIDを
 アイテムを一通り指定し終わったら、一番最後の行の「return」を編集する。
 次のIDとなるアイテムが存在する場合は、次IDのアイテムレシピ検知functionを実行
 
-例：return run function custom_items:custom_block/advanced_crafter/recipe_data/wizard_hat
+例：return run function rd_custom_items:custom_block/advanced_crafter/recipe_data/wizard_hat
 
 次のIDとなるアイテムが存在しない場合は、「return 0」と入力する。
 

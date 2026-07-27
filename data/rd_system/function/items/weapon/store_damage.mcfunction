@@ -6,7 +6,7 @@ $execute if data entity @s $(address).components."minecraft:damage" store result
 $execute if data entity @s $(address).components."minecraft:enchantments" run data modify storage rockietools:item_modifier temp.enchantments set from entity @s $(address).components."minecraft:enchantments"
 
 # マナ割引
-execute store result score $.mana_reduce RD.item.durabity run data get storage rockietools:item_modifier temp.enchantments."custom_items:mana_reduce" 1
+execute store result score $.mana_reduce RD.item.durabity run data get storage rockietools:item_modifier temp.enchantments."rd_custom_items:mana_reduce" 1
 execute if score $.mana_reduce RD.item.durabity matches 0 run scoreboard players set $.mana_reduce RD.item.durabity 1
 
 # ダメージデータが存在しなかったとき、現在のダメージ値を0に設定

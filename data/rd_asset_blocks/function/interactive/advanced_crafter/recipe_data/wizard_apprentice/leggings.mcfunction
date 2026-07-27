@@ -19,4 +19,4 @@ if items block ~ ~ ~ container.21 purple_dye[custom_data~{RD.item:"RD.classy_clo
 unless items entity @s container.16 * \
 if items block ~ ~ ~ container.23 purple_dye[custom_data~{RD.item:"RD.classy_cloth"},custom_model_data={"strings":["RD.classy_cloth"]}] run return 10
 #say RECIPE IS WRONG! RETURN NEXT RECIPE
-# return run function custom_items:custom_block/advanced_crafter/recipe_data/wizard_apprentice/boots
+# return run function rd_custom_items:custom_block/advanced_crafter/recipe_data/wizard_apprentice/boots

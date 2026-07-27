@@ -1,0 +1,11 @@
+execute at @s run particle explosion ~ ~1 ~
+execute at @s run particle witch ~ ~1 ~ 0.5 0.5 0.5 0.025 30
+execute at @s run playsound entity.enderman.teleport player @a ~ ~ ~ 5 1
+
+execute unless entity @a[distance=0.01..] run function rd_custom_items:tp
+
+tp @s @r[distance=0.01..]
+execute at @s run particle explosion ~ ~1 ~
+execute at @s run playsound entity.enderman.teleport player @a ~ ~1 ~ 5 1
+playsound minecraft:entity.allay.death master @a ~ ~ ~ 0.5 2
+advancement revoke @s only rd_custom_items:item_used/misc/warp_potion

@@ -5,7 +5,7 @@ tag @s add pos_set
 
 execute if score @s RD.ai_timer matches 40.. run function rd_system:objects/shortbow/poof with entity @s
 
-$execute if entity @s[tag=RD.randomAngle] run function custom_items:items/shortbow/recoil with storage rockietools:uuid datas."$(UUID)".parent
+$execute if entity @s[tag=RD.randomAngle] run function rd_custom_items:items/shortbow/recoil with storage rockietools:uuid datas."$(UUID)".parent
 
 # 移動
 scoreboard players add @s RD.ai_timer 1

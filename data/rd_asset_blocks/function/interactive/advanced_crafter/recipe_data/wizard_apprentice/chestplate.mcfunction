@@ -19,4 +19,4 @@ if items block ~ ~ ~ container.21 purple_dye[custom_data~{RD.item:"RD.classy_clo
 if items block ~ ~ ~ container.22 purple_dye[custom_data~{RD.item:"RD.classy_cloth"},custom_model_data={"strings":["RD.classy_cloth"]}] \
 if items block ~ ~ ~ container.23 purple_dye[custom_data~{RD.item:"RD.classy_cloth"},custom_model_data={"strings":["RD.classy_cloth"]}] run return 9
 #say RECIPE IS WRONG! RETURN NEXT RECIPE
-# return run function custom_items:custom_block/advanced_crafter/recipe_data/wizard_apprentice/leggings
+# return run function rd_custom_items:custom_block/advanced_crafter/recipe_data/wizard_apprentice/leggings

@@ -5,7 +5,7 @@ execute as @e[type=#boat] on controller if entity @s[tag=RD.can_controll_boat] o
 execute as @e[type=#rd_custom_ai:hostile] at @s if entity @a[distance=..80] as @s run function rd_custom_ai:enemy_movements
 
 # オブジェクト
-execute as @e[tag=RD.object] at @s as @s run function rd_custom_ai:object/
+execute as @e[tag=RD.object,tag=!RD.type.block] at @s as @s run function rd_custom_ai:object/
 
 # 被弾時呼び出し
 execute as @e[tag=RD.on_hurt,nbt={HurtTime:9s}] at @s as @s run function rd_custom_ai:on_hurt/

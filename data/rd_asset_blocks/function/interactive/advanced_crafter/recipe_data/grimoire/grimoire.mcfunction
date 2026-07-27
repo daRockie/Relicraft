@@ -19,4 +19,4 @@ unless items block ~ ~ ~ container.21 * \
 if items block ~ ~ ~ container.22 emerald[custom_data~{RD.item:"RD.peridot"}] \
 unless items block ~ ~ ~ container.23 * run return 3
 #say RECIPE IS WRONG! RETURN NEXT RECIPE
-return run function custom_items:custom_block/advanced_crafter/recipe_data/grimoire/reverberation
+return run function rd_custom_items:custom_block/advanced_crafter/recipe_data/grimoire/reverberation

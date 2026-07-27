@@ -1,9 +1,9 @@
 {
     "values": [
-        "custom_items:speedstar",
-        "custom_items:absorption",
-        "custom_items:final_surge",
-        "custom_items:one_for_all",
-        "custom_items:crit"
+        "rd_custom_items:speedstar",
+        "rd_custom_items:absorption",
+        "rd_custom_items:final_surge",
+        "rd_custom_items:one_for_all",
+        "rd_custom_items:crit"
     ]
 }

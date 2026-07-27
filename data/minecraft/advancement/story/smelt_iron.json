@@ -31,8 +31,8 @@
   ],
   "rewards": {
     "recipes": [
-        "custom_items:anti_blast-shield_recipe",
-        "custom_items:advanced_crafting_table_recipe"
+        "rd_custom_items:anti_blast-shield_recipe",
+        "rd_custom_items:advanced_crafting_table_recipe"
     ]
   },
   "sends_telemetry_event": true

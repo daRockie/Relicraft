@@ -2,12 +2,9 @@
 	"replace": false,
 	"values": [
 		"animated_java:global/on_load",
-		"rd_custom_ai:load",
-		"custom_items:load",
 		"find_looking:internal/load",
 		"player_motion:internal/technical/load",
-		"rd_asset_mobs:reload",
-		"rd_system:load",
+		"#rd_system:loads",
 		"score_to_health:load"
 	]
 }

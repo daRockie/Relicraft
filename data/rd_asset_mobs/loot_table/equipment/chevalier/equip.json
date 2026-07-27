@@ -45,9 +45,9 @@
                 "item_model": "shield",
                 "enchantment_glint_override":false,
                 "enchantments": {
-                  "custom_items:projectile_spawn": 1,
-                  "custom_items:immunity_projectile": 1,
-                  "custom_items:weapon_only/resistance": 5 
+                  "rd_custom_items:projectile_spawn": 1,
+                  "rd_custom_items:immunity_projectile": 1,
+                  "rd_custom_items:weapon_only/resistance": 5 
                 }
               }
             },

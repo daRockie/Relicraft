@@ -3,5 +3,5 @@ playsound minecraft:block.stone_button.click_on hostile @a ~ ~ ~ 5 0.5
 
 function rd_custom_ai:custom_mobs/nuka_creeper/text_display
 
-execute if score @s RD.ai_timer matches 60.. run function rd_custom_ai:custom_mobs/nuka_creeper/summon_minion
+execute if score @s RD.ai_timer matches 60.. at @s run function rd_custom_ai:custom_mobs/nuka_creeper/summon_minion
 

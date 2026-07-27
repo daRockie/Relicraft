@@ -9,7 +9,7 @@ execute unless block ~ ~0.25 ~ #rd_custom_ai:no_collision run function rd_system
 
 execute if score @s RD.ai_timer matches 40.. run function rd_system:objects/shortbow/poof
 
-execute if entity @s[tag=RD.randomAngle] run function custom_items:items/shortbow/recoil with entity @s equipment.head.components."minecraft:custom_data".data
+execute if entity @s[tag=RD.randomAngle] run function rd_custom_items:items/shortbow/recoil with entity @s equipment.head.components."minecraft:custom_data".data
 
 # 移動
 scoreboard players add @s RD.ai_timer 1

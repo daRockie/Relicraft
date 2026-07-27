@@ -7,7 +7,7 @@
     "description": "鍛冶台で赤熱鉄を作成する",
     "frame": "goal"
   },
-  "parent": "custom_items:hammer/3",
+  "parent": "rd_custom_items:hammer/3",
   "criteria": {
     "Craft": {
       "trigger": "minecraft:inventory_changed",

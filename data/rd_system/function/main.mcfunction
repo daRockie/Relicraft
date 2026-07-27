@@ -1,4 +1,4 @@
-execute as @e[type=!#minecraft:unliving_objects] at @s if entity @a[distance=..80] as @s run function rd_system:mana/main
+execute as @e[type=!#minecraft:unliving_objects,tag=RD.has_mana] at @s if entity @a[distance=..80] as @s run function rd_system:mana/main
 function rd_system:objects/main
 
 

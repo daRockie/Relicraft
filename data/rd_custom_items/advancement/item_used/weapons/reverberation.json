@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "using_reverberation": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data":
+            {
+              "RD.item":"RD.reverberation",
+              "RD.recipeResult":true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "rd_custom_items:items/grimoire/reverberation/right_click"
+  }
+}

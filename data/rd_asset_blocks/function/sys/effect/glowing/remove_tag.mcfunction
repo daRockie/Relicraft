@@ -1,3 +1,5 @@
+# say tag remove
+
 data remove entity @s item.components."minecraft:custom_data".effects[{tag:"glowing"}]
 tag @s remove RD.block.glowing
 tag @s remove RD.block.glowing.initalized

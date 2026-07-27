@@ -8,7 +8,7 @@ execute if score @s[type=player] RD.mana.bossbar.fadeout matches 1.. run scorebo
 
 execute if score @s abilityCooldown.reverberation matches 1.. run scoreboard players remove @s abilityCooldown.reverberation 1
 
-execute if score @s abilityCooldown.reverberation matches 120 at @s run function custom_items:items/grimoire/reverberation/summon
+execute if score @s abilityCooldown.reverberation matches 120 at @s run function rd_custom_items:items/grimoire/reverberation/summon
 
 scoreboard players add @s RD.mana.timer 1
 

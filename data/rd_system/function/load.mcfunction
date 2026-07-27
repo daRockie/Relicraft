@@ -40,7 +40,7 @@ execute if data storage rockietools:custom_crafter {} run data modify storage ro
 execute if data storage rockietools:custom_recipe {} run data modify storage rockietools:custom_recipe list set value {}
 
 function rd_recipe:
-# function custom_items:custom_block/advanced_crafter/utils/storage/recipes/loop_backward_init
+# function rd_custom_items:custom_block/advanced_crafter/utils/storage/recipes/loop_backward_init
 
 function rd_system:save_progression
 

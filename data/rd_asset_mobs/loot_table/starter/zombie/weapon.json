@@ -21,7 +21,7 @@
                       ]
                     },
                     "enchantments": {
-                      "custom_items:immunity_projectile": 1
+                      "rd_custom_items:immunity_projectile": 1
                     }
                   }
                 }

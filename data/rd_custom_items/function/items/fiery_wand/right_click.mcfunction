@@ -1,0 +1,1 @@
+advancement revoke @s only rd_custom_items:item_used/weapons/fiery_wand

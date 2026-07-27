@@ -1,1 +1,0 @@
-execute positioned ~ ~1 ~ run function custom_items:items/transmitter/teleport

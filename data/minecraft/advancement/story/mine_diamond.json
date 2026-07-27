@@ -30,7 +30,7 @@
     ]
   ],
   "rewards": {
-    "recipes": ["custom_items:ruby_recipe"]
+    "recipes": ["rd_custom_items:ruby_recipe"]
   },
   "sends_telemetry_event": true
 }

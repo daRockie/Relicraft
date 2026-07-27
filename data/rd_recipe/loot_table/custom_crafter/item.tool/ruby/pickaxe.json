@@ -38,7 +38,7 @@
     "value": 10
   },
   "minecraft:enchantments": {
-    "custom_items:treasure/ruby/protection": 1
+    "rd_custom_items:treasure/ruby/protection": 1
   },
   "minecraft:max_damage": 798,
   "minecraft:max_stack_size": 1,

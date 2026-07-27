@@ -1,22 +1,24 @@
 scoreboard players reset @s RD.block.calculator
-execute unless data entity @s data.ore[] run return run kill @s
+
+# say generating ores...
 
 # Xを記録
 $scoreboard players set @s RD.block.calculator $(x)
 $scoreboard players add @s RD.block.calculator $(rng_x)
 
+# 出力用データに書き込み
 execute store result entity @s data.final.x int 1 run scoreboard players get @s RD.block.calculator
 
 # Zを記録
 $scoreboard players set @s RD.block.calculator $(z)
 $scoreboard players add @s RD.block.calculator $(rng_z)
 
+# 出力用データに書き込み
 execute store result entity @s data.final.z int 1 run scoreboard players get @s RD.block.calculator
 
-execute if data entity @s data.ore[{type:"ruby"}] run data modify entity @s data.final.y set from entity @s data.ore[{type:"ruby"}].offset
-execute if data entity @s data.ore[{type:"ruby"}] run data modify entity @s data.final.type set value "ruby"
-execute if data entity @s data.ore[{type:"ruby"}] run function rd_custom_ai:object/marker/ore_generator/generate/place with entity @s data.final
+# タイプと生成先のY座標を取得
+data modify entity @s data.final.y set from entity @s data.ore[-1].offset
+data modify entity @s data.final.type set from entity @s data.ore[-1].type
 
-execute if data entity @s data.ore[{type:"peridot"}] run data modify entity @s data.final.y set from entity @s data.ore[{type:"peridot"}].offset
-execute if data entity @s data.ore[{type:"peridot"}] run data modify entity @s data.final.type set value "peridot"
-execute if data entity @s data.ore[{type:"peridot"}] run function rd_custom_ai:object/marker/ore_generator/generate/place with entity @s data.final
+# 生成
+function rd_custom_ai:object/marker/ore_generator/generate/place with entity @s data.final

@@ -68,12 +68,16 @@ data modify storage rockietools:custom_recipe meta.crafter set value \
 # -> table: レシピモード時に表示される素材のルートテーブル
 # -> count: アイテムの最低要求量
 
+
+# data modify storage rockietools:custom_recipe list.crafter.menu append value {function:"null",}
+
 data modify storage rockietools:custom_recipe list.crafter append value \
 {\
     result:\
         {\
             name:"Null",\
             table:"rd_recipe:null",\
+            sort:[{}],\
         },\
     ingredient:\
     [\
@@ -94,7 +98,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"ルビーのヘルメット",\
-            table:"rd_recipe:custom_crafter/item.armor/ruby/helmet"\
+            table:"rd_recipe:custom_crafter/item.armor/ruby/helmet",\
+            sort:[{key:"ingredient/ore/ruby"},{key:"ingredient/ore"},{key:"armor"}],\            
         },\
     ingredient:\
     [\
@@ -115,7 +120,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"ルビーのチェストプレート",\
-            table:"rd_recipe:custom_crafter/item.armor/ruby/chestplate"\
+            table:"rd_recipe:custom_crafter/item.armor/ruby/chestplate",\
+            sort:[{key:"ingredient/ore/ruby"},{key:"ingredient/ore"},{key:"armor"}],\
         },\
     ingredient:\
     [\
@@ -136,7 +142,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"ルビーのレギンス",\
-            table:"rd_recipe:custom_crafter/item.armor/ruby/leggings"\
+            table:"rd_recipe:custom_crafter/item.armor/ruby/leggings",\
+            sort:[{key:"ingredient/ore/ruby"},{key:"ingredient/ore"},{key:"armor"}],\            
         },\
     ingredient:\
     [\
@@ -157,7 +164,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"ルビーのブーツ",\
-            table:"rd_recipe:custom_crafter/item.armor/ruby/boots"\
+            table:"rd_recipe:custom_crafter/item.armor/ruby/boots",\
+            sort:[{key:"ingredient/ore/ruby"},{key:"ingredient/ore"},{key:"armor"}],\                        
         },\
     ingredient:\
     [\
@@ -178,7 +186,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"ルビーのツルハシ",\
-            table:"rd_recipe:custom_crafter/item.tool/ruby/pickaxe"\
+            table:"rd_recipe:custom_crafter/item.tool/ruby/pickaxe",\
+            sort:[{key:"ingredient/ore/ruby"},{key:"ingredient/ore"},{key:"tools"}],\            
         },\
     ingredient:\
     [\
@@ -199,7 +208,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"ルビーの剣",\
-            table:"rd_recipe:custom_crafter/item.tool/ruby/sword"\
+            table:"rd_recipe:custom_crafter/item.tool/ruby/sword",\
+            sort:[{key:"ingredient/ore/ruby"},{key:"ingredient/ore"},{key:"tools"}],\
         },\
     ingredient:\
     [\
@@ -221,7 +231,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"魔導書",\
-            table:"rd_recipe:custom_crafter/item.misq/grimoire"\
+            table:"rd_recipe:custom_crafter/item.misq/grimoire",\
+            sort:[{key:"ingredient/ore/peridot"},{key:"misq"},{key:"sorcery"}]\
         },\
     ingredient:\
     [\
@@ -242,7 +253,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"鎮魂歌の残響",\
-            table:"rd_recipe:custom_crafter/item.misq/scrolls/craftable/reverberation"\
+            table:"rd_recipe:custom_crafter/item.misq/scrolls/craftable/reverberation",\
+            sort:[{key:"misq"},{key:"sorcery"},{key:"sorcery/scrolls"}]\
         },\
     ingredient:\
     [\

@@ -1,5 +1,3 @@
-# マナ不足の場合処理を終了
-execute unless score @s RD.mana >= $.mana_use RD.item.durabity run return run function custom_items:items/not_enough_mana
 
 # ダメージ計算
 scoreboard players operation $.max_damage RD.item.durabity -= $.damage RD.item.durabity
@@ -10,6 +8,8 @@ execute store result storage rockietools:item_modifier temp.current_damage int 1
 
 # tellraw @a [{"text":"Max Damage: ",italic:false},{"score":{name:"$.max_damage",objective:"RD.item.durabity"}}]
 
+# マナ不足の場合処理を終了
+execute unless score @s RD.mana >= $.mana_use RD.item.durabity run return run function rd_custom_items:items/not_enough_mana
 
 # マナが足りているなら武器に書き込まれているfunctionを実行
 $execute if score @s RD.mana >= $.mana_use RD.item.durabity run function $(function)

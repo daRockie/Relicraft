@@ -16,7 +16,6 @@ $execute unless predicate rd_asset_blocks:location_y0 run function $(function)sp
 
 scoreboard players remove @s RD.block.calculator 1
 
-
 execute if score @s RD.block.calculator matches 1.. run return run function rd_asset_blocks:sys/ore_generation/ with entity @s equipment.head.components."minecraft:custom_data"
 
 # say end

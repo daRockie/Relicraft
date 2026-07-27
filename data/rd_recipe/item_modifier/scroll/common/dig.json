@@ -17,7 +17,7 @@
       "function": "minecraft:set_custom_data",
       "tag": {
         "RD.listed_spell": [
-            {"Used":true,"function":"custom_items:items/healing_wand/used","damage_per_use":1,"skill_name":"採掘Ⅰ","mana_use":40}
+            {"Used":true,"function":"rd_custom_items:items/healing_wand/used","damage_per_use":1,"skill_name":"採掘Ⅰ","mana_use":40}
         ]
       },
       "conditions": []

@@ -4,7 +4,7 @@ execute if entity @s[tag=placed_barrel] unless block ~ ~ ~ barrel[facing=up]{Cus
 # kill @e[type=item,distance=0..2,nbt={Item:{components:{"minecraft:custom_name":{text:"改良型作業台",bold:1b}},id:"minecraft:dispenser"}}]
 # tell @a[distance=0..2,sort=nearest,limit=1] "a"
 # execute if score @a[distance=0..2,sort=nearest,limit=1] sneakTimer matches 1 run scoreboard players add @s RD.ai_timer 1
-# execute unless entity @a[distance=0..2,predicate=custom_items:sneaking] run scoreboard players set @s RD.ai_timer 0
+# execute unless entity @a[distance=0..2,predicate=rd_custom_items:sneaking] run scoreboard players set @s RD.ai_timer 0
 #execute unless block ~ ~ ~ dispenser{Items:[]} if score @s RD.ai_timer matches 20.. if score @s isSuccess matches 1 run function crafter_main:do_craft
 
 
@@ -15,8 +15,8 @@ execute if entity @s[tag=placed_barrel] if block ~ ~ ~ barrel[facing=up]{CustomN
 fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace hopper destroy
 
 # 音止め
-execute if block ~ ~ ~ barrel[facing=up,open=false]{CustomName:{"bold":true}} if entity @s[tag=opening] as @a[distance=0..4] run function custom_items:custom_block/stop_sound
+execute if block ~ ~ ~ barrel[facing=up,open=false]{CustomName:{"bold":true}} if entity @s[tag=opening] as @a[distance=0..4] run function rd_custom_items:custom_block/stop_sound
 execute if block ~ ~ ~ barrel[facing=up,open=false]{CustomName:{"bold":true}} if entity @s[tag=opening] run function rd_asset_blocks:interactive/advanced_crafter/utils/closed
 
 # データの定義
-execute if block ~ ~ ~ barrel[facing=up]{CustomName:{"bold":true}} run function rd_asset_blocks:interactive/advanced_crafter/utils/register
+execute if block ~ ~ ~ barrel[facing=up]{CustomName:{"bold":true}} run function rd_asset_blocks:interactive/advanced_crafter/utils/tick

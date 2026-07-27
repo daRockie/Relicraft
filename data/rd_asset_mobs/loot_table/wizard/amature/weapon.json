@@ -22,11 +22,11 @@
             },
             {
               "type": "minecraft:loot_table",
-              "value": "custom_items:item/fiery_wand"
+              "value": "rd_custom_items:item/fiery_wand"
             },
             {
               "type": "loot_table",
-              "value": "custom_items:item/thanatolas"
+              "value": "rd_custom_items:item/thanatolas"
             }
 
           ],

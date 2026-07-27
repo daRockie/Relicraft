@@ -1,0 +1,7 @@
+{
+    "values": [
+        "#minecraft:unliving_objects",
+        "#rd_custom_ai:animal",
+        "#rd_custom_ai:golems"
+    ]
+}

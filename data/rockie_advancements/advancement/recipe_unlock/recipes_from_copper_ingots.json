@@ -15,10 +15,10 @@
   },
   "rewards": {
     "recipes": [
-      "custom_items:copper_helmet",
-      "custom_items:copper_chestplate",
-      "custom_items:copper_leggings",
-      "custom_items:copper_boots"
+      "rd_custom_items:copper_helmet",
+      "rd_custom_items:copper_chestplate",
+      "rd_custom_items:copper_leggings",
+      "rd_custom_items:copper_boots"
     ]
   }
 }

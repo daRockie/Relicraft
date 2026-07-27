@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.0": {
+        "components": {
+          "minecraft:custom_name": {
+            "text":"",
+            "bold": true
+          }
+        }
+      }
+    }
+  }
+}

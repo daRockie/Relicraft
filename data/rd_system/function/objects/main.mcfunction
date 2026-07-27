@@ -1,5 +1,5 @@
 
-execute as @e[type=armor_stand] at @s if entity @a[distance=..120] run function rd_system:objects/armor_stands
+execute as @e[type=armor_stand,tag=!RD.type.block] at @s if entity @a[distance=..120] run function rd_system:objects/armor_stands
 
 execute as @e[type=item,tag=RD.fiber] at @s run function rd_system:objects/stinger_fiber/tick
 

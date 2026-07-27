@@ -1,0 +1,8 @@
+{
+    "values": [
+        "rd_custom_ai:load",
+		"rd_custom_items:load",
+		"rd_asset_mobs:reload",
+		"rd_system:load"
+    ]
+}

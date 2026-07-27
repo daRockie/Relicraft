@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "using_fiery_wand": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data":
+            {
+              "Weapon_ID": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "rd_custom_items:items/fiery_wand/right_click"
+  }
+}

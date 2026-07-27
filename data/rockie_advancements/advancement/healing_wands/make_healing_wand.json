@@ -25,11 +25,11 @@
     "craft": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "custom_items:right_click/healing_wand"
+        "recipe_id": "rd_custom_items:right_click/healing_wand"
       }
     }
   },
   "rewards": {
-    "recipes": ["custom_items:right_click/wand_of_affection"]
+    "recipes": ["rd_custom_items:right_click/wand_of_affection"]
   }
 }

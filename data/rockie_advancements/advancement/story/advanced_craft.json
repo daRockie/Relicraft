@@ -26,11 +26,11 @@
       "get_item": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "custom_items:advanced_crafting_table_recipe"
+          "recipe_id": "rd_custom_items:advanced_crafting_table_recipe"
         }
       }
     },
     "rewards":{
-      "recipes": ["custom_items:ruby_recipe"]
+      "recipes": ["rd_custom_items:ruby_recipe"]
     }
   }

@@ -26,7 +26,7 @@ function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/fill
 
 scoreboard players add #_SLOTCOUNTER RD.block.calculator.temp3 0
 
-data modify block ~ ~ ~ CustomName.text set value "改良型作業台 ➡ レシピブック"
+# data modify block ~ ~ ~ CustomName.text set value "改良型作業台 ➡ レシピブック"
 data modify block ~ ~ ~ CustomName.bold set value true
 
 #say Turned into recipe mode

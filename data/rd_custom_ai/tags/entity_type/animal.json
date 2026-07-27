@@ -1,0 +1,28 @@
+{
+  "values": [
+    "minecraft:allay",
+    "minecraft:sheep",
+    "minecraft:mule",
+    "minecraft:horse",
+    "minecraft:polar_bear",
+    "minecraft:fox",
+    "minecraft:goat",
+    "minecraft:panda",
+    "minecraft:wolf",
+    "minecraft:armadillo",
+    "minecraft:bat",
+    "minecraft:camel_husk",
+    "minecraft:camel",
+    "minecraft:trader_llama",
+    "minecraft:llama",
+    "minecraft:ocelot",
+    "minecraft:cat",
+    "minecraft:parrot",
+    "#minecraft:aquatic",
+    "minecraft:rabbit",
+    "minecraft:chicken",
+    "minecraft:bee",
+    "minecraft:cow",
+    "minecraft:pig"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "values": [
+        "rd_custom_ai:main",
+		"rd_custom_items:main",
+		"rd_asset_blocks:",
+		"rd_asset_mobs:main",
+		"rd_asset_mobs:set_equipment/main",
+		"rd_system:main"
+    ]
+}

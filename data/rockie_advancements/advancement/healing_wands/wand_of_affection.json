@@ -28,13 +28,13 @@
 		"craft": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "custom_items:right_click/wand_of_affection"
+				"recipe_id": "rd_custom_items:right_click/wand_of_affection"
 			}
 		}
 	},
 	"rewards": {
 		"recipes": [
-			"custom_items:right_click/wand_of_affection"
+			"rd_custom_items:right_click/wand_of_affection"
 		]
 	}
 }

@@ -1,5 +1,5 @@
 # Preventing from run command
-execute if entity @s[type=!rd_custom_ai:hostile] run return fail
+execute if entity @s[type=!#rd_custom_ai:hostile] run return fail
 execute if entity @s[type=creeper] run return fail
 
 execute if entity @s[tag=HasVehicle] run ride @s dismount

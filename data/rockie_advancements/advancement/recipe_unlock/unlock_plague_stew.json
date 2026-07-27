@@ -9,7 +9,7 @@
   },
   "rewards": {
     "recipes": [
-      "custom_items:plague_stew"
+      "rd_custom_items:plague_stew"
     ]
   }
 }

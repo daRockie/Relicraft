@@ -20,10 +20,10 @@
   },
   "rewards": {
     "recipes": [
-    "custom_items:quiver",
-    "custom_items:advanced_crafting_table_recipe",
-    "custom_items:golden_hammer",
-    "custom_items:right_click/fiery_wand"
+    "rd_custom_items:quiver",
+    "rd_custom_items:advanced_crafting_table_recipe",
+    "rd_custom_items:golden_hammer",
+    "rd_custom_items:right_click/fiery_wand"
     ]
   }
 }
