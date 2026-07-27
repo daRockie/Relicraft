@@ -5,11 +5,12 @@
 # レシピn番目スロットi番目の素材データとクラフト枠i番目のスロットをセット
 $data modify storage rockietools:custom_recipe temp_crafter.current_ingredient set from storage rockietools:custom_recipe temp_crafter.list.ingredient[$(current_slot)]
 $data modify storage rockietools:custom_recipe temp_crafter.current_ingredient.slot set from storage rockietools:custom_recipe meta.crafter.crafting_slot[$(current_slot)].entry
+$data modify storage rockietools:custom_recipe temp_crafter.current_ingredient.count set from storage rockietools:custom_recipe temp_crafter.list.ingredient[$(current_slot)].count
 
 
 execute unless data storage rockietools:custom_recipe temp_crafter.current_ingredient run data modify storage rockietools:custom_recipe temp_crafter.meta.recipe_data set value "rd_recipe:air"
 
-# $say $(current_slot)
+# $say current slot: $(current_slot)
 
 # マクロを実行
 

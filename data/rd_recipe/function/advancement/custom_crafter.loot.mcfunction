@@ -1,0 +1,1 @@
+advancement grant @s only rd_recipe:custom_crafter/root

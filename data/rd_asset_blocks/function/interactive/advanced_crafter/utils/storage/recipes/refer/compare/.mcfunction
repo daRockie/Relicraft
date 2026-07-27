@@ -10,7 +10,6 @@ execute if data storage rockietools:custom_recipe temp_crafter.meta.crafting_slo
 
 # スコアボードを利用して参照するスロット番号を取得
 execute store result storage rockietools:custom_recipe temp_crafter.meta.current_slot int 1 run scoreboard players get @s RD.temp0
-# $say $(current_slot)
 
 
 # メタデータが保持している情報: スロット番号、レシピ番号

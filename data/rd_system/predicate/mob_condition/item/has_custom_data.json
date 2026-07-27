@@ -1,0 +1,13 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "container.0": {
+                "predicates": {
+                    "custom_data": {"RD.has_any_functionality":true}
+                }
+            }
+        }
+    }
+}

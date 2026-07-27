@@ -11,10 +11,13 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
-                  "text": "燻る落葉",
+                  "text": "香る落葉",
                   "italic": false
                 },
                 "max_stack_size":64,
+                "custom_data":{
+                  "RD.item":"RD.smoldering_fallen_leaves"
+                },
                 "tooltip_display":{
                   "hidden_components": [
                     "jukebox_playable"

@@ -1,0 +1,127 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_blocks",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "rarity":"rare",
+                "custom_data":{
+                  "RD.item":"RD.bag_with_smoldering_herb"
+                },
+                "minecraft:custom_name": {
+                  "text": "燻されたハーブの袋",
+                  "color":"dark_purple",
+                  "italic": false
+                },
+                "max_stack_size":64,
+                "tooltip_display":{
+                  "hidden_components": [
+                    "jukebox_playable"
+                  ]
+                },
+                "minecraft:item_model": "minecraft:player_head",
+                "profile":{"properties": [{"name": "textures","value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTZmYWRmMWZmZDFlNDQzZGZjNzBkODkyZjg3ZjFiMzNiNTRkNTQwNmY0OTQ0NzQzMDMyNDgzZTBjYTY1NjRiYyJ9fX0="}]},
+                "minecraft:lore": [
+                  {
+                    "text": "エントから入手できる、いい香りのする葉っぱ。を燻したもの。",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "体に刷り込むことで、",
+                    "color": "gray",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "即時回復1",
+                        "color": "green",
+                        "italic": false
+                      },
+                      {
+                        "text": "の効果を得られる。",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "...ただし、使いすぎると",
+                    "color": "dark_gray",
+                    "extra": [{
+                      "text": "強力な副作用",
+                      "color": "red",
+                      "bold": true
+                    },
+                    {
+                      "text": "が現れるかもしれない",
+                      "color": "dark_gray"
+                    }
+                  ]
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "改良型作業台上で素材としても使用できる。",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "consumable":{
+                  "animation": "crossbow",
+                  "sound":"item.brush.brushing.generic",
+                  "consume_seconds": 0.5,
+                  "has_consume_particles": false,
+                  "on_consume_effects": [
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "instant_health",
+                          "duration": 3,
+                          "amplifier": 0
+                        }
+                      ],
+                      "probability": 1
+                    },
+                    {
+                      "type": "apply_effects",
+                      "effects": [
+                        {
+                          "id": "nausea",
+                          "ambient": true,
+                          "duration": 400,
+                          "amplifier": 1
+                        },
+                        {
+                          "id": "slowness",
+                          "duration": 200,
+                          "amplifier": 1
+                        },
+                        {
+                          "id": "poison",
+                          "duration": 600,
+                          "amplifier": 1
+                        }
+                      ],
+                      "probability": 0.2
+                    }
+                  ]
+                },
+                
+                "minecraft:enchantment_glint_override": true
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

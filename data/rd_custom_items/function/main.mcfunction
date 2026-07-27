@@ -6,6 +6,8 @@ execute as @a[predicate=rd_custom_items:daytime] if dimension overworld run scor
 
 execute as @e[tag=!RD.type.block] at @s if entity @a[distance=..80] as @s run function rd_custom_items:variables/set_value
 
+execute as @e[type=item,predicate=rd_system:mob_condition/item/has_custom_data] at @s if entity @a[distance=..80] as @s run function rd_custom_items:item_entities/tick with entity @s Item.components."minecraft:custom_data"
+
 # Equipment
 
 

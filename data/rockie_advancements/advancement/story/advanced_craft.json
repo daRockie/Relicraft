@@ -31,6 +31,7 @@
       }
     },
     "rewards":{
+      "function": "rd_recipe:advancement/custom_crafter.loot",
       "recipes": ["rd_custom_items:ruby_recipe"]
     }
   }
