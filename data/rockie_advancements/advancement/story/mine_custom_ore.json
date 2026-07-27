@@ -1,0 +1,17 @@
+{
+    "display": {
+        "description":"珍しい鉱石を掘りあてる",
+        "title":"これでメシには困らない",
+        "icon": {
+            "id": "player_head",
+            "components": {
+                "profile": {"properties": [{"name": "textures","value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzczYjM1NWM5MWJjYzQyMjA4OWQwM2Y1NDY5ODdlMWE3MWVlNzc1OWY0YzdkNTdlZDU5ODgyY2U4YmM2MTM3NCJ9fX0="}]}
+            },
+            "count": 1
+        }
+    },
+    "criteria": {
+        "a":{"trigger": "impossible"}
+    },
+    "parent": "rockie_advancements:install"
+}

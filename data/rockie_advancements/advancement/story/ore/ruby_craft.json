@@ -12,9 +12,10 @@
       "title": "紅の宝石",
       "description": "ルビーを入手する",
       "frame": "task",
+      "hidden":true,
       "show_toast": true
     },
-    "parent": "rockie_advancements:story/advanced_craft",
+    "parent": "rockie_advancements:story/mine_custom_ore",
     "criteria": {
       "craft": {
         "trigger": "minecraft:inventory_changed",

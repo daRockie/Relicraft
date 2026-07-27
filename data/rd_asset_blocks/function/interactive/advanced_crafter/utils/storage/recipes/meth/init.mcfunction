@@ -5,6 +5,8 @@
 
 # レシピの長さの下りはfiller上で確認済み
 
+advancement grant @p[advancements={rd_recipe:custom_crafter/root=true,rd_recipe:custom_crafter/craft_something=false},distance=..6] only rd_recipe:custom_crafter/craft_something
+
 playsound minecraft:entity.experience_orb.pickup block @a ~ ~ ~ 1 1
 playsound block.smithing_table.use block @a ~ ~ ~ 2 1
 particle crit ~ ~1 ~ 0.5 0.5 0.5 0.05 15

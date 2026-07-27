@@ -20,7 +20,7 @@
 		"frame": "challenge",
 		"show_toast": true
 	},
-	"parent": "rockie_advancements:story/ruby_craft",
+	"parent": "rockie_advancements:story/ore/ruby_craft",
 	"criteria": {
 		"craft_helmet": {
 			"trigger": "minecraft:inventory_changed",

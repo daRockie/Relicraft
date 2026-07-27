@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "からくり仕掛けのモノづくり",
+        "description": "アイテムを何かしら作る",
+        "icon": {
+            "id": "writable_book"
+        },
+        "frame": "task",
+        "announce_to_chat": true,
+        "show_toast": true
+    },
+    "parent": "rd_recipe:custom_crafter/root",
+    "criteria": {"a":{
+        "trigger": "impossible"
+    }}
+
+}
