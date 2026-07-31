@@ -13,11 +13,7 @@
   "result": {
     "id": "minecraft:iron_axe",
     "components": {
-      "minecraft:custom_model_data": {
-        "strings": [
-          "iron_hammer"
-        ]
-      },
+      "item_model":"relicraft:tools/hammer/iron",
       "minecraft:custom_name": {
         "text": "鉄のハンマー",
         "italic": false,

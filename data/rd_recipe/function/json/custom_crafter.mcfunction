@@ -55,7 +55,7 @@ data modify storage rockietools:custom_recipe meta.crafter set value \
 # ～以下、レシピ（全項目省略不可）～
 # 
 # ◆ result
-# -> name: アイテム名（デバッグ用）
+# -> name: アイテム名。レシピモードでアイテムを検索するときに使う
 # -> table: レシピ検索画面、またはクラフト時に参照するアイテムのルートテーブル
 # 
 # ◆ ingredient　必ず八項目必要、省略不可能
@@ -318,7 +318,7 @@ data modify storage rockietools:custom_recipe list.crafter append value \
 {\
     result:\
         {\
-            name:"凝縮されたハーブ",\
+            name:"ハーブの袋",\
             table:"rd_recipe:ingredient/craftables/bag_with_herbs",\
             sort:[{key:"drop"},{key:"ingredient/greenery"},{key:"ingredient"}]\
         },\

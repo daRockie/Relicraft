@@ -40,6 +40,24 @@
               "pitch": 2,
               "sound": "item.mace.smash_ground",
               "volume": 1
+            },
+            {
+              "type": "spawn_particles",
+              "particle": {
+                "type": "explosion"
+              },
+              "horizontal_position": {
+                "type": "entity_position"
+              },
+              "horizontal_velocity": {
+                "base": 1
+              },
+              "vertical_position": {
+                "type": "entity_position"
+              },
+              "vertical_velocity": {
+                "base": 1
+              }
             }
           ]
         }

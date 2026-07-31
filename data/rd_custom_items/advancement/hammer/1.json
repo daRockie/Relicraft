@@ -28,7 +28,7 @@
     }
   },
   "rewards": {
-    "recipes": ["rd_custom_items:iron_hammer"],
+    "recipes": ["rd_custom_items:tools/hammer/iron"],
     "experience": 50
   }
 }

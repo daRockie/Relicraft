@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:iron_axe",
       "components": {
-        "custom_model_data": {"strings": ["iron_hammer"]} 
+        "item_model": "relicraft:tools/hammer/iron"
       }
     },
     "title": {
@@ -24,7 +24,7 @@
     "craft": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "rd_custom_items:iron_hammer"
+        "recipe_id": "rd_custom_items:tools/hammer/iron"
       }
     }
   },

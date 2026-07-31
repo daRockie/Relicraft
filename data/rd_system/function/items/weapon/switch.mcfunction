@@ -1,3 +1,4 @@
+# $say $(address)
 
 # ダメージ計算
 scoreboard players operation $.max_damage RD.item.durabity -= $.damage RD.item.durabity

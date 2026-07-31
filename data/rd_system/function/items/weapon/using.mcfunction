@@ -16,4 +16,5 @@ execute if items entity @s weapon.mainhand *[custom_data~{weapon:1b}] run functi
 execute unless items entity @s weapon.mainhand *[custom_data~{weapon:1b}] run function rd_system:items/weapon/set_address/offhand
 
 function rd_system:items/weapon/store_damage with storage rockietools:item_modifier temp.tools
+
 advancement revoke @s only rd_system:using_item
