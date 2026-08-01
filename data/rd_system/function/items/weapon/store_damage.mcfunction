@@ -3,7 +3,6 @@
 
 # ダメージのコンポーネントデータがあった時、ダメージデータを取得してストレージに代入、エンチャントも同様
 $execute if data entity @s $(address).components."minecraft:damage" store result storage rockietools:item_modifier temp.current_damage int 1 run data get entity @s $(address).components."minecraft:damage"
-$execute if data entity @s $(address).components."minecraft:enchantments" run data modify storage rockietools:item_modifier temp.enchantments set from entity @s $(address).components."minecraft:enchantments"
 
 # マナ割引
 execute store result score $.mana_reduce RD.item.durabity run data get storage rockietools:item_modifier temp.enchantments."rd_custom_items:mana_reduce" 1
@@ -13,6 +12,7 @@ execute if score $.mana_reduce RD.item.durabity matches 0 run scoreboard players
 $execute unless data entity @s $(address).components."minecraft:damage" run data modify storage rockietools:item_modifier temp.current_damage set value 0
 $execute unless data entity @s $(address).components."minecraft:enchantments" run data modify storage rockietools:item_modifier temp.enchantments set value {}
 
+# 耐久値エンチャント
 $execute if data entity @s $(address).components."minecraft:enchantments"."minecraft:unbreaking" store result storage rockietools:item_modifier temp.unbreaking int 1 run data get entity @s $(address).components."minecraft:enchantments"."minecraft:unbreaking" 1
 $execute unless data entity @s $(address).components."minecraft:enchantments"."minecraft:unbreaking" run data modify storage rockietools:item_modifier temp.unbreaking set value 1
 
