@@ -5,7 +5,7 @@ execute if entity @s[type=minecraft:area_effect_cloud,tag=kill_item] at @s run k
 execute if entity @s[type=#zombies] run function rd_asset_mobs:system/randomizer/zombie
 
 # スケルトン族
-execute if entity @s[type=#skeletons] run function rd_asset_mobs:system/randomizer/skeleton
+execute if entity @s[type=#skeletons] run function rd_asset_mobs:system/randomizer/skeleton/main
 
 # クリーパー族
 execute if entity @s[type=creeper] run function rd_asset_mobs:system/randomizer/creeper

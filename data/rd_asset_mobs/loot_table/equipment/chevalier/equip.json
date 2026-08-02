@@ -43,6 +43,10 @@
               "function": "set_components",
               "components": {
                 "item_model": "shield",
+                "piercing_weapon":{
+                  "deals_knockback": true,
+                  "sound": "item.spear.hit"
+                },
                 "enchantment_glint_override":false,
                 "enchantments": {
                   "rd_custom_items:projectile_spawn": 1,
@@ -54,6 +58,20 @@
             {
               "function": "set_attributes",
               "modifiers": [
+                {
+                  "id":"minecraft:shield_chivalier_kb",
+                  "amount": 1,
+                  "attribute": "attack_knockback",
+                  "operation": "add_value",
+                  "slot": "any"
+                },
+                {
+                  "slot":"any",
+                  "id": "shield_chivalier_reach",
+                  "amount": 2,
+                  "attribute": "entity_interaction_range",
+                  "operation": "add_value"
+                },
                 {
                   "id": "shield_chivalier_armor",
                   "attribute": "armor",

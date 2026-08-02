@@ -1,1 +1,1 @@
-execute if score @s spawnRandom matches 0..20 run function rd_asset_mobs:summon/skeleton/elite_wither_skeleton
+execute if predicate rd_custom_ai:percent/20 run function rd_asset_mobs:summon/skeleton/elite_wither_skeleton
