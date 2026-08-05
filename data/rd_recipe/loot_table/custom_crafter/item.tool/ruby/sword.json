@@ -6,9 +6,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_sword",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_components",
+							"type": "minecraft:set_components",
 							"components": {
 								"minecraft:rarity": "uncommon",
 								"minecraft:custom_name": {
@@ -50,7 +50,7 @@
 								"minecraft:repairable": {
 									"items": "#minecraft:diamond_tool_materials"
 								},
-								"minecraft:swing_animation": {},
+								"minecraft:attack_animation": {},
 								"minecraft:tool": {
 									"can_destroy_blocks_in_creative": false,
 									"damage_per_block": 2,

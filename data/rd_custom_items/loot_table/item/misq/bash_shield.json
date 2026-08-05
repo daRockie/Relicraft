@@ -1,0 +1,97 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "shield",
+					"modifier": [
+						{
+							"type": "set_custom_data",
+							"tag": {
+								"weapon": true
+							}
+						},
+						{
+							"type": "set_components",
+							"components": {
+								"minecraft:attribute_modifiers": [
+									{
+										"type": "minecraft:attack_damage",
+										"amount": 2,
+										"id": "minecraft:base_attack_damage",
+										"operation": "add_value",
+										"slot": "mainhand"
+									},
+									{
+										"type": "minecraft:attack_speed",
+										"amount": -2.9,
+										"id": "minecraft:base_attack_speed",
+										"operation": "add_value",
+										"slot": "mainhand"
+									},
+                  {
+                    "id": "minecraft:base_attack_knockback",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "type": "attack_knockback",
+                    "slot": "mainhand"
+                  }
+								],
+								"custom_name": {
+									"text": "バッシュシールド",
+									"italic": false
+								},
+                "lore":[
+                  {"text": "ズドーン！","bold":true,"color": "gray"},
+                  {"text": "軽い素材で作られた盾。","italic":false,"color": "gray"},
+                  {"text": "通常の盾として使えるほか、メインハンドに持てば突進してモブを吹っ飛ばすことができる。","italic":false,"color": "gray"}
+                ],
+								"minecraft:attack_range": {
+									"hitbox_margin": 0.125,
+									"max_creative_reach": 6.5,
+									"max_reach": 2.5,
+									"min_creative_reach": 2,
+									"min_reach": 0,
+									"mob_factor": 0.5
+								},
+								"minecraft:kinetic_weapon": {
+									"damage_conditions": {
+										"max_duration_ticks": 225,
+										"min_relative_speed": 4.6,
+                    "min_speed": 0
+									},
+									"contact_cooldown_ticks": 3,
+									"damage_multiplier": 0,
+									"dismount_conditions": {
+										"max_duration_ticks": 50,
+										"min_speed": 11
+									},
+                  "delay_ticks":3,
+									"forward_movement": 0.25,
+									"hit_sound": "minecraft:item.shield.block",
+									"knockback_conditions": {
+										"max_duration_ticks": 40,
+										"min_speed": 0.2
+									},
+									"sound": "minecraft:item.spear.use"
+								},
+								"max_damage": 125,
+								"use_effects": {
+									"speed_multiplier": 0.8,
+									"can_sprint": true
+								},
+								"piercing_weapon": {
+									"deals_knockback": true,
+                  "dismounts": true,
+                  "hit_sound": "item.shield.break"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -7,10 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:flint",
-          "conditions": [],
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
                   "translate": "rd.item.spider_fang",
@@ -26,7 +25,7 @@
                 "max": 2,
                 "min": 0
               },
-              "function": "minecraft:set_count"
+              "type": "minecraft:set_count"
             },
             {
               "count": {
@@ -35,13 +34,13 @@
                 "min": 0
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -49,7 +48,7 @@
                 "max": 2,
                 "min": 0
               },
-              "function": "minecraft:set_count"
+              "type": "minecraft:set_count"
             },
             {
               "count": {
@@ -58,7 +57,7 @@
                 "min": 0
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             }
           ],
           "name": "minecraft:string"
@@ -68,23 +67,19 @@
     },
     {
       "bonus_rolls": 0,
-      "conditions": [
-        {
-          "condition": "minecraft:killed_by_player"
-        }
-      ],
+      "condition":{"type": "minecraft:killed_by_player"},
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
+              "type":"set_count",
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
                 "max": 1,
                 "min": -1
-              },
-              "function": "minecraft:set_count"
+              }
             },
             {
               "count": {
@@ -93,7 +88,7 @@
                 "min": 0
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             }
           ],
           "name": "minecraft:spider_eye"

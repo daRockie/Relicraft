@@ -23,7 +23,7 @@
           "block_state": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:anvil"
+              "id": "minecraft:anvil"
             }
           },
           "predicate": {
@@ -33,10 +33,6 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:block_state_property",
-          "block": "minecraft:chipped_anvil"
-        },
         "effect": {
           "type": "minecraft:play_sound",
           "sound": "minecraft:entity.zombie.attack_iron_door",
@@ -45,10 +41,6 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:block_state_property",
-          "block": "minecraft:chipped_anvil"
-        },
         "effect": {
           "type": "minecraft:change_item_damage",
           "amount": {
@@ -65,7 +57,7 @@
           "block_state": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "minecraft:chipped_anvil"
+              "id": "minecraft:chipped_anvil"
             }
           },
           "predicate": {
@@ -75,10 +67,6 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:block_state_property",
-          "block": "minecraft:damaged_anvil"
-        },
         "effect": {
           "type": "minecraft:play_sound",
           "sound": "minecraft:entity.zombie.attack_iron_door",
@@ -87,10 +75,6 @@
         }
       },
       {
-        "requirements": {
-          "condition": "minecraft:block_state_property",
-          "block": "minecraft:damaged_anvil"
-        },
         "effect": {
           "type": "minecraft:change_item_damage",
           "amount": {

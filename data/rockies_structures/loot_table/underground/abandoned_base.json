@@ -7,10 +7,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_apple",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 2
               }
@@ -20,10 +21,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bread",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 1,
                 "max": 7
               }
@@ -33,10 +35,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:torch",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 13
               }
@@ -49,10 +52,11 @@
             {
               "type": "minecraft:item",
               "name": "bucket",
-              "functions": [
+              "modifier": [
                 {
-                  "function": "minecraft:set_count",
+                  "type": "minecraft:set_count",
                   "count": {
+                    "type":"uniform",
                     "min": 0,
                     "max": 2
                   }
@@ -76,10 +80,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:coal",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 2,
                 "max": 7
               }
@@ -89,10 +94,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_nugget",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 14
               }
@@ -102,10 +108,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 5
               }

@@ -7,13 +7,13 @@
           "type": "minecraft:item",
           "name": "minecraft:potion",
           "conditions": [],
-          "functions": [
+          "modifier": [
             {
-                "function": "set_count",
+                "type": "set_count",
                 "count": 4
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:lore": [
                   {
@@ -52,5 +52,5 @@
       ]
     }
   ],
-  "functions": []
+  "modifier": []
 }

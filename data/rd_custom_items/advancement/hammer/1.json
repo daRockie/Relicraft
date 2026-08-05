@@ -23,7 +23,7 @@
     "craft": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "rd_custom_items:golden_hammer"
+        "recipes": "rd_custom_items:golden_hammer"
       }
     }
   },

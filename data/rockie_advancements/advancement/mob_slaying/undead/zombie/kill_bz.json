@@ -23,10 +23,14 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "entity_tags": {
-            "any_of": [
-              "RD.boomer_zombie"
-            ]
+          "type":"entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_tags": {
+              "any_of": [
+                "RD.boomer_zombie"
+              ]
+            }
           }
         }
       }

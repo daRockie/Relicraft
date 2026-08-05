@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "rd_custom_items:equipments/util/on_hurt"
+    "type": "rd_custom_items:equipments/util/on_hurt"
   }
 }

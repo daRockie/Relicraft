@@ -1,2 +1,0 @@
-execute as @e[tag=!RD.initialized,tag=!RD.noEquipment,type=!#rd_custom_ai:no_equipment] store result score @s RD.enemy.equipment run random value 0..100
-execute as @e[type=#rd_custom_ai:hostile,tag=!RD.noEquipment] unless entity @s[type=#arthropod] if score @s RD.enemy.equipment matches 90.. as @s run function rd_asset_mobs:set_equipment/entity_check

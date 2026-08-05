@@ -4,8 +4,12 @@
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {
-          "slots": {
-            "armor.*": {}
+          "type":"entity_properties",
+          "entity": "this",
+          "predicate": {
+              "slots": {
+              "armor.*": {}
+            }
           }
         }
       }

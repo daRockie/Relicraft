@@ -6,10 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:filled_map",
-          "conditions": [],
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "!minecraft:death_protection": {},
                 "rarity":"epic",
@@ -56,8 +55,7 @@
                 "minecraft:tooltip_display": {
                   "hidden_components": [
                     "minecraft:map_id",
-                    "minecraft:map_decorations",
-                    "minecraft:map_color"
+                    "minecraft:map_decorations"
                   ]
                 },
                 "minecraft:item_model": "minecraft:mojang_banner_pattern",
@@ -66,8 +64,9 @@
               }
             },
             {
-              "function": "minecraft:reference",
-              "name": "rd_recipe:scroll/default"
+              "type": "minecraft:modify_contents",
+              "component":"container",
+              "modifier": "rd_recipe:scroll/default"
             }
           ]
         }

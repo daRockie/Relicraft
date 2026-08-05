@@ -6,9 +6,9 @@
         "item": {
           "items": "minecraft:spyglass"
         },
-        "player": [
+        "player": 
           {
-            "condition": "minecraft:entity_properties",
+            "type": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
               "type_specific/player": {
@@ -21,7 +21,7 @@
               }
             }
           }
-        ]
+        
       },
       "trigger": "minecraft:using_item"
     }

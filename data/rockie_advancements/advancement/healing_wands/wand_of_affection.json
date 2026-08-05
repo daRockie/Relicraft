@@ -28,7 +28,7 @@
 		"craft": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "rd_custom_items:right_click/wand_of_affection"
+				"recipes": "rd_custom_items:right_click/wand_of_affection"
 			}
 		}
 	},

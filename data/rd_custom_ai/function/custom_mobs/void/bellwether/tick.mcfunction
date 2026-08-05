@@ -1,5 +1,5 @@
 
-execute if entity @s[predicate=!rd_asset_mobs:in_hostile] if predicate {condition:"random_chance",chance:0.01} run playsound entity.enderman.ambient hostile @a ~ ~ ~ 1 1
+execute if entity @s[predicate=!rd_asset_mobs:in_hostile] if predicate {type:"random_chance",chance:0.01} run playsound entity.enderman.ambient hostile @a ~ ~ ~ 1 1
 
 data modify entity @s ignited set value false
 

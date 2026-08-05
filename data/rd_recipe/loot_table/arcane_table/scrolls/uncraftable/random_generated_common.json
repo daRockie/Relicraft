@@ -6,10 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:filled_map",
-          "conditions": [],
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "!minecraft:death_protection": {},
                 "minecraft:custom_name": {
@@ -44,8 +43,7 @@
                 "minecraft:tooltip_display": {
                   "hidden_components": [
                     "minecraft:map_id",
-                    "minecraft:map_decorations",
-                    "minecraft:map_color"
+                    "minecraft:map_decorations"
                   ]
                 },
                 "minecraft:item_model": "minecraft:field_masoned_banner_pattern",
@@ -53,12 +51,14 @@
               }
             },
             {
-              "function": "minecraft:reference",
-              "name": "rd_recipe:scroll/default"
+              "type": "minecraft:modify_contents",
+              "component": "container",
+              "modifier": "rd_recipe:scroll/default"
             },
             {
-              "function": "reference",
-              "name": "rd_recipe:scroll/common/sequence_loot"
+              "type": "modify_contents",
+              "component":"container",              
+              "modifier": "rd_recipe:scroll/common/sequence_loot"
             }
           ]
         }

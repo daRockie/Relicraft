@@ -3,7 +3,7 @@
     "plague_stew": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:mushroom_stew"
+        "recipes": "minecraft:mushroom_stew"
       }
     }
   },

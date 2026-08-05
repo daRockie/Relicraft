@@ -15,6 +15,6 @@
     }
   },
   "rewards": {
-    "function": "rd_custom_items:items/shortbow/right_click"
+    "type": "rd_custom_items:items/shortbow/right_click"
   }
 }

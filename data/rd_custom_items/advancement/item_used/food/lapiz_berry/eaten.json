@@ -15,6 +15,6 @@
         }
     },
     "rewards": {
-        "function": "rd_custom_items:items/food/lapiz_berry/eaten"
+        "type": "rd_custom_items:items/food/lapiz_berry/eaten"
     }
 }

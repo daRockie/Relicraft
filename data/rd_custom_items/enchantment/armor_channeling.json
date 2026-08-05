@@ -40,22 +40,26 @@
           },
           "speed": 1
         },
-        "requirements": [
-          {
-            "condition": "minecraft:random_chance",
+        "requirements": 
+        {
+          "type": "all_of",
+          "terms": [
+            {
+            "type": "minecraft:random_chance",
             "chance": 0.6
-          },
-          {
-            "condition": "minecraft:weather_check",
+            },
+            {
+            "type": "minecraft:weather_check",
             "thundering": true
-          },
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "can_see_sky": true
+            },
+            {
+              "type": "location_check",
+              "predicate": {
+                "can_see_sky": true
+              }
             }
-          }
-        ]
+          ]
+        }
       },
       {
         "effect": {
@@ -211,22 +215,26 @@
             }
           ]
         },
-        "requirements": [
-          {
-            "condition": "minecraft:random_chance",
-            "chance": 0.003
-          },
-          {
-            "condition": "minecraft:weather_check",
-            "thundering": true
-          },
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "can_see_sky": true
+        "requirements": 
+        {
+          "type": "all_of",
+          "terms": [
+            {
+              "type": "minecraft:random_chance",
+              "chance": 0.003
+            },
+            {
+              "type": "minecraft:weather_check",
+              "thundering": true
+            },
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "can_see_sky": true
+              }
             }
-          }
-        ]
+          ]
+        }
       }
     ]
   }

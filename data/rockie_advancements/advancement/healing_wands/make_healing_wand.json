@@ -25,7 +25,7 @@
     "craft": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "rd_custom_items:right_click/healing_wand"
+        "recipes": "rd_custom_items:right_click/healing_wand"
       }
     }
   },

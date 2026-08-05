@@ -29,8 +29,8 @@
         },
         "enchanted":"attacker",
         "affected": "attacker",
-        "requirements": [{
-          "condition": "random_chance_with_enchanted_bonus",
+        "requirements": {
+          "type": "random_chance_with_enchanted_bonus",
           "enchanted_chance": {
             "type": "linear",
             "base": 0.05,
@@ -38,7 +38,7 @@
           },
           "enchantment": "rd_custom_items:crit",
           "unenchanted_chance": 0
-        }]
+        }
       },
       {
         "effect": {

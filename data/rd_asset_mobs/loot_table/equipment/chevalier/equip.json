@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bow",
-          "functions": [
+          "modifier": [
             {
-              "function": "set_custom_data",
+              "type": "set_custom_data",
               "tag": {
                 "RD.hasAlready":true
               }
@@ -31,16 +31,16 @@
         {
           "type": "minecraft:item",
           "name": "bow",
-          "functions": [
+          "modifier": [
             {
-              "function": "set_custom_data",
+              "type": "set_custom_data",
               "tag": {
                 "RD.hasAlready":true,
                 "RD.chevalier_shield":true
               }
             },
             {
-              "function": "set_components",
+              "type": "set_components",
               "components": {
                 "item_model": "shield",
                 "piercing_weapon":{
@@ -56,7 +56,7 @@
               }
             },
             {
-              "function": "set_attributes",
+              "type": "set_attributes",
               "modifiers": [
                 {
                   "id":"minecraft:shield_chivalier_kb",

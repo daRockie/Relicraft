@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_chirp",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "food":{
                     "nutrition": 1,

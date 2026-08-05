@@ -7,9 +7,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:budding_amethyst",
-          "conditions": [
+          "condition": 
             {
-              "condition": "minecraft:match_tool",
+              "type": "minecraft:match_tool",
               "predicate": {
                 "components": {
                   "minecraft:enchantments": {
@@ -20,8 +20,7 @@
                   }
                 }
               }
-            }
-          ]
+          }
         }
       ]
     }

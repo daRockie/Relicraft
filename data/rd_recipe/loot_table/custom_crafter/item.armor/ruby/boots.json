@@ -6,16 +6,16 @@
         {
           "type": "item",
           "name": "leather_boots",
-          "functions": [
+          "modifier": [
             {
-              "function": "set_custom_data",
+              "type": "set_custom_data",
               "tag": {
                 "RD.item": "RD.ruby_boots",
                 "RD.recipeResult": true
               }
             },
             {
-              "function": "set_components",
+              "type": "set_components",
               "components": {
                 "trim":{
                     "pattern":"silence",

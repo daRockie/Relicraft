@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "book",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
                   "text": "魔導書",
@@ -32,7 +32,7 @@
               }
             },
             {
-              "function": "minecraft:set_custom_data",
+              "type": "minecraft:set_custom_data",
               "tag": {
                 "RD.item": "RD.grimoire",
                 "RD.recipeResult": true

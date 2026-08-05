@@ -2,5 +2,5 @@ execute store result score #_PROGRESSION RD.mobs.temp run data get storage rocki
 # tellraw @a [{"score":{"name":"#_PROGRESSION",objective:"RD.mobs.temp"}}]
 # say hi
 
-execute if score #_PROGRESSION RD.mobs.temp matches 0 run data modify storage rockietools:get_id progression set value ""
-execute if score #_PROGRESSION RD.mobs.temp matches 1 run data modify storage rockietools:get_id progression set value "starter"
+# execute if score #_PROGRESSION RD.mobs.temp matches 0 run data modify storage rockietools:get_id progression set value ""
+# execute if score #_PROGRESSION RD.mobs.temp matches 1 run data modify storage rockietools:get_id progression set value "starter"

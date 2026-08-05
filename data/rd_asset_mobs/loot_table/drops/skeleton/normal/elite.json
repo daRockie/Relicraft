@@ -3,6 +3,7 @@
   "pools": [
     {
       "rolls": {
+        "type":"uniform",
         "min": 0,
         "max": 2
       },
@@ -11,18 +12,20 @@
           "type": "minecraft:item",
           "name": "minecraft:diamond",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:enchanted_count_increase",
+              "type": "minecraft:enchanted_count_increase",
               "count": {
+                "type":"uniform",
                 "min": 1,
                 "max": 3
               },
               "enchantment": "minecraft:looting"
             },
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 3
               },
@@ -34,11 +37,12 @@
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
           "weight": 1,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_enchantments",
+              "type": "minecraft:set_enchantments",
               "enchantments": {
                 "minecraft:power": {
+                  "type":"uniform",
                   "min": 1,
                   "max": 3
                 }
@@ -50,10 +54,11 @@
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
           "weight": 8,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 2
               }
@@ -69,10 +74,11 @@
           "type": "minecraft:item",
           "name": "minecraft:arrow",
           "weight": 6,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 4
               }
@@ -82,9 +88,9 @@
         {
           "type": "minecraft:item",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:consumable": {
                   "consume_seconds": 1000000,
@@ -123,7 +129,7 @@
                 "max": 3,
                 "min": 0
               },
-              "function": "minecraft:set_count"
+              "type": "minecraft:set_count"
             },
             {
               "count": {
@@ -132,7 +138,7 @@
                 "min": 0
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             }
           ],
           "name": "minecraft:player_head"
@@ -145,7 +151,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -153,7 +159,7 @@
                 "max": 2,
                 "min": 0
               },
-              "function": "minecraft:set_count"
+              "type": "minecraft:set_count"
             },
             {
               "count": {
@@ -162,7 +168,7 @@
                 "min": 0
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             }
           ],
           "name": "minecraft:bone"

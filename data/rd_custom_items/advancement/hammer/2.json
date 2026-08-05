@@ -24,7 +24,7 @@
     "craft": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "rd_custom_items:tools/hammer/iron"
+        "recipes": "rd_custom_items:tools/hammer/iron"
       }
     }
   },

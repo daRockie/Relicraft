@@ -26,7 +26,7 @@
       "get_item": {
         "trigger": "minecraft:recipe_crafted",
         "conditions": {
-          "recipe_id": "rd_custom_items:advanced_crafting_table_recipe"
+          "recipes": "rd_custom_items:advanced_crafting_table_recipe"
         }
       }
     },

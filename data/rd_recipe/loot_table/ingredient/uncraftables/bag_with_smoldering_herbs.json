@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_blocks",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "rarity":"rare",
                 "custom_data":{

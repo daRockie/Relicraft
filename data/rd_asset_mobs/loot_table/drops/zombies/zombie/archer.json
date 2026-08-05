@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -14,7 +14,7 @@
                 "max": 2,
                 "min": 0
               },
-              "function": "minecraft:set_count"
+              "type": "minecraft:set_count"
             },
             {
               "count": {
@@ -23,7 +23,7 @@
                 "min": 0
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             }
           ],
           "name": "minecraft:rotten_flesh"
@@ -33,12 +33,13 @@
     },
     {
       "bonus_rolls": 0,
-      "conditions": [
+      "condition": 
+      {"type":"all_of","terms":[
         {
-          "condition": "minecraft:killed_by_player"
+          "type": "minecraft:killed_by_player"
         },
         {
-          "condition": "minecraft:random_chance_with_enchanted_bonus",
+          "type": "minecraft:random_chance_with_enchanted_bonus",
           "enchanted_chance": {
             "type": "minecraft:linear",
             "base": 0.035,
@@ -46,8 +47,8 @@
           },
           "enchantment": "minecraft:looting",
           "unenchanted_chance": 0.025
-        }
-      ],
+      }]
+      },
       "entries": [
         {
           "type": "minecraft:item",
@@ -56,10 +57,11 @@
         {
           "type": "minecraft:item",
           "name": "arrow",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type": "uniform",
                 "min": 0,
                 "max": 4
               }

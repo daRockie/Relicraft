@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "rd_system:items/weapon/use_item"
+    "type": "rd_system:items/weapon/use_item"
   }
 }

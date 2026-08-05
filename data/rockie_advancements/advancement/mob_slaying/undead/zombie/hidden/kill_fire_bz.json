@@ -29,11 +29,15 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "entity_tags": {
-            "all_of": [
-              "RD.boomer_zombie",
-              "RD.boomer_zombie.on_fire"
-            ]
+          "type":"entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_tags": {
+              "all_of": [
+                "RD.boomer_zombie",
+                "RD.boomer_zombie.on_fire"
+              ]
+            }
           }
         }
       }

@@ -8,8 +8,8 @@
             "type": "minecraft:item",
             "name": "minecraft:gunpowder",
             "weight": 1,
-            "functions": [{
-                "function": "minecraft:set_components",
+            "modifier": [{
+                "type": "minecraft:set_components",
                 "components":{
                     "minecraft:rarity": "uncommon",
                     "minecraft:custom_name": {"text":"強化型火薬","italic":false},
@@ -22,7 +22,7 @@
           {
             "type": "minecraft:item",
             "weight": 3,
-            "functions": [],
+            "modifier": [],
             "name": "minecraft:rotten_flesh"
           }
         ],

@@ -1,55 +1,16 @@
 {
-    "function": "sequence",
+    "type": "sequence",
     "functions": [
         {
-            "function": "reference",
-            "name": "rd_recipe:scroll/common/healing",
-            "conditions": [
+            "type": "modify_contents",
+            "component": "container",
+            "modifier": "rd_recipe:scroll/common/healing",
+            "condition": 
                 {
-                    "condition": "random_chance",
+                    "type": "random_chance",
                     "chance": 0.3
                 }
-            ]
-        },
-        {
-            "function": "reference",
-            "name": "rd_recipe:scroll/common/fire",
-            "conditions": [
-                {
-                    "condition": "random_chance",
-                    "chance": 0.3
-                }
-            ]
-        },
-        {
-            "function": "reference",
-            "name": "rd_recipe:scroll/common/light",
-            "conditions": [
-                {
-                    "condition": "random_chance",
-                    "chance": 0.3
-                }
-            ]
-        },
-                {
-            "function": "reference",
-            "name": "rd_recipe:scroll/common/dig",
-            "conditions": [
-                {
-                    "condition": "random_chance",
-                    "chance": 0.3
-                }
-            ]
-        },
-                {
-            "function": "reference",
-            "name": "rd_recipe:scroll/common/speed",
-            "conditions": [
-                {
-                    "condition": "random_chance",
-                    "chance": 0.3
-                }
-            ]
         }
+        
     ]
 }

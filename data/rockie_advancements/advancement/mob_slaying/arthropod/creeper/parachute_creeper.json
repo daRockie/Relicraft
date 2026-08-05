@@ -28,10 +28,14 @@
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
-          "entity_tags": {
-            "any_of": [
-              "RD.parachute_creeper"
-            ]
+          "type":"entity_properties",
+          "entity": "this",
+            "predicate": {
+              "entity_tags": {
+              "any_of": [
+                "RD.parachute_creeper"
+              ]
+            }
           }
         }
       }

@@ -16,6 +16,6 @@
     }
   },
   "rewards": {
-    "function": "rd_custom_items:items/grimoire/reverberation/right_click"
+    "type": "rd_custom_items:items/grimoire/reverberation/right_click"
   }
 }

@@ -3,9 +3,9 @@
     "opened_custom_block": {
       "trigger": "minecraft:any_block_use",
       "conditions": {
-        "location": [
+        "location": 
           {
-            "condition": "minecraft:location_check",
+            "type": "minecraft:location_check",
             "predicate": {
               "block": {
                 "blocks": "minecraft:barrel",
@@ -20,11 +20,10 @@
               }
             }
           }
-        ]
       }
     }
   },
   "rewards": {
-    "function": "rd_custom_items:custom_block/stop_sound"
+    "type": "rd_custom_items:custom_block/stop_sound"
   }
 }

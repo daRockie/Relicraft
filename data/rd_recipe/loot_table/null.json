@@ -7,9 +7,9 @@
           "type": "minecraft:item",
           "name": "minecraft:barrier",
           "conditions": [],
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
                   "text": "クラフト素材をグリッドに並べてください！",
@@ -35,5 +35,5 @@
       ]
     }
   ],
-  "functions": []
+  "modifier": []
 }

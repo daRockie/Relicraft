@@ -2,7 +2,7 @@ scoreboard players add @s[tag=!RD.void_bellwether.attack_prepared] RD.ai_timer 1
 
 execute on target run tag @s add creeper.target
 
-execute if predicate {condition:"random_chance",chance:0.01} run playsound entity.enderman.scream hostile @a ~ ~ ~ 1 0.7
+execute if predicate {type:"random_chance",chance:0.01} run playsound entity.enderman.scream hostile @a ~ ~ ~ 1 0.7
 
 execute if entity @s[nbt={HurtTime:10s}] run scoreboard players add @s RD.ai_timer_2 70
 

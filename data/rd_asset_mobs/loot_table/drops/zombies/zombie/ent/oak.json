@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
+          "modifier": [
             {
               "add": false,
               "count": {
@@ -14,7 +14,7 @@
                 "max": 2,
                 "min": 0
               },
-              "function": "minecraft:set_count"
+              "type": "minecraft:set_count"
             },
             {
               "count": {
@@ -23,19 +23,19 @@
                 "min": 0
               },
               "enchantment": "minecraft:looting",
-              "function": "minecraft:enchanted_count_increase"
+              "type": "minecraft:enchanted_count_increase"
             },
             {
-              "function": "furnace_smelt",
-              "conditions": [{
-                "condition": "entity_properties",
+              "type": "furnace_smelt",
+              "condition": {
+                "type": "entity_properties",
                 "entity": "this",
                 "predicate": {
                   "flags": {
                     "is_on_fire": true
                   }
                 }
-              }]
+              }
             }
           ],
           "name": "oak_log"
@@ -44,30 +44,29 @@
       "rolls": 1
     },
     {
-      "conditions": [
+      "condition": 
         {
-          "condition": "entity_properties",
+          "type": "entity_properties",
           "entity": "this",
           "predicate": {
             "flags": {
               "is_on_fire": true
             }
           }
-        }
-      ],
+        },
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:loot_table",
           "value": "rd_recipe:ingredient/drops/smoldering_fallen_leaves",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 0,
                 "max": 3
-              },
-              "conditions": []
+              }
             }
           ]
         }
@@ -75,50 +74,55 @@
     },
     {
       "bonus_rolls": 0,
-      "conditions": [
+      "condition": 
         {
-          "condition": "minecraft:killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance_with_enchanted_bonus",
-          "enchanted_chance": {
+          "type": "all_of",
+          "terms": [
+            {
+              "type": "killed_by_player"
+            },
+            {
+              "type": "random_chance_with_enchanted_bonus",
+              "enchanted_chance": {
             "type": "minecraft:linear",
             "base": 0.035,
             "per_level_above_first": 0.2
           },
           "enchantment": "minecraft:looting",
           "unenchanted_chance": 0.03
-        }
-      ],
+            }
+          ]
+        },
       "entries": [
         {
           "type": "minecraft:loot_table",
           "value": "rd_recipe:ingredient/drops/smoldering_fallen_leaves",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:set_count",
               "count": {
+                "type":"uniform",
                 "min": 1,
                 "max": 3
-              },
-              "conditions": []
+              }
             },
             {
-              "function": "set_count",
+              "type": "set_count",
               "count": {
+                "type":"uniform",
                 "min": 3,
                 "max": 5
               },
               "add": true,
-              "conditions": [{
-                "condition": "entity_properties",
+              "condition": {
+                "type": "entity_properties",
                 "entity":"this",
                 "predicate": {
                   "flags": {
                     "is_on_fire": true
                   }
                 }
-              }]
+              }
             }
           ]
         },
@@ -128,7 +132,7 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [],
+          "modifier": [],
           "name": "apple"
         }
       ],

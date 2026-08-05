@@ -6,13 +6,13 @@
         {
           "type": "item",
           "name": "shield",
-          "functions": [
+          "modifier": [
             {
-              "function": "set_custom_data",
+              "type": "set_custom_data",
               "tag": {"weapon":true}
             },
             {
-              "function": "set_components",
+              "type": "set_components",
               "components": {
                 "max_stack_size": 1,
                 "max_damage":32,
