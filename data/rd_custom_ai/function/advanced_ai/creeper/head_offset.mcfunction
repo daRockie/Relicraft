@@ -10,8 +10,8 @@ data modify entity @n[tag=RD.head_target] Rotation[1] set from entity @s Rotatio
 
 # tp @s ~ ~ ~ ~ ~
 
-execute if predicate {condition:"entity_properties",entity:"this",predicate:{"effects":{invisibility:{}}}} run data modify entity @n[tag=RD.head_target] transformation.scale set value [0,0,0]
-$execute unless predicate {condition:"entity_properties",entity:"this",predicate:{"effects":{invisibility:{}}}} run data modify entity @n[tag=RD.head_target] transformation.scale set value [$(scale),$(scale),$(scale)]
+execute if predicate {type:"entity_properties",entity:"this",predicate:{"effects":{invisibility:{}}}} run data modify entity @n[tag=RD.head_target] transformation.scale set value [0,0,0]
+$execute unless predicate {type:"entity_properties",entity:"this",predicate:{"effects":{invisibility:{}}}} run data modify entity @n[tag=RD.head_target] transformation.scale set value [$(scale),$(scale),$(scale)]
 
 
 # execute if entity @s[predicate=rd_asset_mobs:in_hostile] facing entity @p eyes run tp @n[tag=RD.head_entity] ~ ~ ~ ~ ~

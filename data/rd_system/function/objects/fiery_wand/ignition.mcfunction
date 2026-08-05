@@ -16,7 +16,7 @@ playsound entity.generic.explode player @a ~ ~0.7 ~ 1 2
 particle lava ~ ~0.7 ~ 0.05 0.05 0.05 0.25 15
 particle explosion ~ ~0.7 ~ 0.05 0.05 0.05 0.25 15
 particle ash ~ ~0.7 ~ 1 1 1 0 25
-particle block{block_state:{Name:"blackstone"}} ~ ~0.7 ~ 0.5 0.5 0.5 0.05 50
+particle block{block_state:{id:"blackstone"}} ~ ~0.7 ~ 0.5 0.5 0.5 0.05 50
 fill ~4 ~-1 ~4 ~-4 ~1 ~-4 air replace #grasses destroy
 fill ~4 ~-1 ~4 ~-4 ~1 ~-4 air replace light
 data modify entity @s CustomNameVisible set value 1b

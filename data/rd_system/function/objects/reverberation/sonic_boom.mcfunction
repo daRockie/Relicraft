@@ -3,7 +3,7 @@ execute if entity @s[tag=!pos_set] run function rd_system:register with entity @
 #execute if entity @s[tag=!pos_set] run function rd_system:getparent with entity @s {}
 tag @s add pos_set
 
-#particle block_marker{block_state:{Name:"barrier"}} ~ ~ ~
+#particle block_marker{block_state:{id:"barrier"}} ~ ~ ~
 tp @s ^ ^ ^5
 
 execute if score @s RD.ai_timer matches 6.. run function rd_system:objects/reverberation/kill with entity @s

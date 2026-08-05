@@ -1,3 +1,5 @@
+# say a
+
 data modify storage rockietools:item_modifier temp.tools set value {}
 
 execute if items entity @s weapon.mainhand *[custom_data~{Used:1b}] run function rd_system:items/weapon/set_address/used_item/mainhand

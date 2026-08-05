@@ -8,13 +8,6 @@
           "name": "shield",
           "modifier": [
             {
-              "type": "set_custom_data",
-              "tag": {
-                "weapon": true,
-                "RD.store_damage":true
-              }
-            },
-            {
               "type": "set_components",
               "components": {
                 "max_stack_size": 1,
@@ -140,6 +133,13 @@
                 "repairable": {
                   "items": ["magma_block"]
                 }
+              }
+            },
+            {
+              "type": "set_custom_data",
+              "tag": {
+                "weapon": true,
+                "RD.store_damage":true
               }
             }
           ]

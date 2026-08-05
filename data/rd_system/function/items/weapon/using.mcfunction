@@ -1,3 +1,5 @@
+# say using
+
 scoreboard players set $.max_damage RD.item.durabity 0
 scoreboard players set $.damage RD.item.durabity 0
 scoreboard players set $.damage_per_use RD.item.durabity 0

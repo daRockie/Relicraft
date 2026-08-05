@@ -1,7 +1,7 @@
 execute on target run tag @s add skeleton.target
 
 execute if entity @n[tag=skeleton.target,distance=0..12] run scoreboard players add @s RD.ai_timer 1
-execute if score @s RD.ai_timer matches ..100 if entity @n[tag=skeleton.target,distance=13..] if items entity @s[tag=!RD.chevalier.tank.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/tank/melee
+execute if score @s RD.ai_timer matches ..99 if entity @n[tag=skeleton.target,distance=11..] if items entity @s[tag=!RD.chevalier.tank.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/tank/melee
 
 execute if score @s RD.ai_timer matches 20..80 if entity @n[tag=skeleton.target,distance=0..6] if items entity @s[tag=RD.chevalier.tank.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/tank/guard
 execute if score @s RD.ai_timer matches 81..100 if entity @n[tag=skeleton.target,distance=0..6] if items entity @s[tag=!RD.chevalier.tank.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/tank/melee

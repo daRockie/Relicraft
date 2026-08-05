@@ -1,4 +1,4 @@
-summon falling_block ~ ~1 ~ {BlockState:{Name:"fire"},Motion:[0,0.5,0]}
+summon falling_block ~ ~1 ~ {BlockState:{id:"fire"},Motion:[0,0.5,0]}
 
 
 particle lava ~ ~1 ~ 0.5 0.5 0.5 0.05 10

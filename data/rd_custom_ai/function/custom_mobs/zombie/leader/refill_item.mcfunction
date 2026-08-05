@@ -1,4 +1,4 @@
-item modify entity @s armor.head {function:"set_components",components:{item_model:"green_banner"}}
+item modify entity @s armor.head {type:"set_components",components:{item_model:"green_banner"}}
 
 playsound entity.horse.armor hostile @a ~ ~ ~ 1 1
 
