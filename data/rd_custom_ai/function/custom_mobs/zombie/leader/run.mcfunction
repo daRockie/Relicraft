@@ -6,4 +6,4 @@ scoreboard players add @s RD.ai_timer 200
 
 tag @s add RD.already_ran
 
-function rd_custom_ai:movements/runaway/init {"speed":0.5}
+function rd_custom_ai:movements/runaway/init {"speed":0.59}

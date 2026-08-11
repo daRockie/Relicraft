@@ -8,12 +8,6 @@
           "name": "shield",
           "modifier": [
             {
-              "type": "set_custom_data",
-              "tag": {
-                "weapon": true
-              }
-            },
-            {
               "type": "set_components",
               "components": {
                 "minecraft:attribute_modifiers": [

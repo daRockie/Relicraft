@@ -2,9 +2,8 @@
     "type": "sequence",
     "functions": [
         {
-            "type": "modify_contents",
-            "component": "container",
-            "modifier": "rd_recipe:scroll/common/healing",
+            "type":"sequence",
+            "functions":"rd_recipe:scroll/common/healing",
             "condition": 
                 {
                     "type": "random_chance",

@@ -33,7 +33,7 @@
                   "cooldown_group": "healing_wand"
                 },
                 "food":{
-                  "nutrition": 0.5,
+                  "nutrition": 2,
                   "saturation": 0,
                   "can_always_eat": true
                 },

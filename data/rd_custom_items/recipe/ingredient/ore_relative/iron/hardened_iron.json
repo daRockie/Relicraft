@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "iron_ingot",
+  "cookingtime": 200,
+  "category": "misc",
+  "experience": 10,
+  "group": "ore",
+  "show_notification": true,  
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "components": {
+      "item_model": "netherite_ingot",
+      "minecraft:custom_name": {
+        "text": "鋼鉄",
+        "italic": false
+      },
+      "rarity":"uncommon",
+      "custom_data": {"RD.item":"RD.hardened_iron_ingot"},
+      "minecraft:custom_model_data": {
+        "strings": [
+          "RD.redhot_iron"
+        ]
+       }
+    }
+  }
+}

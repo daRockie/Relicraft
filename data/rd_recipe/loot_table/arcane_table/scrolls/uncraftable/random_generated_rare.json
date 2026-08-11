@@ -52,9 +52,8 @@
               }
             },
             {
-              "type": "minecraft:modify_contents",
-              "component":"container",
-              "modifier": "rd_recipe:scroll/default"
+              "type": "minecraft:sequence",
+              "functions": "rd_recipe:scroll/default"
             }
           ]
         }

@@ -4,7 +4,7 @@ execute if entity @n[tag=skeleton.target,distance=0..12] run scoreboard players 
 
 execute if score @s RD.ai_timer matches 40..80 if entity @n[tag=skeleton.target,distance=0..6] if items entity @s[tag=!RD.chevalier.arch.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/arch/melee
 execute if score @s RD.ai_timer matches 40..80 if entity @n[tag=skeleton.target,distance=7..] if items entity @s[tag=RD.chevalier.arch.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/arch/bow
-execute if score @s RD.ai_timer matches 40..80 if entity @n[tag=skeleton.target,distance=0..3.5] if items entity @s[tag=!RD.chevalier.arch.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] if entity @n[type=skeleton,tag=RD.chevalier.tank] run scoreboard players add @n[tag=!RD.chevalier.tank.melee] RD.ai_timer 20
+execute if score @s RD.ai_timer matches 40..80 if entity @n[tag=skeleton.target,distance=0..4] if items entity @s[tag=!RD.chevalier.arch.melee] weapon.* *[custom_data~{RD.hasAlready:1b}] if entity @n[type=skeleton,tag=RD.chevalier.tank,distance=..15] as @n[type=skeleton,tag=RD.chevalier.tank,distance=..15] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/arch/call_tank
 
 execute if score @s RD.ai_timer matches 120.. if entity @s[tag=RD.chevalier.arch.melee] run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/arch/bow
 execute if score @s RD.ai_timer matches 120.. anchored eyes facing entity @n[tag=skeleton.target] feet positioned ^ ^ ^-5 run function rd_custom_ai:custom_mobs/skeleton/chevalier/role_based/arch/back_step

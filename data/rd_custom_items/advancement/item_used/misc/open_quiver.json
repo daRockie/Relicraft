@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "type": "rd_custom_items:open_quiver"
+    "function": "rd_custom_items:open_quiver"
   }
 }

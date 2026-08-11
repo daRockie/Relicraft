@@ -51,14 +51,12 @@
               }
             },
             {
-              "type": "minecraft:modify_contents",
-              "component": "container",
-              "modifier": "rd_recipe:scroll/default"
+              "type":"sequence",
+              "functions": "rd_recipe:scroll/default"
             },
             {
-              "type": "modify_contents",
-              "component":"container",              
-              "modifier": "rd_recipe:scroll/common/sequence_loot"
+              "type":"sequence",       
+              "functions": "rd_recipe:scroll/common/sequence_loot"
             }
           ]
         }

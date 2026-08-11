@@ -1,0 +1,1 @@
+$spreadplayers ~ ~ $(spreadDistance) $(maxRange) under $(Pos) false @s

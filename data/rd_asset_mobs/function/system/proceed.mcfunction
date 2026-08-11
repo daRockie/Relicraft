@@ -6,6 +6,7 @@ execute if entity @s[tag=RD.no_auto_initialize] run return fail
 
 # プレイヤーならマナ導入を確定で行う
 tag @s[type=player] add RD.has_mana
+execute unless data storage rockietools:player meta.respawn run function rd_asset_mobs:system/set_first_respawn_point
 
 # マナの初期設定
 execute if entity @s[tag=RD.has_mana] run function rd_asset_mobs:system/mana_initialize

@@ -1,0 +1,3 @@
+function rd_asset_mobs:summon/vanish
+
+summon zombie ~ ~ ~ {CustomName:"スロワーゾンビ",Tags:["RD.no_chase","RD.initialized","RD.bouldering_zombie"],equipment:{head:{id:"player_head",components:{"minecraft:profile":{properties:[{name:"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmZiZDk0ZTZlZWRlMTk0NDBjZjk1YzUzMGJlZDllMTRlNTM1MTE1YTA3NWQ0Zjk1NjA0MDM0YzJjODI2NTFkMCJ9fX0="}]}}}},drop_chances:{head:0f}}

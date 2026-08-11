@@ -71,6 +71,7 @@
 								"use_remainder": {
 									"id": "iron_spear",
 									"components": {
+										"rarity":"rare",
 										"item_model": "iron_sword",
 										"custom_model_data": {
 											"strings": [
@@ -78,7 +79,7 @@
 											]
 										},
 										"custom_name": {
-											"text": "アラクネの剣",
+											"text": "アラクネの短剣",
 											"italic": false
 										},
 										"custom_data": "{\"Used\":1b,Loottable:\"rd_custom_items:item/leaping_sword\",function:\"rd_custom_items:items/leaping_sword/used\",damage_per_use:3,max_damage:128,mana_use:0,skill_name:\"跳躍\",break_sound:\"entity.item.break\"}",

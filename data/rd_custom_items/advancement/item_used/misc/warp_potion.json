@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "type": "rd_custom_items:warp_potion"
+    "function": "rd_custom_items:items/misq/warp_potion/used"
   }
 }

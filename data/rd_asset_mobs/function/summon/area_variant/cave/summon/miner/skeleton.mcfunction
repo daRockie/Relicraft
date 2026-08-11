@@ -1,0 +1,2 @@
+function rd_asset_mobs:summon/vanish
+summon skeleton ~ ~ ~ {Tags:["RD.initialized","RD.miner_skeleton"],equipment:{mainhand:{id:"iron_pickaxe"},head:{id:"player_head",components:{profile:{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzhmNmMwNDRhMWI0ZGI2ZjgxMDJjYjUxZTJjMzZjNmIzMjc1MTEyOGFiYmQxOGE1ZDljOWM2N2E1NWIxOWFmYiJ9fX0="}]}}}},drop_chances:{head:0f}}
