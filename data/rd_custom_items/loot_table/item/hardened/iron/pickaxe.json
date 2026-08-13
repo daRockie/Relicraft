@@ -29,7 +29,8 @@
 									"rules": [
 										{
 											"blocks": "#minecraft:incorrect_for_iron_tool",
-											"correct_for_drops": false
+											"correct_for_drops": false,
+											"speed": 0.5
 										},
 										{
 											"blocks": "#minecraft:mineable/pickaxe",

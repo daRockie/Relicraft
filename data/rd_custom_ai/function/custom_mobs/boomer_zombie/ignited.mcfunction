@@ -7,7 +7,8 @@ execute if entity @s[tag=!RD.boomer_zombie.on_fire] run function rd_custom_ai:cu
 particle minecraft:large_smoke ~ ~1.75 ~ 0.05 0 0.05 0 2 normal
 execute if score @s RD.ai_timer matches 50 run function rd_custom_ai:custom_mobs/boomer_zombie/speed_gain
 execute if score @s RD.ai_timer matches 50.. run particle minecraft:trial_spawner_detection_ominous ~ ~ ~ 0.5 0.5 0.5 0 2
-execute if score @s RD.ai_timer matches 70 facing entity @n[tag=zombies.target] eyes run function rd_custom_ai:custom_mobs/boomer_zombie/jump_forward
+execute if score @s RD.ai_timer matches 70 facing entity @n[tag=zombies.target] eyes rotated ~ -40 positioned ^ ^ ^3.15 run function rd_custom_ai:custom_mobs/zombie/viking/jump
+
 # execute at @s if entity @e[type=zombie,nbt={Tags:["RD.initialized","RD.spawned","RD.boomer_zombie","ignited"],OnGround:1b},distance=0.2..] run function rd_custom_ai:step_away
 execute if score @s[nbt={OnGround:1b}] RD.ai_timer matches 80.. run function rd_custom_ai:movements/boomer_zombie/kill_and_boom with entity @s {}
 execute if score @s[tag=RD.kill] RD.ai_timer matches 81 run function rd_custom_ai:movements/boomer_zombie/kill_and_boom with entity @s {}

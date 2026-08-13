@@ -1,0 +1,2 @@
+execute unless block ~ ~-1 ~ furnace run data modify entity @s CustomName set value {"text":"1マス下にかまどがありません！",color:"red"}
+execute if block ~ ~-1 ~ furnace run function rd_asset_blocks:interactive/mini_furnace/block/on_furnace/tick

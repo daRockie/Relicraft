@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:location_check",
+  "offsetY": -1,
+  "predicate": {
+    "block": {
+      "blocks": "minecraft:furnace",
+      "state": {
+        "lit": {
+            "max": "true"
+        }
+      }
+    }
+  }
+}

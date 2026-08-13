@@ -6,7 +6,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:armor_stand",
-          "conditions": [],
           "modifier": [
             {
               "type": "minecraft:set_components",
