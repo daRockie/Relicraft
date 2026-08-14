@@ -3,6 +3,16 @@
     "#minecraft:logs",
     "#minecraft:furnace_minecart_fuel",
     "#minecraft:wooden_trapdoors",
-    "#minecraft:planks"
+    "#minecraft:planks",
+    "#minecraft:saplings",
+    "#minecraft:wooden_trapdoors",
+    "#minecraft:wooden_slabs",
+    "coal_block",
+    "dried_kelp_block",
+    "#boats",
+    "#minecraft:bamboo_blocks",
+    "#wool_carpets",
+    "#rd_asset_blocks:wooden_tools",
+    "leaf_litter"
   ]
 }

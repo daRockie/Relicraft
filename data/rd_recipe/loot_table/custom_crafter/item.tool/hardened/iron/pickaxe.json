@@ -24,6 +24,8 @@
 								},
 								"rarity": "rare",
 								"tool": {
+									"damage_per_block": 1,
+									"default_mining_speed": 1.5,
 									"rules": [
 										{
 											"blocks": "#minecraft:incorrect_for_iron_tool",

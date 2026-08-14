@@ -11,4 +11,4 @@ $function rd_recipe:return_item {table:"$(table)", place:"container.$(slot)", ar
 
 $item modify block ~ ~ ~ container.$(slot) rd_asset_blocks:set_tempitem
 $item modify block ~ ~ ~ container.$(slot) rd_asset_blocks:set_ingredient
-$item modify block ~ ~ ~ container.$(slot) {function:"set_count",count:{type:"storage",path:"temp_crafter.current_ingredient.count",storage:"rockietools:custom_recipe"}}
+$item modify block ~ ~ ~ container.$(slot) {type:"set_count",count:{type:"storage",path:"temp_crafter.current_ingredient.count",storage:"rockietools:custom_recipe"}}

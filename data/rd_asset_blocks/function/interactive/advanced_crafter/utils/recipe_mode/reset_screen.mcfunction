@@ -1,3 +1,5 @@
+# say reset!
+
 execute as @e[type=item,distance=0..10] as @s if data entity @s Item.components."minecraft:custom_data".TempItem run kill @s
 
 execute if items block ~ ~ ~ container.* *[!custom_data~{TempItem:1b}] run function rd_asset_blocks:interactive/advanced_crafter/utils/avoid_deleting_items/

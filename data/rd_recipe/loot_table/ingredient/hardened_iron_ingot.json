@@ -1,0 +1,34 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "iron_ingot",
+					"modifier": [
+						{
+							"type": "minecraft:set_components",
+							"components": {
+								"item_model": "netherite_ingot",
+								"minecraft:custom_name": {
+									"text": "鋼鉄",
+									"italic": false
+								},
+								"rarity": "uncommon",
+								"custom_data": {
+									"RD.item": "RD.hardened_iron_ingot"
+								},
+								"minecraft:custom_model_data": {
+									"strings": [
+										"RD.redhot_iron"
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

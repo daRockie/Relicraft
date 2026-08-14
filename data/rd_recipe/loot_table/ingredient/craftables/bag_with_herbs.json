@@ -12,7 +12,7 @@
               "components": {
                 "rarity":"rare",
                 "custom_data":{
-                  "RD.item":"RD.bag_with_herb",
+                  "RD.item":"RD.bag_with_herbs",
                   "function_to_load":"rd_custom_items:item_entities/ingredient/bag_with_herb/tick"
                 },
                 "minecraft:custom_name": {

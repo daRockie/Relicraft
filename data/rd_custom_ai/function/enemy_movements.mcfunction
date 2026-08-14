@@ -15,3 +15,5 @@ execute if entity @s[type=enderman] run function rd_custom_ai:advanced_ai/enderm
 
 # ウィッチ
 execute if entity @s[type=witch] run function rd_custom_ai:advanced_ai/witch/tick
+
+execute if entity @s[tag=RD.with_mannequin,type=piglin_brute] run function rd_custom_ai:w_mannequin/tick

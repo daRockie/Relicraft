@@ -71,7 +71,7 @@ data modify storage rockietools:custom_recipe meta.crafter set value \
 
 # data modify storage rockietools:custom_recipe list.crafter.menu append value {function:"null",}
 
-# data modify storage rockietools:custom_recipe list.crafter append value \
+data modify storage rockietools:custom_recipe list.crafter append value \
 {\
     result:\
         {\
@@ -280,15 +280,15 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         },\
     ingredient:\
     [\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
-        {declear:"if", modifier:"sculk", table:"",count:1},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
-        {declear:"if", modifier:"sculk", table:"",count:1},\
-        {declear:"if", modifier:"book[custom_data~{RD.item:\"RD.grimoire\"}]", table:"rd_recipe:ingredient/grimoire",count:1},\
-        {declear:"if", modifier:"sculk", table:"",count:1},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
-        {declear:"if", modifier:"sculk", table:"",count:1},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+        {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.bag_with_smoldering_herb\"}]", table:"rd_recipe:ingredient/uncraftables/bag_with_smoldering_herbs",count:1},\
+        {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.bag_with_herbs\"}]", table:"rd_recipe:ingredient/craftables/bag_with_herbs",count:2},\
+        {declear:"if", modifier:"armor_stand[custom_data~{RD.item:\"RD.mini_furnace\"}]", table:"rd_custom_items:misc/mini_furnace",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.bag_with_herbs\"}]", table:"rd_recipe:ingredient/craftables/bag_with_herbs",count:2},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.bag_with_herbs\"}]", table:"rd_recipe:ingredient/craftables/bag_with_herbs",count:2},\
+        {declear:"if", modifier:"campfire", table:"",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.bag_with_herbs\"}]", table:"rd_recipe:ingredient/craftables/bag_with_herbs",count:2},\
     ]\
 }
 
@@ -324,14 +324,58 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         },\
     ingredient:\
     [\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:4},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:1},\
+    ]\
+}
+
+data modify storage rockietools:custom_recipe list.crafter append value \
+{\
+    result:\
+        {\
+            name:"鋼鉄のツルハシ",\
+            table:"rd_recipe:custom_crafter/item.tool/hardened/iron/pickaxe",\
+            sort:[{key:"ingredient/ore/iron"},{key:"ingredient/ore"},{key:"tools"}],\            
+        },\
+    ingredient:\
+    [\
+        {declear:"if", modifier:"iron_ingot[custom_data~{RD.item:\"RD.hardened_iron_ingot\"}]", table:"rd_recipe:ingredient/hardened_iron_ingot",count:1},\
+        {declear:"if", modifier:"iron_ingot[custom_data~{RD.item:\"RD.hardened_iron_ingot\"}]", table:"rd_recipe:ingredient/hardened_iron_ingot",count:1},\
+        {declear:"if", modifier:"iron_ingot[custom_data~{RD.item:\"RD.hardened_iron_ingot\"}]", table:"rd_recipe:ingredient/hardened_iron_ingot",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:4},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:4},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:4},\
+        {declear:"if", modifier:"stick", table:"rd_recipe:air",count:1},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
-        {declear:"if", modifier:"music_disc_blocks[custom_data~{RD.item:\"RD.smoldering_fallen_leaves\"}]", table:"rd_recipe:ingredient/drops/smoldering_fallen_leaves",count:4},\
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"stick", table:"rd_recipe:air",count:1},\
+        {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+    ]\
+}
+
+data modify storage rockietools:custom_recipe list.crafter append value \
+{\
+    result:\
+        {\
+            name:"巻き取られた糸",\
+            table:"rd_recipe:ingredient/thread",\
+            sort:[{key:"ingredient/arthropod"},{key:"ingredient/combat"},{key:"ingredient"}],\            
+        },\
+    ingredient:\
+    [\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"stick", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
     ]\
 }

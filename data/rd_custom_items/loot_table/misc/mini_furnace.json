@@ -10,6 +10,9 @@
 						{
 							"type": "minecraft:set_components",
 							"components": {
+								"custom_data":{
+									"RD.item":"RD.mini_furnace"
+								},
 								"max_stack_size": 16,
 								"minecraft:rarity": "common",
 								"minecraft:custom_name": {
