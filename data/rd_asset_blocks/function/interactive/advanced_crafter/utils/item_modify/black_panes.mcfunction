@@ -1,3 +1,7 @@
+# say grid
+tag @s add RD.block.interactive.advanced_crafter.black_panes
+tag @s remove RD.block.interactive.advanced_crafter.green_panes
+
 item replace block ~ ~ ~ container.0 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
 item replace block ~ ~ ~ container.1 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
 item replace block ~ ~ ~ container.2 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
@@ -15,5 +19,5 @@ item replace block ~ ~ ~ container.18 with black_stained_glass_pane[tooltip_disp
 item replace block ~ ~ ~ container.19 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
 item replace block ~ ~ ~ container.20 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
 item replace block ~ ~ ~ container.24 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
-item replace block ~ ~ ~ container.25 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
+# item replace block ~ ~ ~ container.25 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
 item replace block ~ ~ ~ container.26 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]

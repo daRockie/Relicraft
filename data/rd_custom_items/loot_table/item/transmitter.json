@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "shield",
+          "name": "diamond_sword",
           "modifier": [
             {
               "type": "set_custom_data",
@@ -15,7 +15,8 @@
               "type": "set_components",
               "components": {
                 "max_stack_size": 1,
-                "item_model":"end_crystal",
+                "max_damage":326,
+                "item_model":"iron_sword",
                 "enchantment_glint_override":true,
                 "minecraft:custom_name": {
                   "text": "トランスミッター",
@@ -57,24 +58,24 @@
         }
       ],
                 "use_cooldown": {
-                  "seconds": 1,
+                  "seconds": 2,
                   "cooldown_group": "transmitter"
                 },
                 "consumable": {
-                  "consume_seconds": 0,
+                  "consume_seconds": 0.05,
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
                 "use_remainder": {
-                  "id": "firework_star",                  
+                  "id": "diamond_sword",                  
                   "components": {
                     "minecraft:custom_name": {
                   "text": "トランスミッター",
                   "italic": false
                 },
                 "rarity":"epic",
-                    "custom_data": "{\"Used\":1b,Loottable:\"rd_custom_items:item/transmitter\",function:\"rd_custom_items:items/transmitter/pos_set\"}",
-                    "item_model": "end_crystal",
+                    "custom_data": "{\"Used\":1b,Loottable:\"rd_custom_items:item/transmitter\",function:\"rd_custom_items:items/transmitter/pos_set\",damage_per_use:10,max_damage:72,skill_name:\"トランスミッション\",mana_use:40,break_sound:\"entity.item.break\"}",
+                    "item_model": "iron_sword",
                     "enchantment_glint_override": true
                   }
                 }

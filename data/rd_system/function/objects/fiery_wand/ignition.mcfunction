@@ -1,11 +1,22 @@
+$tag @n[nbt={UUID:$(owner)}] add RD.projectile.owner
 
-$execute if entity @n[dx=0.5,dy=0.5,dz=0.5,type=!#unliving_objects,nbt={UUID:$(owner)}] run return fail
-execute as @e[distance=0.01..4,tag=!RD.fiery_wand,type=!#unliving_objects] run data modify entity @s Fire set value 100
+# 敵によって撃たれた / 敵が敵性エンティティを補足しているか
+execute if entity @n[tag=RD.projectile.owner,type=!player] run tag @s add RD.projectile.shoot_by_enemy
+execute if entity @n[tag=RD.projectile.owner,type=!player,predicate=rd_asset_mobs:in_hostile_to_each_other] run tag @s add RD.projectile.friendly_fire
+execute if entity @n[tag=RD.projectile.owner,type=player] run tag @s add RD.projectile.friendly_fire
+
+# 空振り判定
+execute if entity @n[dx=0.5,dy=0.5,dz=0.5,type=!#unliving_objects,tag=RD.projectile.owner] run return fail
+execute if entity @s[tag=!RD.projectile.friendly_fire] if entity @n[dx=0.5,dy=0.5,dz=0.5,type=!#unliving_objects,tag=!RD.projectile.owner,type=#rd_custom_ai:hostile] run return fail
+
+# ちゃっかまん
+execute if entity @s[tag=RD.projectile.friendly_fire] as @e[distance=0.01..4,tag=!RD.fiery_wand,type=!#unliving_objects] run data modify entity @s Fire set value 100
+execute if entity @s[tag=RD.projectile.shoot_by_enemy,tag=!RD.projectile.friendly_fire] as @e[distance=0.01..4,tag=!RD.fiery_wand,type=!#unliving_objects,type=!#rd_custom_ai:hostile] run data modify entity @s Fire set value 100
 
 execute if entity @e[distance=..4,tag=!RD.fiery_wand,type=player] as @e[type=player,distance=0..4] at @s facing entity @e[type=armor_stand,limit=1,sort=nearest,tag=RD.fiery_wand] feet rotated ~ 0 run summon slime ^ ^ ^ {Size:2,OnGround:1b,CustomName:"ファイアリーワンドの流れ弾",Silent:1b,Invulnerable:1b,DeathLootTable:"empty",Tags:["fire","RD.initialized","RD.spawned"],equipment:{mainhand:{id:"minecraft:stick",count:1,components:{"minecraft:enchantments":{"minecraft:fire_aspect":2}}}},active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:1000000,show_particles:0b}],attributes:[{id:"minecraft:attack_damage",base:6},{id:"minecraft:attack_knockback",base:2},{id:"minecraft:scale",base:0.1},{id:"movement_speed",base:1}]}
 
-$execute as @e[distance=..1.9,tag=!RD.fiery_wand,type=!#unliving_objects] at @s run damage @s 6 rd_system:no_bypass_magic by @n[nbt={UUID:$(owner)}]
-$execute as @e[distance=2..4,tag=!RD.fiery_wand,type=!#unliving_objects] at @s run damage @s 3 rd_system:no_bypass_magic by @n[nbt={UUID:$(owner)}]
+execute if entity @s[tag=RD.projectile.friendly_fire] as @e[distance=..1.9,tag=!RD.fiery_wand,type=!#unliving_objects] at @s run damage @s 6 rd_system:no_bypass_magic by @n[tag=RD.projectile.owner]
+execute if entity @s[tag=RD.projectile.friendly_fire] as @e[distance=2..4,tag=!RD.fiery_wand,type=!#unliving_objects] at @s run damage @s 3 rd_system:no_bypass_magic by @n[tag=RD.projectile.owner]
 
 #$execute as @a[nbt={UUID:$(owner)}] run say I DID
 
@@ -19,5 +30,8 @@ particle ash ~ ~0.7 ~ 1 1 1 0 25
 particle block{block_state:{id:"blackstone"}} ~ ~0.7 ~ 0.5 0.5 0.5 0.05 50
 fill ~4 ~-1 ~4 ~-4 ~1 ~-4 air replace #grasses destroy
 fill ~4 ~-1 ~4 ~-4 ~1 ~-4 air replace light
+
+tag @n[tag=RD.projectile.owner] remove RD.projectile.owner
+
 data modify entity @s CustomNameVisible set value 1b
 kill @s

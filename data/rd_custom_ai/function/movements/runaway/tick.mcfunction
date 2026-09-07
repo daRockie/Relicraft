@@ -2,7 +2,7 @@ $tp @n[nbt={UUID:$(linked)}] @s
 
 # $say $(linked)
 
-$execute unless entity @n[nbt={UUID:$(linked)}] run function rd_custom_ai:movements/runaway/vanish with entity @s equipment.head.components."minecraft:custom_data"
+# $execute unless entity @n[nbt={UUID:$(linked)}] run function rd_custom_ai:movements/runaway/vanish with entity @s equipment.head.components."minecraft:custom_data"
 
 damage @s 0.00000000001 mob_attack
 

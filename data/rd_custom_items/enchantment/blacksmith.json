@@ -21,7 +21,7 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
               "id": "minecraft:anvil"
             }
@@ -55,7 +55,7 @@
         "effect": {
           "type": "minecraft:replace_block",
           "block_state": {
-            "type": "minecraft:simple_state_provider",
+            "type": "minecraft:simple",
             "state": {
               "id": "minecraft:chipped_anvil"
             }

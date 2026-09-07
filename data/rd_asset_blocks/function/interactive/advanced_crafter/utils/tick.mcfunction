@@ -9,4 +9,4 @@ execute store result entity @n[type=item_display,tag=RD.block.customCrafter] bri
 #$data modify entity @s CustomName set value [{"text":"明るさ： ","color":"yellow","bold":1b},{"storage":"rockietools:custom_crafter","nbt":'data."$(UUID)".current_brightness',"color":"white","bold":0b}]
 
 # アイテムの定義
-execute if block ~ ~ ~ barrel[open=true,facing=up] run function rd_asset_blocks:interactive/advanced_crafter/utils/counting_item
+execute if block ~ ~ ~ barrel[open=true,facing=up] run function rd_asset_blocks:interactive/advanced_crafter/utils/opened_tick

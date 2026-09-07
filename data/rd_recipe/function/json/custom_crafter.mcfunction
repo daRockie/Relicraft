@@ -77,7 +77,7 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         {\
             name:"Null",\
             table:"rd_recipe:null",\
-            sort:[{}],\
+            sort:[{key:"nothing"}],\
         },\
     ingredient:\
     [\
@@ -92,6 +92,8 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
     ]\
 }
+
+function rd_recipe:json/category/custom_crafter
 
 data modify storage rockietools:custom_recipe list.crafter append value \
 {\
@@ -306,7 +308,7 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         {declear:"if", modifier:"sculk", table:"",count:1},\
         {declear:"if", modifier:"echo_shard", table:"",count:1},\
         {declear:"if", modifier:"sculk", table:"",count:1},\
-        {declear:"if", modifier:"book[custom_data~{RD.item:\"RD.grimoire\"}]", table:"rd_recipe:ingredient/grimoire",count:1},\
+        {declear:"if", modifier:"compass", table:"rd_recipe:air",count:1},\
         {declear:"if", modifier:"sculk", table:"",count:1},\
         {declear:"if", modifier:"echo_shard", table:"",count:1},\
         {declear:"if", modifier:"sculk", table:"",count:1},\

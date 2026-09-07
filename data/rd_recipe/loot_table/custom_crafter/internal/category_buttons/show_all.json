@@ -1,0 +1,45 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "barrier",
+                    "modifier": [
+                        "rd_recipe:has_no_recipe",
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_model": "player_head",
+                                "rarity":"uncommon",
+                                "custom_name":{
+                                    "text": "全てのレシピ",
+                                    "italic": false
+                                },
+                                "lore":[
+                                    {
+                                        "text": "全てのアイテムのレシピを閲覧します。",
+                                        "italic": false,
+                                        "color": "gray"
+                                    }
+                                ],
+                                "custom_data": {
+                                    "RD.item":"RD.internal.crafter.category.all"
+                                },
+                                "profile": {
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWQ5NDA5M2MyNzM4NzUyZjI0NTY5NmI1NDc4YjY2ODIzMjE4OTkwYzlkZDUzNjFiNjQ2ZGFjYWIxNzY3NGE0MSJ9fX0="
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

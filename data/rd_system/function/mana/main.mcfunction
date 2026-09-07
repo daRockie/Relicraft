@@ -1,10 +1,10 @@
 #say running
 
-# 長押し検知
+# マナボスバー導入処理
 execute if entity @s[type=player,tag=!RD.mana.init] run function rd_system:mana/init
 
 # クールダウン処理
-execute if score @s[type=player] RD.mana.bossbar.fadeout matches 1.. run scoreboard players remove @s[type=player] RD.mana.bossbar.fadeout 1
+execute if entity @s[type=player] if score @s RD.mana.bossbar.fadeout matches 1.. run scoreboard players remove @s RD.mana.bossbar.fadeout 1
 
 execute if score @s abilityCooldown.reverberation matches 1.. run scoreboard players remove @s abilityCooldown.reverberation 1
 

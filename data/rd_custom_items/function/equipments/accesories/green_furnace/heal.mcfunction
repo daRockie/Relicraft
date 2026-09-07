@@ -11,27 +11,27 @@ particle happy_villager ~ ~2 ~ 0.5 0.5 0.5 0.25 15
 particle white_smoke ~ ~1 ~ 0.5 0.5 0.5 0.05 15
 
 # ヘルス、最大体力をストア
-execute store result score $.RD.internal.health RD.health run data get entity @s Health 100
+execute store result score $CHANGEABLE.RD.internal.health RD.health run data get entity @s Health 100
 
-execute store result score $.RD.internal.max_health RD.health run attribute @s max_health get 100
+execute store result score $CHANGEABLE.RD.internal.max_health RD.health run attribute @s max_health get 100
 
-# tellraw @a [{"text":"体力: "},{"score":{"name":"$.RD.internal.health","objective":"health"}}]
-# tellraw @a [{"text":"最大体力: "},{"score":{"name":"$.RD.internal.max_health","objective":"health"}}]
+# tellraw @a [{"text":"体力: "},{"score":{"name":"$CHANGEABLE.RD.internal.health","objective":"health"}}]
+# tellraw @a [{"text":"最大体力: "},{"score":{"name":"$CHANGEABLE.RD.internal.max_health","objective":"health"}}]
 
 
 # 計算
 
-scoreboard players operation $.RD.internal.max_health RD.health *= #const.10 RD.health
+scoreboard players operation $CHANGEABLE.RD.internal.max_health RD.health *= #const.10 RD.health
 
-scoreboard players operation $.RD.internal.max_health RD.health /= #const.100 RD.health
+scoreboard players operation $CHANGEABLE.RD.internal.max_health RD.health /= #const.100 RD.health
 
-# tellraw @a [{"text":"最大体力の20%: "},{"score":{"name":"$.RD.internal.max_health","objective":"health"}}]
+# tellraw @a [{"text":"最大体力の20%: "},{"score":{"name":"$CHANGEABLE.RD.internal.max_health","objective":"health"}}]
 
-scoreboard players operation $.RD.internal.health RD.health += $.RD.internal.max_health RD.health
+scoreboard players operation $CHANGEABLE.RD.internal.health RD.health += $CHANGEABLE.RD.internal.max_health RD.health
 
-# tellraw @a [{"score":{"name":"$.RD.internal.health","objective":"health"}}]
+# tellraw @a [{"score":{"name":"$CHANGEABLE.RD.internal.health","objective":"health"}}]
 
-scoreboard players operation @s ScoreToHealth = $.RD.internal.health RD.health
+scoreboard players operation @s ScoreToHealth = $CHANGEABLE.RD.internal.health RD.health
 
 # tellraw @a [{"score":{"name":"@s","objective":"ScoreToHealth"}}]
 

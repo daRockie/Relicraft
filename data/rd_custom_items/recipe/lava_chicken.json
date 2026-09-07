@@ -3,6 +3,7 @@
   "ingredient": [
     "minecraft:cooked_chicken"
   ],
+  "cookingtime": 200,
   "result": {
     "id": "minecraft:cooked_chicken",
     "components": {
@@ -24,7 +25,7 @@
               {
                 "id": "minecraft:fire_resistance",
                 "amplifier": 0,
-                "duration": 600,
+                "duration": 800,
                 "show_icon": true
               }
             ]
@@ -39,15 +40,25 @@
       "minecraft:lore": [
         {
           "text": "スパイシーな味わい",
-          "color": "dark_gray"
-        },
-        {
-          "text": ""
-        },
-        {
-          "text": "火炎耐性 （0:30）",
-          "color": "blue",
+          "color": "gray",
           "italic": false
+        },
+        {
+          "text": "火炎耐性を",
+          "color": "gray",
+          "italic": false,
+          "extra": [
+            {
+              "text": "30秒間",
+              "color": "green",
+              "italic": false
+            },
+            {
+              "text": "得る。",
+              "color": "gray",
+              "italic": false
+            }
+          ]
         }
       ]
     }

@@ -1,11 +1,11 @@
 # say using
 
-scoreboard players set $.max_damage RD.item.durabity 0
-scoreboard players set $.damage RD.item.durabity 0
-scoreboard players set $.damage_per_use RD.item.durabity 0
-scoreboard players set $.max_damage_tmp RD.item.durabity 0
-scoreboard players set $.mana_reduce RD.item.durabity 0
-scoreboard players set $.mana_use RD.item.durabity 0
+scoreboard players set $CHANGEABLE.max_damage RD.item.durabity 0
+scoreboard players set $CHANGEABLE.damage RD.item.durabity 0
+scoreboard players set $CHANGEABLE.damage_per_use RD.item.durabity 0
+scoreboard players set $CHANGEABLE.max_damage_tmp RD.item.durabity 0
+scoreboard players set $CHANGEABLE.mana_reduce RD.item.durabity 0
+scoreboard players set $CHANGEABLE.mana_use RD.item.durabity 0
 
 # particle happy_villager ~ ~ ~ 0.5 0.5 0.5 0.05 1
 # playsound minecraft:entity.player.levelup master @a ~ ~ ~ 1 2

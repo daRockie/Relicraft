@@ -1,0 +1,90 @@
+{
+    "type": "group",
+    "terms": [
+        {
+            "type": "slot_range",
+            "slots": "container.0",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.1",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.2",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.6",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.7",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.8",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.9",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.11",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.15",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.16",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.17",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.18",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.19",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.20",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.24",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.25",
+            "source": "block_entity"
+        },
+        {
+            "type": "slot_range",
+            "slots": "container.26",
+            "source": "block_entity"
+        }
+    ]
+}

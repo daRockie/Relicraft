@@ -6,6 +6,6 @@
 
   },
   "rewards": {
-    "type": "rd_custom_items:equipments/util/on_attack"
+    "function": "rd_custom_items:equipments/util/on_attack"
   }
 }

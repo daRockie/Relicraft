@@ -5,8 +5,8 @@
 $execute if data entity @s $(address).components."minecraft:damage" store result storage rockietools:item_modifier temp.current_damage int 1 run data get entity @s $(address).components."minecraft:damage"
 
 # マナ割引
-execute store result score $.mana_reduce RD.item.durabity run data get storage rockietools:item_modifier temp.enchantments."rd_custom_items:mana_reduce" 1
-execute if score $.mana_reduce RD.item.durabity matches 0 run scoreboard players set $.mana_reduce RD.item.durabity 1
+execute store result score $CHANGEABLE.mana_reduce RD.item.durabity run data get storage rockietools:item_modifier temp.enchantments."rd_custom_items:mana_reduce" 1
+execute if score $CHANGEABLE.mana_reduce RD.item.durabity matches 0 run scoreboard players set $CHANGEABLE.mana_reduce RD.item.durabity 1
 
 # ダメージデータが存在しなかったとき、現在のダメージ値を0に設定
 $execute unless data entity @s $(address).components."minecraft:damage" run data modify storage rockietools:item_modifier temp.current_damage set value 0
@@ -31,16 +31,16 @@ $data modify storage rockietools:item_modifier temp.max_damage set from entity @
 
 
 # スコアに取得したデータを代入
-execute store result score $.mana_use RD.item.durabity run data get storage rockietools:item_modifier temp.mana_use 1
+execute store result score $CHANGEABLE.mana_use RD.item.durabity run data get storage rockietools:item_modifier temp.mana_use 1
 
-scoreboard players operation $.mana_use RD.item.durabity /= $.mana_reduce RD.item.durabity
+scoreboard players operation $CHANGEABLE.mana_use RD.item.durabity /= $CHANGEABLE.mana_reduce RD.item.durabity
 
-execute store result score $.max_damage RD.item.durabity run data get storage rockietools:item_modifier temp.max_damage 10000
-execute store result score $.max_damage_tmp RD.item.durabity run data get storage rockietools:item_modifier temp.max_damage 1
+execute store result score $CHANGEABLE.max_damage RD.item.durabity run data get storage rockietools:item_modifier temp.max_damage 10000
+execute store result score $CHANGEABLE.max_damage_tmp RD.item.durabity run data get storage rockietools:item_modifier temp.max_damage 1
 
-execute store result score $.damage RD.item.durabity run data get storage rockietools:item_modifier temp.current_damage 10000
+execute store result score $CHANGEABLE.damage RD.item.durabity run data get storage rockietools:item_modifier temp.current_damage 10000
 
-execute store result score $.damage_per_use RD.item.durabity run data get storage rockietools:item_modifier temp.damage_per_use 10000
+execute store result score $CHANGEABLE.damage_per_use RD.item.durabity run data get storage rockietools:item_modifier temp.damage_per_use 10000
 
-# tellraw @a [{"text":"Max Damage: ",italic:false},{"score":{name:"$.max_damage",objective:"RD.item.durabity"}}]
-# tellraw @a [{"text":"Damage: ",italic:false},{"score":{name:"$.damage",objective:"RD.item.durabity"}}]
+# tellraw @a [{"text":"Max Damage: ",italic:false},{"score":{name:"$CHANGEABLE.max_damage",objective:"RD.item.durabity"}}]
+# tellraw @a [{"text":"Damage: ",italic:false},{"score":{name:"$CHANGEABLE.damage",objective:"RD.item.durabity"}}]

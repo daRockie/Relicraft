@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "barrier",
+                    "modifier": [
+                        "rd_recipe:has_no_recipe",
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_model": "iron_pickaxe",
+                                "rarity":"uncommon",
+                                "custom_name":{
+                                    "text": "採掘",
+                                    "italic": false
+                                },
+                                "lore":[
+                                    {
+                                        "text": "鉱石等、採掘で収集可能な素材からクラフトできるレシピを閲覧します。",
+                                        "italic": false,
+                                        "color": "gray"
+                                    }
+                                ],
+                                "custom_data": {
+                                    "RD.item":"RD.internal.crafter.category.ore_all"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

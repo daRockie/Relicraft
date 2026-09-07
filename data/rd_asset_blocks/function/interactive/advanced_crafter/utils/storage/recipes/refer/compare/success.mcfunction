@@ -2,10 +2,15 @@
 
 scoreboard players set $RD.BLOCK.CUSTOM_CRAFTER.count RD.block.calculator 0
 scoreboard players set $RD.BLOCK.CUSTOM_CRAFTER.cost RD.block.calculator 0
+execute store result score $RD.BLOCK.CUSTOM_CRAFTER.multiplier RD.block.calculator run data get block ~ ~ ~ Items[{Slot:25b}].count 1
 
 $execute if items block ~ ~ ~ container.$(slot) * store result score $RD.BLOCK.CUSTOM_CRAFTER.count RD.block.calculator run data get block ~ ~ ~ Items[{Slot:$(slot)b}].count
 $execute if items block ~ ~ ~ container.$(slot) * run scoreboard players set $RD.BLOCK.CUSTOM_CRAFTER.cost RD.block.calculator $(count)
 
+scoreboard players operation $RD.BLOCK.CUSTOM_CRAFTER.cost RD.block.calculator *= $RD.BLOCK.CUSTOM_CRAFTER.multiplier RD.block.calculator
+
+# execute unless score $RD.BLOCK.CUSTOM_CRAFTER.cost RD.block.calculator matches 1.. run tellraw @a [{"text":"✖",color:red}]
+# execute if score $RD.BLOCK.CUSTOM_CRAFTER.cost RD.block.calculator matches 1.. run tellraw @a [{"score":{name:"$RD.BLOCK.CUSTOM_CRAFTER.cost",objective:"RD.block.calculator"}}]
 
 $execute if items block ~ ~ ~ container.$(slot) * if score $RD.BLOCK.CUSTOM_CRAFTER.count RD.block.calculator < $RD.BLOCK.CUSTOM_CRAFTER.cost RD.block.calculator run return fail
 # $execute if items block ~ ~ ~ container.$(slot) * if score @s RD.block.calculator < @s RD.block.calculator.temp1 run return fail

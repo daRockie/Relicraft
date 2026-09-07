@@ -1,0 +1,17 @@
+{
+    "type": "sequence",
+    "functions": [
+        {
+            "type": "set_item",
+            "item": "bow"
+        },
+        {
+            "type": "copy_components",
+            "source": "this",
+            "include": [
+                "item_model",
+                "consumable"
+            ]
+        }
+    ]
+}

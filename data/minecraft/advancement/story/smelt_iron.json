@@ -32,7 +32,9 @@
   "rewards": {
     "recipes": [
         "rd_custom_items:anti_blast-shield_recipe",
-        "rd_custom_items:advanced_crafting_table_recipe"
+        "rd_custom_items:advanced_crafting_table_recipe",
+        "rd_custom_items:ingredient/computers/low_power_circuit",
+        "rd_custom_items:ingredient/ore_relative/iron/hardened_iron"
     ]
   },
   "sends_telemetry_event": true

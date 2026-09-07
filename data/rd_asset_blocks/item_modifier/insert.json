@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:sequence",
+  "functions": {
+    "type": "minecraft:set_count",
+    "count": {
+      "type": "minecraft:storage",
+      "storage": "rockietools:custom_recipe",
+      "path": "temp.craft_amount"
+    }
+  }
+}

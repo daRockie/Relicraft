@@ -1,3 +1,6 @@
+tag @s add RD.block.interactive.advanced_crafter.green_panes
+tag @s remove RD.block.interactive.advanced_crafter.black_panes
+
 item replace block ~ ~ ~ container.0 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
 item replace block ~ ~ ~ container.1 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
 item replace block ~ ~ ~ container.2 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
@@ -15,5 +18,5 @@ item replace block ~ ~ ~ container.18 with lime_stained_glass_pane[tooltip_displ
 item replace block ~ ~ ~ container.19 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
 item replace block ~ ~ ~ container.20 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
 item replace block ~ ~ ~ container.24 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
-item replace block ~ ~ ~ container.25 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
+# item replace block ~ ~ ~ container.25 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]
 item replace block ~ ~ ~ container.26 with lime_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b},enchantment_glint_override=1b]

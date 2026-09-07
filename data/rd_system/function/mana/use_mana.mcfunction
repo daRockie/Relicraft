@@ -1,4 +1,4 @@
-scoreboard players operation @s RD.mana -= $.mana_use RD.item.durabity
+scoreboard players operation @s RD.mana -= $CHANGEABLE.mana_use RD.item.durabity
 execute if entity @s[type=!player] run return fail
 function rd_system:mana/add_mana with entity @s {}
 particle dust{color:[0.38,0.86,0.98],scale:1} ~ ~1 ~ 0.2 0.2 0.2 0.05 5

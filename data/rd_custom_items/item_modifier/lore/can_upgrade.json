@@ -1,0 +1,28 @@
+{
+    "type": "set_lore",
+    "lore": [
+        {
+			"text": "a",
+			"obfuscated": true,
+			"italic": false,
+	    	"bold": true,
+			"extra": [
+				{
+					"bold": true,
+					"italic": false,
+					"text": "強化可能",
+					"color": "light_purple",
+					"underlined": true,
+					"obfuscated": false
+				},
+				{
+					"text": "a",
+					"obfuscated": true,
+					"bold": true,
+    				"italic": false
+				}
+			]
+		}
+    ],
+    "mode": "append"
+}

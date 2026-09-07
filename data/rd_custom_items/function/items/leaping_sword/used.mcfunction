@@ -1,3 +1,4 @@
+tp @s @s
 
 particle cloud ~ ~ ~ 0.5 0 0.5 0.05 10
 

@@ -1,3 +1,5 @@
+say got called!
+
 execute anchored eyes run particle rain ~ ~ ~ 0.5 0.5 0.5 1 5
 playsound entity.skeleton.hurt hostile @a ~ ~ ~ 1 2
 
