@@ -6,7 +6,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:barrier",
-          "conditions": [],
           "modifier": [
             {
               "type": "minecraft:set_components",

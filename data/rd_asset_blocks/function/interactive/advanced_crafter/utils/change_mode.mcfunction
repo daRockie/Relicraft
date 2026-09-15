@@ -1,6 +1,8 @@
+data remove storage rockietools:custom_recipe temp.input
+
 # say mode changed
 # function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/call_startup
-function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/call_recipe {"keys":"{key:\"ui_buttons\"}"}
+function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/call_recipe {"keys":"{key:\"ui_buttons/startup\"}"}
 
 tag @s remove RD.block.interactive.advanced_crafter.crafting_mode
 

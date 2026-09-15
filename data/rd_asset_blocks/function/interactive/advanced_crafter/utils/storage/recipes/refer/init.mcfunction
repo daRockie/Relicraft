@@ -7,7 +7,6 @@ scoreboard players set @s RD._BOOLEAN 0
 
 # temp削除
 data remove storage rockietools:custom_crafter temp_crafter.meta
-data remove storage rockietools:custom_recipe list.crafter[{result:{name:"Temp"}}]
 
 # temp設定
 data modify storage rockietools:custom_recipe list.crafter append value {result:{name:"Temp",table:"rd_recipe:air"},ingredient:[{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"},{declear:"if", modifier:"*",table:"rd_recipe:null"}]}
@@ -16,6 +15,7 @@ data modify storage rockietools:custom_recipe list.crafter append value {result:
 
 data modify storage rockietools:custom_recipe temp_crafter.list set from storage rockietools:custom_recipe list.crafter
 data modify storage rockietools:custom_recipe temp_crafter.meta set from storage rockietools:custom_recipe meta
-data remove storage rockietools:custom_recipe temp_crafter.list[0]
+data remove storage rockietools:custom_recipe temp_crafter.list[{result:{sort:[{key:"ui_buttons"}]}}]
+# data remove storage rockietools:custom_recipe temp_crafter.list[0]
 
 function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/refer/

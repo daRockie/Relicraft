@@ -6,11 +6,11 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:light_gray_stained_glass_pane",
-          "conditions": [],
           "modifier": [
             {
               "type": "minecraft:set_components",
               "components": {
+                "item_model":"air",
                 "minecraft:tooltip_display": {
                   "hide_tooltip": true
                 },

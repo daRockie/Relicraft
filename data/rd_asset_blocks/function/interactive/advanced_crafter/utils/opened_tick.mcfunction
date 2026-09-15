@@ -4,7 +4,7 @@ execute if score @s RD.isCrafting matches 2 run function rd_asset_blocks:interac
 
 execute if score @s RD.isCrafting matches 1 run function rd_asset_blocks:interactive/advanced_crafter/check_recipe
 
-execute if score @s RD.isCrafting matches 0 run function rd_asset_blocks:interactive/advanced_crafter/utils/recipe_mode
+execute if score @s RD.isCrafting matches 0 run function rd_asset_blocks:interactive/advanced_crafter/utils/recipe_mode/main
 
 # クリック検知
 

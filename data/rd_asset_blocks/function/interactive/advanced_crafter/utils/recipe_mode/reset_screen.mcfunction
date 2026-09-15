@@ -1,4 +1,4 @@
-say reset!
+# say reset!
 
 execute as @e[type=item,distance=0..10] as @s if data entity @s Item.components."minecraft:custom_data".TempItem run kill @s
 

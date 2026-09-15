@@ -16,7 +16,7 @@ execute if entity @a[distance=0..16] run scoreboard players add @s[tag=!RD.no_ch
 execute rotated ~ 0 unless block ^ ^ ^1 #rd_custom_ai:no_collision run scoreboard players reset @s[tag=!RD.no_chase] RD.ai_timer
 execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #rd_custom_ai:no_collision run scoreboard players reset @s[tag=!RD.no_chase] RD.ai_timer
 
-execute if entity @e[distance=2..4.5,tag=zombies.target] if score @s[tag=!RD.no_chase] RD.ai_timer matches 60.. run function rd_custom_ai:advanced_ai/zombie/chase_jump
+execute if entity @e[distance=2..4.5,tag=zombies.target] if score @s[tag=!RD.no_chase] RD.ai_timer matches 60.. rotated ~ -35 positioned ^ ^ ^3 run function rd_custom_ai:custom_mobs/jump_forward
 execute if entity @e[distance=2..4.5,tag=zombies.target] if score @s[tag=!RD.no_chase] RD.ai_timer matches 60.. run scoreboard players reset @s RD.ai_timer
 
 execute if score @s[tag=!RD.no_chase] RD.ai_timer matches 80.. run scoreboard players reset @s RD.ai_timer

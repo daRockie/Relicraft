@@ -71,13 +71,13 @@ data modify storage rockietools:custom_recipe meta.crafter set value \
 
 # data modify storage rockietools:custom_recipe list.crafter.menu append value {function:"null",}
 
-data modify storage rockietools:custom_recipe list.crafter append value \
+# data modify storage rockietools:custom_recipe list.crafter append value \
 {\
     result:\
         {\
-            name:"Null",\
-            table:"rd_recipe:null",\
-            sort:[{key:"nothing"}],\
+            name:"Example",\
+            table:"rd_recipe:example",\
+            sort:[{key:"example"}],\
         },\
     ingredient:\
     [\
@@ -93,8 +93,10 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     ]\
 }
 
+# カテゴリデータ
 function rd_recipe:json/category/custom_crafter
 
+# 以降レシピ
 data modify storage rockietools:custom_recipe list.crafter append value \
 {\
     result:\

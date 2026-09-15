@@ -11,23 +11,23 @@
                         {
                             "type": "set_components",
                             "components": {
-                                "item_model": "iron_pickaxe",
+                                "item_model": "coal",
                                 "rarity":"uncommon",
                                 "custom_name":{
-                                    "text": "採掘",
+                                    "text": "採掘➡石炭",
                                     "italic": false
                                 },
                                 "lore":[
                                     {
-                                        "text": "鉱石等、採掘で収集可能な素材からクラフトできるレシピを閲覧します。",
+                                        "text": "燃料系の素材を使用したアイテムを表示します。",
                                         "italic": false,
                                         "color": "gray"
                                     }
                                 ],
                                 "custom_data": {
                                     "RD.item":"RD.internal.category",
-                                    "keys":"{key:\"ui_buttons/ore\"}",
-                                    "parent":"{key:\"ui_buttons/startup\"}"
+                                    "keys":"{key:\"ingredient/ore/coal\"}",
+                                    "parent":"{key:\"ui_buttons/ore\"}"
                                 }
                             }
                         }

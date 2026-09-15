@@ -8,7 +8,7 @@ item replace block ~ ~ ~ container.7 with air
 
 item replace block ~ ~ ~ container.8 with black_stained_glass_pane[tooltip_display={hide_tooltip:true},custom_data={TempItem:1b}]
 
-item replace block ~ ~ ~ container.9 with crafting_table[enchantment_glint_override=1b,custom_name={"text":"クラフト画面を開く","italic":0b,color:yellow},lore=[{"text":"警告：レシピ画面で表示されているアイテムと所持しているアイテムを置き換えると消滅します！",italic:0b,color:red,bold:1b}],custom_data={TempItem:1b}]
+loot replace block ~ ~ ~ container.9 loot rd_recipe:custom_crafter/internal/ui/to_crafting_mode
 item replace block ~ ~ ~ container.10 with air
 item replace block ~ ~ ~ container.11 with air
 item replace block ~ ~ ~ container.15 with air

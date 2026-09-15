@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "barrier",
+                    "modifier": [
+                        "rd_recipe:has_no_recipe",
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_model": "oak_sign",
+                                "custom_name":{
+                                    "text": "ここには何もないようです... :(",
+                                    "color":"gray",
+                                    "italic": true
+                                },
+                                "lore":[
+                                    {
+                                        "text": "他のレシピを探しましょう",
+                                        "italic": false,
+                                        "color": "dark_gray"
+                                    }
+                                ]
+                            }
+                        },
+                        "rd_asset_blocks:set_tempitem"
+                    ]
+                }
+            ]
+        }
+    ]
+}

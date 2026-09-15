@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "crafting_table",
+          "modifier": [
+            "rd_asset_blocks:set_tempitem",
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "rarity":"uncommon",
+                "minecraft:custom_name": {
+                  "text": "クラフト画面に戻る",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "⚠",
+                    "extra": [
+                      {
+                        "text": "警告",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "⚠",
+                        "color": "red",
+                        "italic": false
+                      }
+                    ],
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "レシピ画面で表示されているアイテムと所持しているアイテムを置き換えると消滅します！",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
