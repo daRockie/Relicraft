@@ -43,7 +43,7 @@ data modify block ~ ~ ~ CustomName.bold set value true
 
 # item replace block ~ ~ ~ container.25 with
 
-execute if entity @s[tag=RD.block.interactive.advanced_crafter.crafting_mode] run loot replace block ~ ~ ~ container.25 loot rd_asset_blocks:block/static/advanced_crafter/x
+# execute if entity @s[tag=RD.block.interactive.advanced_crafter.crafting_mode] run loot replace block ~ ~ ~ container.25 loot rd_asset_blocks:block/static/advanced_crafter/x
 
 # item modify block ~ ~ ~ container.25 rd_asset_blocks:insert
 

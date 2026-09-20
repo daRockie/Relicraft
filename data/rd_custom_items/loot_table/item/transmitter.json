@@ -58,7 +58,7 @@
         }
       ],
                 "use_cooldown": {
-                  "seconds": 2,
+                  "seconds": 0.3,
                   "cooldown_group": "transmitter"
                 },
                 "consumable": {

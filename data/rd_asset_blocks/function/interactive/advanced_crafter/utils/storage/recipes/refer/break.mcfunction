@@ -1,6 +1,6 @@
 scoreboard players set @s RD.custom_block.CALC_0 0
 
-function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/fill/get_recipe with storage rockietools:custom_recipe temp_crafter.meta
+function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/refer/get_recipe with storage rockietools:custom_recipe temp_crafter.meta
 
 # レシピ取得、アイテムデータを返却
 function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/refer/set_item with storage rockietools:custom_recipe temp_crafter.meta

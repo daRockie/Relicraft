@@ -96,6 +96,9 @@ data modify storage rockietools:custom_recipe meta.crafter set value \
 # カテゴリデータ
 function rd_recipe:json/category/custom_crafter
 
+# 通常の作業台でクラフト可能なもの
+function rd_recipe:json/category/craftable_in_crafting_table
+
 # 以降レシピ
 data modify storage rockietools:custom_recipe list.crafter append value \
 {\

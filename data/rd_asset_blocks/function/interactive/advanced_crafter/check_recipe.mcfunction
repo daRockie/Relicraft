@@ -1,9 +1,10 @@
 tag @s add RD.block.interactive.advanced_crafter.crafting_mode
 
 # レシピの確認
-execute if items entity @a[distance=..10,sort=nearest] player.cursor *[custom_data~{TempItem:1b}] run function rd_asset_blocks:interactive/advanced_crafter/utils/replace_panes
+# execute if items entity @a[distance=..10,sort=nearest] player.cursor *[custom_data~{TempItem:1b}] run 
+function rd_asset_blocks:interactive/advanced_crafter/utils/replace_panes
 
-execute unless items block ~ ~ ~ container.10 * if score @s RD.isCrafting matches 1 if items entity @a player.cursor *[custom_data={TempItem:1b}] run function rd_asset_blocks:interactive/advanced_crafter/utils/change_mode
+execute unless items block ~ ~ ~ container.10 *[custom_data~{TempItem:1b}] if score @s RD.isCrafting matches 1 if items entity @a player.cursor *[custom_data={TempItem:1b}] run function rd_asset_blocks:interactive/advanced_crafter/utils/change_mode
 
 execute unless items block ~ ~ ~ container.16 *[custom_data~{RD.recipeResult:1b}] unless items block ~ ~ ~ container.16 barrier[custom_data={TempItem:1b}] if entity @s[tag=RD.block.customCrafter.processing] if score @s RD._BOOLEAN matches 1 run function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/meth/init
 

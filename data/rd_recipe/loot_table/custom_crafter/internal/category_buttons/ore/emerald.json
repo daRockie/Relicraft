@@ -27,7 +27,7 @@
                                 "custom_data": {
                                     "RD.item":"RD.internal.category",
                                     "keys":"{key:\"ingredient/ore/emerlad\"}",
-                                    "parent":"{key:\"ui_buttons/ore\"}"
+                                    "parent":[{"keys":"{key:\"ui_buttons/startup\"}"},{"keys":"{key:\"ui_buttons/ore\"}"}]
                                 }
                             }
                         }

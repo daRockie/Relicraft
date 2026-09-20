@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "barrier",
+                    "modifier": [
+                        "rd_recipe:has_no_recipe",
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_model": "iron_sword",
+                                "rarity":"uncommon",
+                                "custom_name":{
+                                    "text": "討伐",
+                                    "italic": false
+                                },
+                                "lore":[
+                                    {
+                                        "text": "敵モブ等の討伐によって収集可能な素材からクラフトできるレシピを閲覧します。",
+                                        "italic": false,
+                                        "color": "gray"
+                                    }
+                                ],
+                                "custom_data": {
+                                    "RD.item":"RD.internal.category",
+                                    "keys":"{key:\"ui_buttons/combat\"}",
+                                    "parent":[{"keys":"{key:\"ui_buttons/startup\"}"}]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

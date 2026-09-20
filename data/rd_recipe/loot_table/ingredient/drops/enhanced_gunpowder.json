@@ -1,0 +1,46 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gunpowder",
+          "modifier": [
+            {
+              "type": "minecraft:set_name",
+              "name": {
+                "text": "強化された火薬",
+                "italic": false
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "uncommon",
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:lore": [
+                  {
+                    "text": "古来から伝わる製法で精製された火薬。",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "通常の火薬と同じように使用できるほか、燃料としても使用できる。",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "また、改良型作業台でクラフト素材として使用できる。",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

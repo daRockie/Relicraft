@@ -1,3 +1,5 @@
+# say tick
+
 execute if entity @s[tag=!opening] run function rd_asset_blocks:interactive/advanced_crafter/utils/opened
 
 execute if score @s RD.isCrafting matches 2 run function rd_asset_blocks:interactive/advanced_crafter/recipe_viewer/main

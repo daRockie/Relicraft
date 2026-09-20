@@ -1,4 +1,4 @@
-say end 
+# say end 
 # particle dust{color:[0.75,0,0.5],scale:1} ~ ~1.5 ~ 0.05 0.05 0.05 0 1
 execute unless block ~ ~ ~ #rd_custom_ai:no_collision run return run execute positioned ^ ^ ^-0.01 run function rd_custom_items:items/transmitter/tp_end
 
@@ -10,7 +10,9 @@ tp @s ~ ~ ~
 
 tp @s @s
 
-summon area_effect_cloud ~ ~0.5 ~ {Duration:1,potion_contents:{"custom_effects":[{id:"slow_falling",duration:2,ambient:true,show_icon:false}]},Radius:1,custom_particle:{type:"enchanted_hit"}}
+# effect give @s slow_falling 1 0
+
+summon area_effect_cloud ~ ~0.5 ~ {WaitTime:1,Duration:6,Age:3,ReapplicationDelay:0,potion_contents:{"custom_effects":[{id:"slow_falling",amplifier:100,duration:2,ambient:true,show_icon:false},{id:"strength",amplifier:4,duration:4},{id:"levitation",amplifier:2,duration:2,show_icon:false}]},Radius:1,custom_particle:{type:"block",block_state:{id:"air"}}}
 
 playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 1 1
 scoreboard players set @s RD.returnFunction 0

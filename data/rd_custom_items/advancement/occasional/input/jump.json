@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "feather"
+    },
+    "title": {
+      "text": "jump pressed"
+    },
+    "description": "",
+    "background": "minecraft:block/acacia_door_bottom"
+  },
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:type_specific/player": {
+              "input": {
+                "forward": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "a"
+    ]
+  ],
+  "rewards": {
+    "function": "rd_custom_items:equipments/util/on_jump"
+  }
+}

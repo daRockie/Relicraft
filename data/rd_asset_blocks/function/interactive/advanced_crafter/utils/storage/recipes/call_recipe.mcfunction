@@ -1,16 +1,18 @@
+# tellraw @a [{"nbt":"temp.input.parent[-1].keys",storage:"rockietools:custom_recipe"}]
+
+# tempを削除
 data remove storage rockietools:custom_recipe temp.category
 
+# tempを再設定
 data modify storage rockietools:custom_recipe temp.category set value []
 
-execute if data storage rockietools:custom_recipe temp.input.no_keys run return run data modify storage rockietools:custom_recipe temp.category append from storage rockietools:custom_recipe list.crafter[]
+# スタッシュデータを手に所持したアイテムからセット
+data modify entity @s equipment.head.components."minecraft:custom_data".data.stash set from entity @s equipment.mainhand.components."minecraft:custom_data"
 
-
-# tellraw @a [{"nbt":"temp.category",storage:"rockietools:custom_recipe"}]
-
-# $say data modify storage rockietools:custom_recipe temp.category set from storage rockietools:custom_recipe list.crafter[{result:{sort:[$(keys)]}}]
-
+# マクロで指定したキーのアイテムを拾う
 $data modify storage rockietools:custom_recipe temp.category append from storage rockietools:custom_recipe list.crafter[{result:{sort:[$(keys)]}}]
 
-# tellraw @a [{"nbt":"temp.category",storage:"rockietools:custom_recipe"}]
+# parentの最後から1個目の項目を削除
+data remove storage rockietools:custom_recipe temp.input.parent[-1]
 
-# data remove storage rockietools:custom_recipe temp.category[{result:{sort:[{key:"armor"}]}}]
+# tellraw @a [{"storage":"rockietools:custom_recipe",nbt:"temp.category"}]

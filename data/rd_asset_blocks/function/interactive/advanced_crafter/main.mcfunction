@@ -1,4 +1,4 @@
-execute if entity @s[tag=!placed_barrel] run function rd_asset_blocks:interactive/advanced_crafter/initialize
+execute if entity @s[tag=!placed_barrel] run return run function rd_asset_blocks:interactive/advanced_crafter/initialize
 execute if entity @s[tag=placed_barrel] unless block ~ ~ ~ barrel[facing=up]{CustomName:{"bold":true}} run function rd_asset_blocks:interactive/advanced_crafter/destroy_crafter
 #function crafter_main:main
 # kill @e[type=item,distance=0..2,nbt={Item:{components:{"minecraft:custom_name":{text:"改良型作業台",bold:1b}},id:"minecraft:dispenser"}}]
@@ -15,8 +15,8 @@ execute if entity @s[tag=placed_barrel] if block ~ ~ ~ barrel[facing=up]{CustomN
 fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace hopper destroy
 
 # 音止め
-execute if block ~ ~ ~ barrel[facing=up,open=false]{CustomName:{"bold":true}} if entity @s[tag=opening] as @a[distance=0..4] run function rd_custom_items:custom_block/stop_sound
-execute if block ~ ~ ~ barrel[facing=up,open=false]{CustomName:{"bold":true}} if entity @s[tag=opening] run function rd_asset_blocks:interactive/advanced_crafter/utils/closed
+execute if entity @s[tag=placed_barrel] if block ~ ~ ~ barrel[facing=up,open=false]{CustomName:{"bold":true}} if entity @s[tag=opening] as @a[distance=0..4] run function rd_custom_items:custom_block/stop_sound
+execute if entity @s[tag=placed_barrel] if block ~ ~ ~ barrel[facing=up,open=false]{CustomName:{"bold":true}} if entity @s[tag=opening] run function rd_asset_blocks:interactive/advanced_crafter/utils/closed
 
 # データの定義
-execute if block ~ ~ ~ barrel[facing=up]{CustomName:{"bold":true}} run function rd_asset_blocks:interactive/advanced_crafter/utils/tick
+execute if entity @s[tag=placed_barrel] if block ~ ~ ~ barrel[facing=up]{CustomName:{"bold":true}} run function rd_asset_blocks:interactive/advanced_crafter/utils/tick

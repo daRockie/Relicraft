@@ -1,3 +1,4 @@
+
 # 今までの処理重すぎん？
 execute store result entity @n[type=item_display,tag=RD.block.customCrafter] brightness.block int 1 run function rd_asset_blocks:get_brightness
 execute store result entity @n[type=item_display,tag=RD.block.customCrafter] brightness.sky int 1 run function rd_asset_blocks:get_brightness

@@ -4,3 +4,4 @@ execute unless data storage rockietools:custom_recipe temp.input.no_keys run fun
 execute if data storage rockietools:custom_recipe temp.input.no_keys run function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/call_startup
 function rd_asset_blocks:interactive/advanced_crafter/utils/item_modify/fill_blank_recipe_mode
 clear @a *[custom_data~{TempItem:1b}]
+item replace entity @s weapon.mainhand with air

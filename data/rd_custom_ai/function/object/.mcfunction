@@ -24,3 +24,5 @@ execute if entity @s[type=armor_stand,tag=mummy_reviving] at @s run function rd_
 execute if entity @s[tag=RD.runaway_entity] run function rd_custom_ai:movements/runaway/tick with entity @s equipment.head.components."minecraft:custom_data"
 
 execute if entity @s[tag=RD.light_temp] run function rd_custom_ai:object/marker/light/ with entity @s data
+
+execute if entity @s[tag=RD.object.text_display] run function rd_custom_ai:object/text_display

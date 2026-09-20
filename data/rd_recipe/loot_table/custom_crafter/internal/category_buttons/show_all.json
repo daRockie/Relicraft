@@ -26,7 +26,8 @@
                                 ],
                                 "custom_data": {
                                     "RD.item":"RD.internal.category",
-                                    "no_keys": ""
+                                    "no_keys": "",
+                                    "parent":[{"keys":"{key:\"ui_buttons/startup\"}"}]
                                 },
                                 "profile": {
                                     "properties": [

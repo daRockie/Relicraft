@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+        "type": "set_lore",
+        "lore": [
+            {
+                "text": ""
+            },
+            {
+                "text": "----------------",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        "mode": "append",
+        "condition": {
+            "type": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "components": {
+                    "lore": []
+                }
+            }
+        }
+    },
+    {
+        "type": "set_lore",
+        "lore": [
+            "",
+            {
+              "text": "-------------",
+              "color": "gray",
+              "italic": false
+            },
+            "",
+            {
+              "text": "💡",
+              "extra": [
+                {
+                  "text": "このアイテムは通常のクラフト手段を介してクラフトできます",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+            "color": "yellow",
+              "italic": false
+            },
+            ""
+          ],
+        "mode": "append"        
+    }
+  ]
+}

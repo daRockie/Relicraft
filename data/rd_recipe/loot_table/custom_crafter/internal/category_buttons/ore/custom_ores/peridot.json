@@ -1,0 +1,44 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "barrier",
+                    "modifier": [
+                        "rd_recipe:has_no_recipe",
+                        {
+                            "type": "set_components",
+                            "components": {
+                                "item_model": "emerald",
+                                "custom_model_data":{
+                                    "strings": [
+                                        "RD.peridot"
+                                    ]
+                                },
+                                "rarity":"rare",
+                                "custom_name":{
+                                    "text": "採掘➡レア鉱石➡ペリドット",
+                                    "italic": false
+                                },
+                                "lore":[
+                                    {
+                                        "text": "ペリドットを使用したアイテムを表示します。",
+                                        "italic": false,
+                                        "color": "gray"
+                                    }
+                                ],
+                                "custom_data": {
+                                    "RD.item":"RD.internal.category",
+                                    "keys":"{key:\"ingredient/ore/peridot\"}",
+                                    "parent":[{"keys":"{key:\"ui_buttons/startup\"}"},{"keys":"{key:\"ui_buttons/ore\"}"},{"keys":"{key:\"ui_buttons/ore/rare\"}"}]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

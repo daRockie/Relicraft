@@ -33,7 +33,7 @@ data modify storage rockietools:custom_recipe list.crafter append value \
     result:\
         {\
             name:"採掘",\
-            table:"rd_recipe:custom_crafter/internal/category_buttons/ore_all",\
+            table:"rd_recipe:custom_crafter/internal/category_buttons/ore/root",\
             sort:[{key:"ui_buttons/startup"},{key:"ui_buttons"}],\
         },\
     ingredient:\
@@ -135,4 +135,53 @@ data modify storage rockietools:custom_recipe list.crafter append value \
             table:"rd_recipe:custom_crafter/internal/category_buttons/ore/custom_ores/root",\
             sort:[{key:"ui_buttons/ore"},{key:"ui_buttons"}],\
         }\
+}
+
+data modify storage rockietools:custom_recipe list.crafter append value \
+{\
+    result:\
+        {\
+            name:"採掘➡レアな鉱石類➡ルビー",\
+            table:"rd_recipe:custom_crafter/internal/category_buttons/ore/custom_ores/ruby",\
+            sort:[{key:"ui_buttons/ore/rare"},{key:"ui_buttons"}],\
+        }\
+}
+
+data modify storage rockietools:custom_recipe list.crafter append value \
+{\
+    result:\
+        {\
+            name:"採掘➡レアな鉱石類➡ペリドット",\
+            table:"rd_recipe:custom_crafter/internal/category_buttons/ore/custom_ores/peridot",\
+            sort:[{key:"ui_buttons/ore/rare"},{key:"ui_buttons"}],\
+        }\
+}
+
+
+# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
+
+
+# 採掘
+data modify storage rockietools:custom_recipe list.crafter append value \
+{\
+    result:\
+        {\
+            name:"討伐",\
+            table:"rd_recipe:custom_crafter/internal/category_buttons/combat/root",\
+            sort:[{key:"ui_buttons/startup"},{key:"ui_buttons"}],\
+        },\
+    ingredient:\
+    [\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"bedrock",table:"rd_recipe:air",count:1},\
+    ]\
 }
