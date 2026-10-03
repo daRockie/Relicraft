@@ -10,7 +10,7 @@
             {
               "type": "minecraft:set_name",
               "name": {
-                "text": "強化された火薬",
+                "text": "精製された火薬",
                 "italic": false
               }
             },

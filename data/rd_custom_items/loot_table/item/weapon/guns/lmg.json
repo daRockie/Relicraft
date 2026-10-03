@@ -1,0 +1,66 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "shield",
+          "modifier": [
+            {
+              "type": "set_custom_data",
+              "tag": {"weapon":true}
+            },
+            {
+              "type": "set_components",
+              "components": {
+                "max_stack_size": 1,
+                "max_damage":1024,
+                "item_model":"crossbow",
+                "charged_projectiles":["nether_brick"],
+                "tooltip_display":{
+                  "hidden_components": [
+                    "charged_projectiles"
+                  ]
+                },
+                "rarity":"uncommon",
+                "minecraft:custom_name": {
+                  "text": "機関銃",
+                  "italic": false
+                },
+                "minecraft:lore": [
+        "",
+        {"text":"ダメージ：","color": "gray","italic": false,"extra":[{"text":"15","color": "red","italic": false},{"text": " ×10","color": "gray"}]},
+        "",
+        {"text": "クールダウン：","italic": false,"color": "dark_gray","extra": [{"text": "0.2秒","italic": false,"color": "green"}]},
+        {"text": "マナ消費量：","italic": false,"color": "dark_gray","extra": [{"text": "55","italic": false,"color": "dark_aqua"}]}
+      ],
+                "use_cooldown": {
+                  "seconds": 0.1,
+                  "cooldown_group": "kikanho"
+                },
+                "consumable": {
+                  "consume_seconds": 0.05,
+                  "sound": "intentionally_empty",
+                  "has_consume_particles": false
+                },
+                "use_remainder": {
+                  "id": "shield",                  
+                  "components": {
+                    "minecraft:custom_name": {
+                  "text": "機関銃",
+                  "color":"yellow",
+                  "italic": false
+                },
+                    "custom_data": "{\"Used\":1b,Loottable:\"rd_custom_items:item/weapon/guns/lmg\",function:\"rd_custom_items:items/guns/lmg/right_click\",damage_per_use:1,max_damage:72,mana_use:0,skill_name:\"散弾\",break_sound:\"entity.item.break\"}",
+                    "item_model": "crossbow"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

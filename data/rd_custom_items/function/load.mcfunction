@@ -16,9 +16,11 @@ scoreboard objectives add RD.item.emerald dummy "エメラルド数"
 scoreboard objectives add RD.max_health dummy "最大体力"
 scoreboard objectives add RD.damage_taken minecraft.custom:damage_taken "ダメージ"
 scoreboard objectives add RD.damage_dealt minecraft.custom:damage_dealt "与えたダメージ"
+scoreboard objectives add RD.jump minecraft.custom:jump "ジャンプ"
 
 scoreboard players set @a RD.damage_taken 0
 scoreboard players set @a RD.damage_dealt 0
+scoreboard players set @a RD.jump 0
 
 # めんどい
 scoreboard objectives add RD.isCrafting dummy "モード識別"

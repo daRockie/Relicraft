@@ -1,6 +1,6 @@
-$execute if entity @n[nbt={UUID:$(owner)},distance=0.01..,type=player] run return run tag @s remove RD.randomAngle
+# $execute if entity @n[nbt={UUID:$(owner)},distance=0.01..48,type=player] run return run tag @s remove RD.randomAngle
 
-execute store result score @s spawnRandom run random value 0..10
+$execute store result score @s spawnRandom run random value 0..$(threshold)
 scoreboard players set #-1 spawnRandom -1
 
 execute store result score @s RD.temp0 run data get entity @s Rotation[0] 1

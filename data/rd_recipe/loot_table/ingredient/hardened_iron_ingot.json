@@ -17,7 +17,8 @@
 								},
 								"rarity": "uncommon",
 								"custom_data": {
-									"RD.item": "RD.hardened_iron_ingot"
+									"RD.item": "RD.hardened_iron_ingot",
+					                "RD.craftable": true
 								},
 								"minecraft:custom_model_data": {
 									"strings": [

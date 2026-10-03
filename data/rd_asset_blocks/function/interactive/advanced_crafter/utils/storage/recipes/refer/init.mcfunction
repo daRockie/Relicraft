@@ -13,6 +13,7 @@ data remove storage rockietools:custom_crafter temp_crafter.meta
 data modify storage rockietools:custom_recipe temp_crafter.list set from storage rockietools:custom_recipe list.crafter
 data modify storage rockietools:custom_recipe temp_crafter.meta set from storage rockietools:custom_recipe meta
 data remove storage rockietools:custom_recipe temp_crafter.list[{result:{sort:[{key:"ui_buttons"}]}}]
+data remove storage rockietools:custom_recipe temp_crafter.list[{result:{sort:[{key:"craftable_in_crafting_table"}]}}]
 
 # 比較開始
 function rd_asset_blocks:interactive/advanced_crafter/utils/storage/recipes/refer/

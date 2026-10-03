@@ -386,3 +386,26 @@ data modify storage rockietools:custom_recipe list.crafter append value \
         {declear:"if", modifier:"string[!custom_data]", table:"rd_recipe:air",count:1},\
     ]\
 }
+
+data modify storage rockietools:custom_recipe list.crafter append value \
+{\
+    result:\
+        {\
+            name:"アラクネの短剣",\
+            table:"rd_custom_items:item/leaping_sword",\
+            sort:[{key:"ingredient/ore/iron"},{key:"ingredient/ore"},{key:"tools"}],\
+        },\
+    ingredient:\
+    [\
+        {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"iron_ingot[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[custom_data~{RD.item:\"RD.thread\"}]", table:"rd_recipe:ingredient/thread",count:1},\
+        {declear:"if", modifier:"iron_ingot[!custom_data]", table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"string[custom_data~{RD.item:\"RD.thread\"}]", table:"rd_recipe:ingredient/thread",count:1},\
+        {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+        {declear:"if", modifier:"stick", table:"rd_recipe:ingredient/ruby",count:1},\
+        {declear:"unless", modifier:"*",table:"rd_recipe:air",count:1},\
+    ]\
+}
+

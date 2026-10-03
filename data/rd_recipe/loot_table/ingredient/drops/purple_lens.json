@@ -1,0 +1,85 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "music_disc_blocks",
+          "modifier": [
+            {
+              "type": "set_custom_data",
+              "tag": {
+                "RD.item":"RD.purple_lens"
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "max_stack_size":16,
+                "minecraft:profile": {
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ2MTIwNDk5YjMyNDYzOWNkOWExNzc5OWVhMWRmZmYzNzNlNzlhZmUxZjBkOGI1MzI4Y2Y0Nzg5NmM0Nzc1In19fQ=="
+                    }
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "text": "紫紺のレンズ",
+                  "italic": false,
+                  "color": "blue"
+                },
+                "item_model":"player_head",
+                "minecraft:rarity": "rare",
+                "!jukebox_playable": {},
+                "lore": [
+                    {
+                        "text": "未知の技術で加工されたエンダーアイ。",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "モンスター達だけでは到底作れないはずだ...",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "改良型作業台でクラフトの素材として使用できるほか、高性能回路の素材になる。",
+                        "color":"gray",
+                        "italic": false
+                    },
+                    {
+                        "text": ""
+                    },
+                    {
+                        "text": "a",
+                        "obfuscated": true,
+                        "italic":false,
+                        "bold":true,
+                        "extra": [
+                            {
+                                "bold":true,
+                                "italic":false,
+                                "text": "強化可能",
+                                "color": "light_purple",
+                                "underlined":true,
+                                "obfuscated": false
+                            },
+                            {
+                                "text": "a",
+                                "obfuscated": true,
+                                "bold": true,
+                                "italic": false
+                            }
+                        ]
+                    }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

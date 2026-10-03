@@ -22,6 +22,8 @@ execute unless score $CHANGEABLE.max_damage RD.item.durabity matches 1.. run ret
 $item modify entity @s weapon.$(loot_address) rd_custom_items:set_enchantments
 $item modify entity @s weapon.$(loot_address) rd_custom_items:set_custom_enchantments
 
+$swing @s $(loot_address) whack
+
 # tempデータを削除
 data remove storage rockietools:item_modifier temp.durabity
 data remove storage rockietools:item_modifier temp.enchantments

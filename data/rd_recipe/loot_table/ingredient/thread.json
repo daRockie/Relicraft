@@ -9,6 +9,12 @@
           "conditions": [],
           "modifier": [
             {
+              "type": "set_custom_data",
+              "tag": {
+                "RD.item":"RD.thread"
+              }
+            },
+            {
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:profile": {

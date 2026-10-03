@@ -1,3 +1,5 @@
+function rd_recipe:json/category/craftable_in_crafting_table
+
 # ボタン系統
 
 data modify storage rockietools:custom_recipe list.crafter append value \

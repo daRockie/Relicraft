@@ -1,4 +1,4 @@
-say initializing
+# say initializing
 
 tag @s add RD.block.interactive.advanced_crafter.crafting_mode
 stopsound @a * entity.armor_stand.place

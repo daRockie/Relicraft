@@ -11,5 +11,6 @@ data modify entity @s equipment.head.components."minecraft:custom_data".data.sta
 
 # UIボタンの属性を含むデータをすべて削除
 data remove storage rockietools:custom_recipe temp.category[{result:{sort:[{key:"ui_buttons"}]}}]
+data remove storage rockietools:custom_recipe temp.category[{result:{sort:[{key:"craftable_in_crafting_table"}]}}]
 
 # tellraw @a [{"storage":"rockietools:custom_recipe",nbt:"temp.category"}]

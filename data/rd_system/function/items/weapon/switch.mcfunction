@@ -23,3 +23,4 @@ function rd_system:items/weapon/rng with storage rockietools:item_modifier temp
 
 # マナ消費メッセージ
 $execute if score $CHANGEABLE.mana_use RD.item.durabity matches 1.. run tellraw @s [{"score":{"name":"$CHANGEABLE.mana_use",objective:"RD.item.durabity"},color:"aqua"},{"text":" Mana(","color":"aqua"},{"text":"$(skill_name)","color":"gold"},{"text":")","color":"aqua"}]
+execute if score $CHANGEABLE.mana_use RD.item.durabity matches 1.. positioned ~ ~2 ~ run function rd_asset_mobs:summon/object/text_display/summon {"text":{"text":"🖊-",color:"aqua",italic:false,extra:[{"score":{"name":"$CHANGEABLE.mana_use","objective":"RD.item.durabity"}}]},timer:40}

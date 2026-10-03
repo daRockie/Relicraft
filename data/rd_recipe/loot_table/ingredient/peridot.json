@@ -16,7 +16,8 @@
                   ]
                 },
                 "minecraft:custom_data": {
-                  "RD.item": "RD.peridot"
+                  "RD.item": "RD.peridot",
+                  "RD.craftable": true
                 },
                 "minecraft:custom_name": {
                   "text": "ペリドット",

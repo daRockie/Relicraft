@@ -20,6 +20,10 @@ $execute unless data entity @s $(address).components."minecraft:enchantments"."m
 $execute if data entity @s $(address).components."minecraft:use_remainder".components."minecraft:custom_data"."mana_use" store result storage rockietools:item_modifier temp.mana_use int 1 run data get entity @s $(address).components."minecraft:use_remainder".components."minecraft:custom_data"."mana_use"
 $execute unless data entity @s $(address).components."minecraft:use_remainder".components."minecraft:custom_data"."mana_use" store result storage rockietools:item_modifier temp.mana_use int 1 run data modify storage rockietools:item_modifier temp.mana_use set value 0
 
+# もしリロードが存在すれば、それを記録
+$execute if data entity @s $(address).components."minecraft:use_remainder".components."minecraft:custom_data"."reload" store result storage rockietools:item_modifier temp.reload int 1 run data get entity @s $(address).components."minecraft:use_remainder".components."minecraft:custom_data"."reload"
+$execute unless data entity @s $(address).components."minecraft:use_remainder".components."minecraft:custom_data"."reload" store result storage rockietools:item_modifier temp.reload int 1 run data modify storage rockietools:item_modifier temp.reload set value 0
+
 # 耐久値消費量を取得
 $data modify storage rockietools:item_modifier temp.damage_per_use set value $(damage_per_use)
 $data modify storage rockietools:item_modifier temp.skill_name set value "$(skill_name)"

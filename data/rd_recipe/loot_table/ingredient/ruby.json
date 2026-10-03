@@ -10,7 +10,8 @@
             {
               "type": "set_custom_data",
               "tag": {
-                "RD.item": "RD.ruby"
+                "RD.item": "RD.ruby",
+                "RD.craftable": true
               }
             },
             {
@@ -47,9 +48,6 @@
                   }
                 ],
                 "minecraft:enchantment_glint_override": true,
-                "custom_data": {
-                  "RD.item": "RD.ruby"
-                },
                 "minecraft:custom_model_data": {
                   "strings": [
                     "RD.ruby"

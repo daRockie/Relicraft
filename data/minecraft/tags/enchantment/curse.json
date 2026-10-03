@@ -1,5 +1,7 @@
 {
     "values": [
-        "rd_custom_items:armor_channeling"
+        "rd_custom_items:armor_channeling",
+        "#rd_custom_items:cannot_remove"
+        
     ]
 }

@@ -36,7 +36,7 @@ scoreboard players operation @s ScoreToHealth = $CHANGEABLE.RD.internal.health R
 # tellraw @a [{"score":{"name":"@s","objective":"ScoreToHealth"}}]
 
 tellraw @s [{"text":"40",color:"aqua"},{"text":" Mana(","color":"aqua"},{"text":"息吹の香炉","color":"gold"},{"text":")","color":"aqua"}]
-
+function rd_asset_mobs:summon/object/text_display/summon {"text":{"text":"🖊-40",color:"aqua",italic:false},timer:40}
 # effect give @s regeneration 2 2
 
 effect give @s resistance 3 1

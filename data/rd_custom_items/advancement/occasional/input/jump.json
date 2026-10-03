@@ -1,14 +1,4 @@
 {
-  "display": {
-    "icon": {
-      "id": "feather"
-    },
-    "title": {
-      "text": "jump pressed"
-    },
-    "description": "",
-    "background": "minecraft:block/acacia_door_bottom"
-  },
   "criteria": {
     "a": {
       "trigger": "minecraft:location",
@@ -19,7 +9,7 @@
           "predicate": {
             "minecraft:type_specific/player": {
               "input": {
-                "forward": true
+                "jump": true
               }
             }
           }

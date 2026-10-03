@@ -41,11 +41,11 @@
         {"text": "マナ消費量：","italic": false,"color": "dark_gray","extra": [{"text": "0","italic": false,"color": "dark_aqua"}]}
       ],
                 "use_cooldown": {
-                  "seconds": 0.7,
+                  "seconds": 0.4,
                   "cooldown_group": "shortbow"
                 },
                 "consumable": {
-                  "consume_seconds": 0.01,
+                  "consume_seconds": 0.05,
                   "sound": "intentionally_empty",
                   "has_consume_particles": false
                 },
@@ -56,7 +56,7 @@
                   "text": "短弓",
                   "italic": false
                 },
-                    "custom_data": "{\"Used\":1b,Loottable:\"rd_custom_items:item/shortbow\",function:\"rd_custom_items:items/shortbow/right_click\",damage_per_use:1,max_damage:102,skill_name:\"弓心\",mana_use:0,break_sound:\"entity.item.break\"}",
+                    "custom_data": "{\"Used\":1b,Loottable:\"rd_custom_items:item/shortbow\",function:\"rd_custom_items:items/tankyuu/right_click\",damage_per_use:1,max_damage:72,mana_use:0,skill_name:\"弓心\",break_sound:\"entity.item.break\"}",
                     "item_model": "bow"
                   }
                 }

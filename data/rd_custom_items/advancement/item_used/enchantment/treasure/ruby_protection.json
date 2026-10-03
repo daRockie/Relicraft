@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "mine_a_block": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:slots": {
+              "weapon.*": {
+                "items": "#minecraft:enchantable/durability",
+                "components": {
+                    "enchantments": {"rd_custom_items:treasure/ruby/protection": 1}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [[
+    "mine_a_block"
+  ]],
+  "rewards": {
+    "function": "rd_custom_items:enchantment/treasure/ruby_protection/triggered"
+  }
+}
